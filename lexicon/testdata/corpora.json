@@ -1,0 +1,38 @@
+[
+  {
+    "name": "stats_frwiki.txt",
+    "bytes": 139335991,
+    "lines": 9749456,
+    "occurrences": 1642516410,
+    "sha256": "324f61d55e95f883ee5e398cb08c65eb2c9cfe853ed608a6914505aeff17c03a",
+    "gzipBytes": 50434921,
+    "gzipSHA256": "cc1612595e90257b13f56db1699fc48d731d8e04c149a4422cda70de1a838af1"
+  },
+  {
+    "name": "stats_frwikisource.txt",
+    "bytes": 43784984,
+    "lines": 3634413,
+    "occurrences": 685439799,
+    "sha256": "24473ae8d39fb7c5193d755be2972db222b4b530b864a7e730e3d6acf62cb500",
+    "gzipBytes": 15064176,
+    "gzipSHA256": "9a2aae93b26908f3bd7ca91cbd03f2420a70db5ad859f301d7449fc0bc949f87"
+  },
+  {
+    "name": "stats_google_ngram_1.txt",
+    "bytes": 53200333,
+    "lines": 4014202,
+    "occurrences": 168120132966,
+    "sha256": "5749eea15feeca050e315f5309b6ab947fa4cd58569ceec9ce99b77fad81071f",
+    "gzipBytes": 24553469,
+    "gzipSHA256": "2376fc1befdc5ceaf02768d940df8da7b7ff219947eed2933483f491fbcd1896"
+  },
+  {
+    "name": "stats_litterature.txt",
+    "bytes": 10058791,
+    "lines": 825149,
+    "occurrences": 157575024,
+    "sha256": "b89597d6ce17902b07fabb5ed57f8b33f20ca24855b6b383fee5a91dbf7b5e04",
+    "gzipBytes": 4852803,
+    "gzipSHA256": "98b54b899e6cdb11f9d873d9b95d69843cc2fd3b154e8215f8087614f04bd7b9"
+  }
+]

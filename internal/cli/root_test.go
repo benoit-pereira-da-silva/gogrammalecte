@@ -66,7 +66,7 @@ func TestRejectsInvalidInput(t *testing.T) {
 }
 
 func TestRejectsUnknownCommandsAndArguments(t *testing.T) {
-	for _, args := range [][]string{{"check"}, {"paragraphs", "unexpected"}, {"sentences", "--unknown"}} {
+	for _, args := range [][]string{{"unknown-command"}, {"paragraphs", "unexpected"}, {"sentences", "--unknown"}} {
 		var output bytes.Buffer
 		if err := execute(args, strings.NewReader(""), &output); err == nil {
 			t.Fatalf("accepted unsupported arguments %q", args)

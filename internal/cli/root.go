@@ -16,7 +16,7 @@ func NewCommand(version string) *cobra.Command {
 	root := &cobra.Command{
 		Use:           "gogrammalecte",
 		Short:         "Go port of Grammalecte's French language tools",
-		Long:          "Go port of Grammalecte's French language tools. Text segmentation is available; grammar checking is still being ported.",
+		Long:          "Go port of Grammalecte's French language tools with embedded grammar, dictionaries and resource generators.",
 		Version:       version,
 		SilenceErrors: true,
 		SilenceUsage:  true,
@@ -26,6 +26,8 @@ func NewCommand(version string) *cobra.Command {
 		textCommand("paragraphs", "Split UTF-8 standard input into paragraphs and emit a JSON array", text.Paragraphs),
 		textCommand("sentences", "Split UTF-8 standard input into sentences and emit a JSON array", text.Sentences),
 	)
+	root.AddCommand(languageCommands()...)
+	root.AddCommand(checkCommand(), formatCommand(), generationCommand(), corporaCommand())
 	return root
 }
 

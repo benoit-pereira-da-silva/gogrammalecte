@@ -1,0 +1,13 @@
+{
+  "referenceRevision": "08511c222029b3be20bf547563315d10fb48d44b",
+  "oracle": "CPython 3.14.3",
+  "files": {
+    "genfrdic.py": "a24c4fc999b89d5da54275b0d55060fe25f97a2ed37aed702a861f4d264ff521",
+    "orthographe/FRANCAIS.dic": "1d1cd79e79b4aca3997f7307ff35f84a5ffad1bfdc5c64a0d6ee3af34c446519",
+    "orthographe/FRANCAIS_7.aff": "368d7e8a438ad862cc1c26752378c01c51998b000ce210e59b59069fe3d82f56",
+    "metagraphe.py": "b64dd8f603b037bc3a3b7966ea2593223c149638640f437733b192d8d774bef6",
+    "metaphone2.py": "261aa392e7ee177a0ded56a4f095862e9979f450bf87f4cebe2ab804c49ae5f0",
+    "thes_build.py": "d72bca5c5433e1843329dd60d3c703b59a5fd7f18ee2c61d074d1b2962ac2914",
+    "tags.py": "c7d249f2cd8bd4c77b427a4bab3074e35289ee61fc6195fe96535aec7116f8ba"
+  }
+}

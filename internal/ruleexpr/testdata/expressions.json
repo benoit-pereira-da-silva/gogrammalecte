@@ -1,0 +1,146 @@
+[
+  {
+    "expression": "True",
+    "result": true
+  },
+  {
+    "expression": "False",
+    "result": false
+  },
+  {
+    "expression": "None",
+    "result": null
+  },
+  {
+    "expression": "not False",
+    "result": true
+  },
+  {
+    "expression": "1+2*3",
+    "result": 7
+  },
+  {
+    "expression": "2 < 3 < 4",
+    "result": true
+  },
+  {
+    "expression": "2 < 1 < fail()",
+    "result": false
+  },
+  {
+    "expression": "\"a\" if True else fail()",
+    "result": "a"
+  },
+  {
+    "expression": "False and fail()",
+    "result": false
+  },
+  {
+    "expression": "True or fail()",
+    "result": true
+  },
+  {
+    "expression": "\"un\" + \" élève\"",
+    "result": "un élève"
+  },
+  {
+    "expression": "\"abcdef\"[1:4]",
+    "result": "bcd"
+  },
+  {
+    "expression": "\"abcdef\"[:-2]",
+    "result": "abcd"
+  },
+  {
+    "expression": "\"é😀x\"[1]",
+    "result": "😀"
+  },
+  {
+    "expression": "\"é😀x\"[-1]",
+    "result": "x"
+  },
+  {
+    "expression": "\"ÉTÉ\".lower()",
+    "result": "été"
+  },
+  {
+    "expression": "\"abc\".replace(\"b\",\"d\")",
+    "result": "adc"
+  },
+  {
+    "expression": "\"abc\".startswith((\"a\",\"b\"))",
+    "result": true
+  },
+  {
+    "expression": "\"abc\".endswith(\"c\")",
+    "result": true
+  },
+  {
+    "expression": "\"a\" in {\"a\",\"b\"}",
+    "result": true
+  },
+  {
+    "expression": "\"c\" not in [\"a\",\"b\"]",
+    "result": true
+  },
+  {
+    "expression": "3 not in (1,2)",
+    "result": true
+  },
+  {
+    "expression": "len(\"é😀\")",
+    "result": 2
+  },
+  {
+    "expression": "\"Été\".istitle()",
+    "result": true
+  },
+  {
+    "expression": "\"été\".islower()",
+    "result": true
+  },
+  {
+    "expression": "\"ÉTÉ\".isupper()",
+    "result": true
+  },
+  {
+    "expression": "\"123²\".isdigit()",
+    "result": true
+  },
+  {
+    "expression": "\"été\".isalpha()",
+    "result": true
+  },
+  {
+    "expression": "\"aB\".capitalize()",
+    "result": "Ab"
+  },
+  {
+    "expression": "\"abc\".__len__()",
+    "result": 3
+  },
+  {
+    "expression": "\"abc\"[0:99]",
+    "result": "abc"
+  },
+  {
+    "expression": "\"abc\"[99:]",
+    "result": ""
+  },
+  {
+    "expression": "\"abc\"[::2]",
+    "result": "ac"
+  },
+  {
+    "expression": "\"abc\"[::-1]",
+    "result": "cba"
+  },
+  {
+    "expression": "\"\" or \"a\"",
+    "result": "a"
+  },
+  {
+    "expression": "\"b\" and \"a\"",
+    "result": "a"
+  }
+]

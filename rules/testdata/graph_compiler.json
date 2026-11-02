@@ -1,0 +1,860 @@
+{
+  "source_commit": "08511c222029b3be20bf547563315d10fb48d44b",
+  "compiler_sha256": "783df2780d7e12473b8a7a3b3efe8479240b81f4d4efb354f55af0afd7682697",
+  "definitions": [
+    {
+      "Name": "DET",
+      "Value": "[le|la|les]"
+    },
+    {
+      "Name": "CAP",
+      "Value": "[petit|grand]"
+    }
+  ],
+  "declensions": [
+    {
+      "Name": "+s",
+      "Value": "s"
+    },
+    {
+      "Name": "+es",
+      "Value": "e es"
+    }
+  ],
+  "expansions": [
+    {
+      "source": "chat",
+      "expanded": [
+        {
+          "tokens": [
+            "chat"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -2
+        }
+      ]
+    },
+    {
+      "source": "le chat",
+      "expanded": [
+        {
+          "tokens": [
+            "le",
+            "chat"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        }
+      ]
+    },
+    {
+      "source": "[le|la] [chat|chienne]",
+      "expanded": [
+        {
+          "tokens": [
+            "le",
+            "chat"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "la",
+            "chat"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "le",
+            "chienne"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "la",
+            "chienne"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        }
+      ]
+    },
+    {
+      "source": "?le¿ chat",
+      "expanded": [
+        {
+          "tokens": [
+            "le",
+            "chat"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "chat"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        }
+      ]
+    },
+    {
+      "source": "?[le|la]¿ chat",
+      "expanded": [
+        {
+          "tokens": [
+            "le",
+            "chat"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "la",
+            "chat"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "chat"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "chat"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "chat"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        }
+      ]
+    },
+    {
+      "source": "chat ?[noir|blanc]¿",
+      "expanded": [
+        {
+          "tokens": [
+            "chat"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -1
+        },
+        {
+          "tokens": [
+            "chat",
+            "noir"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -1
+        },
+        {
+          "tokens": [
+            "chat",
+            "blanc"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -1
+        }
+      ]
+    },
+    {
+      "source": "({DET}) ({CAP}) [chat+s|chien+s]",
+      "expanded": [
+        {
+          "tokens": [
+            "(le)",
+            "(petit)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(la)",
+            "(petit)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(les)",
+            "(petit)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(le)",
+            "(grand)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(la)",
+            "(grand)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(les)",
+            "(grand)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(le)",
+            "(petit)",
+            "chats"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(le)",
+            "(petit)",
+            "chien"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(le)",
+            "(petit)",
+            "chiens"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(la)",
+            "(petit)",
+            "chats"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(la)",
+            "(petit)",
+            "chien"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(la)",
+            "(petit)",
+            "chiens"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(les)",
+            "(petit)",
+            "chats"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(les)",
+            "(petit)",
+            "chien"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(les)",
+            "(petit)",
+            "chiens"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(le)",
+            "(grand)",
+            "chats"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(le)",
+            "(grand)",
+            "chien"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(le)",
+            "(grand)",
+            "chiens"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(la)",
+            "(grand)",
+            "chats"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(la)",
+            "(grand)",
+            "chien"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(la)",
+            "(grand)",
+            "chiens"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(les)",
+            "(grand)",
+            "chats"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(les)",
+            "(grand)",
+            "chien"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        },
+        {
+          "tokens": [
+            "(les)",
+            "(grand)",
+            "chiens"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -4
+        }
+      ]
+    },
+    {
+      "source": "({DET}) ?très¿ ({CAP}) chat",
+      "expanded": [
+        {
+          "tokens": [
+            "(le)",
+            "(petit)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(la)",
+            "(petit)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(les)",
+            "(petit)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(le)",
+            "très",
+            "(petit)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(la)",
+            "très",
+            "(petit)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(les)",
+            "très",
+            "(petit)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(le)",
+            "(grand)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(la)",
+            "(grand)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(les)",
+            "(grand)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(le)",
+            "très",
+            "(grand)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(la)",
+            "très",
+            "(grand)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "(les)",
+            "très",
+            "(grand)",
+            "chat"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -3
+        }
+      ]
+    },
+    {
+      "source": "[petit+es|gros] chat",
+      "expanded": [
+        {
+          "tokens": [
+            "petit",
+            "chat"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "petite",
+            "chat"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "petites",
+            "chat"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "gros",
+            "chat"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        }
+      ]
+    },
+    {
+      "source": "à␣côté de",
+      "expanded": [
+        {
+          "tokens": [
+            "à côté",
+            "de"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        }
+      ]
+    },
+    {
+      "source": "(chat) ?noir¿",
+      "expanded": [
+        {
+          "tokens": [
+            "(chat)"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -1
+        },
+        {
+          "tokens": [
+            "(chat)",
+            "noir"
+          ],
+          "first_nullable": -1,
+          "last_nullable": -1
+        }
+      ]
+    },
+    {
+      "source": "[a|b] ?x¿ [c|d]",
+      "expanded": [
+        {
+          "tokens": [
+            "a",
+            "c"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "b",
+            "c"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "a",
+            "x",
+            "c"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "b",
+            "x",
+            "c"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "a",
+            "d"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "b",
+            "d"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "a",
+            "x",
+            "d"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "b",
+            "x",
+            "d"
+          ],
+          "first_nullable": 2,
+          "last_nullable": -2
+        }
+      ]
+    },
+    {
+      "source": "?a¿ ?b¿ c",
+      "expanded": [
+        {
+          "tokens": [
+            "a",
+            "c"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "c"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "a",
+            "b",
+            "c"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        },
+        {
+          "tokens": [
+            "b",
+            "c"
+          ],
+          "first_nullable": 1,
+          "last_nullable": -2
+        }
+      ]
+    },
+    {
+      "source": "[@:N|$:V|>chat] ~^a$",
+      "expanded": [
+        {
+          "tokens": [
+            "@:N",
+            "~^a$"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            "$:V",
+            "~^a$"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        },
+        {
+          "tokens": [
+            ">chat",
+            "~^a$"
+          ],
+          "first_nullable": 0,
+          "last_nullable": -3
+        }
+      ]
+    }
+  ],
+  "paths": [
+    [
+      "le",
+      "chat",
+      "##10",
+      "FX__one__b1_a1_1"
+    ],
+    [
+      "le",
+      "chat",
+      "##10",
+      "FX__one__b1_a2_1"
+    ],
+    [
+      "la",
+      "chatte",
+      "##11",
+      "FX__two__b1_a1_1"
+    ],
+    [
+      "~^abc",
+      "@:[NA]",
+      "##12",
+      "FX__three__b1_a1_1"
+    ],
+    [
+      ">chat",
+      "%chat",
+      "*WORD",
+      "/TAG",
+      "$:N",
+      "&:A",
+      "##13",
+      "FX__four__b1_a1_1"
+    ],
+    [
+      "le",
+      "chien",
+      "##10",
+      "FX__one__b1_a1_1"
+    ]
+  ],
+  "graph": {
+    "0": {
+      "la": 11,
+      "le": 16,
+      "<re_value>": {
+        "^abc": 19
+      },
+      "<lemmas>": {
+        "chat": 8
+      }
+    },
+    "1": {},
+    "2": [
+      "FX__four__b1_a1_1"
+    ],
+    "3": {
+      "<rules>": {
+        "#13": 2
+      }
+    },
+    "4": {
+      "<re_mmorph>": {
+        ":A": 3
+      }
+    },
+    "5": {
+      "<morph>": {
+        ":N": 4
+      }
+    },
+    "6": {
+      "<tags>": {
+        "TAG": 5
+      }
+    },
+    "7": {
+      "<meta>": {
+        "WORD": 6
+      }
+    },
+    "8": {
+      "<phonet>": {
+        "chat": 7
+      }
+    },
+    "9": [
+      "FX__two__b1_a1_1"
+    ],
+    "10": {
+      "<rules>": {
+        "#11": 9
+      }
+    },
+    "11": {
+      "chatte": 10
+    },
+    "12": [
+      "FX__one__b1_a1_1",
+      "FX__one__b1_a2_1"
+    ],
+    "13": {
+      "<rules>": {
+        "#10": 12
+      }
+    },
+    "14": [
+      "FX__one__b1_a1_1"
+    ],
+    "15": {
+      "<rules>": {
+        "#10": 14
+      }
+    },
+    "16": {
+      "chat": 13,
+      "chien": 15
+    },
+    "17": [
+      "FX__three__b1_a1_1"
+    ],
+    "18": {
+      "<rules>": {
+        "#12": 17
+      }
+    },
+    "19": {
+      "<re_morph>": {
+        ":[NA]": 18
+      }
+    }
+  }
+}

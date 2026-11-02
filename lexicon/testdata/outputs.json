@@ -1,0 +1,698 @@
+{
+  "rows": [
+    {
+      "entry": "été/AB\tpo:nom\tis:mas sg\tlx:rare symb\tse:math pays\tet:lat\tdi:C\tid:42",
+      "text": "étés",
+      "morph": "nom mas sg",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 0,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 0.0,
+      "frequencyIndex": "0",
+      "metagraphe": "étés",
+      "metaphone": "ATS",
+      "counts": [
+        0,
+        45
+      ],
+      "row": "42\t2\tétés\tété\tnom mas sg\tétés\tATS\trare symb\tmath pays\tlat\tC/R\t0\t45\t0\t2\t3\t0.000000000000000\t0\n"
+    },
+    {
+      "entry": "été/AB\tpo:nom\tis:mas sg\tlx:rare symb\tse:math pays\tet:lat\tdi:C\tid:42",
+      "text": "étés",
+      "morph": "nom mas sg",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 1,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 6.782320343052238e-10,
+      "frequencyIndex": "1",
+      "metagraphe": "étés",
+      "metaphone": "ATS",
+      "counts": [
+        1,
+        45
+      ],
+      "row": "42\t2\tétés\tété\tnom mas sg\tétés\tATS\trare symb\tmath pays\tlat\tC/R\t1\t45\t1\t2\t3\t0.000000000678232\t1\n"
+    },
+    {
+      "entry": "été/AB\tpo:nom\tis:mas sg\tlx:rare symb\tse:math pays\tet:lat\tdi:C\tid:42",
+      "text": "étés",
+      "morph": "nom mas sg",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 13,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 8.81701644596791e-09,
+      "frequencyIndex": "1",
+      "metagraphe": "étés",
+      "metaphone": "ATS",
+      "counts": [
+        13,
+        45
+      ],
+      "row": "42\t2\tétés\tété\tnom mas sg\tétés\tATS\trare symb\tmath pays\tlat\tC/R\t13\t45\t13\t2\t3\t0.000000008817016\t1\n"
+    },
+    {
+      "entry": "été/AB\tpo:nom\tis:mas sg\tlx:rare symb\tse:math pays\tet:lat\tdi:C\tid:42",
+      "text": "étés",
+      "morph": "nom mas sg",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 8818296701,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 5.980851310626274,
+      "frequencyIndex": "9",
+      "metagraphe": "étés",
+      "metaphone": "ATS",
+      "counts": [
+        8818296701,
+        45
+      ],
+      "row": "42\t2\tétés\tété\tnom mas sg\tétés\tATS\trare symb\tmath pays\tlat\tC/R\t8818296701\t45\t8818296701\t2\t3\t5.980851310626274\t9\n"
+    },
+    {
+      "entry": "manger/a0\tpo:v1_it____a\tis:infi\tlx:col\tse:@\tdi:*",
+      "text": "mangers",
+      "morph": "v1_it____a infi",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 0,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 0.0,
+      "frequencyIndex": "0",
+      "metagraphe": "mâjers",
+      "metaphone": "MNJRS/MNKRS",
+      "counts": [
+        0,
+        45
+      ],
+      "row": "0\t2\tmangers\tmanger\tv1_it____a infi\tmâjers\tMNJRS/MNKRS\tcol\t@\t\t*/R\t0\t45\t0\t2\t3\t0.000000000000000\t0\n"
+    },
+    {
+      "entry": "manger/a0\tpo:v1_it____a\tis:infi\tlx:col\tse:@\tdi:*",
+      "text": "mangers",
+      "morph": "v1_it____a infi",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 1,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 6.782320343052238e-10,
+      "frequencyIndex": "1",
+      "metagraphe": "mâjers",
+      "metaphone": "MNJRS/MNKRS",
+      "counts": [
+        1,
+        45
+      ],
+      "row": "0\t2\tmangers\tmanger\tv1_it____a infi\tmâjers\tMNJRS/MNKRS\tcol\t@\t\t*/R\t1\t45\t1\t2\t3\t0.000000000678232\t1\n"
+    },
+    {
+      "entry": "manger/a0\tpo:v1_it____a\tis:infi\tlx:col\tse:@\tdi:*",
+      "text": "mangers",
+      "morph": "v1_it____a infi",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 13,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 8.81701644596791e-09,
+      "frequencyIndex": "1",
+      "metagraphe": "mâjers",
+      "metaphone": "MNJRS/MNKRS",
+      "counts": [
+        13,
+        45
+      ],
+      "row": "0\t2\tmangers\tmanger\tv1_it____a infi\tmâjers\tMNJRS/MNKRS\tcol\t@\t\t*/R\t13\t45\t13\t2\t3\t0.000000008817016\t1\n"
+    },
+    {
+      "entry": "manger/a0\tpo:v1_it____a\tis:infi\tlx:col\tse:@\tdi:*",
+      "text": "mangers",
+      "morph": "v1_it____a infi",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 8818296701,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 5.980851310626274,
+      "frequencyIndex": "9",
+      "metagraphe": "mâjers",
+      "metaphone": "MNJRS/MNKRS",
+      "counts": [
+        8818296701,
+        45
+      ],
+      "row": "0\t2\tmangers\tmanger\tv1_it____a infi\tmâjers\tMNJRS/MNKRS\tcol\t@\t\t*/R\t8818296701\t45\t8818296701\t2\t3\t5.980851310626274\t9\n"
+    },
+    {
+      "entry": "œil\tpo:nom\tis:mas sg\tst:œil\tdi:*",
+      "text": "œils",
+      "morph": "nom mas sg",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 0,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 0.0,
+      "frequencyIndex": "0",
+      "metagraphe": "2ils",
+      "metaphone": "LS",
+      "counts": [
+        0,
+        45
+      ],
+      "row": "0\t2\tœils\tœil\tnom mas sg\t2ils\tLS\t\t\t\t*/R\t0\t45\t0\t2\t3\t0.000000000000000\t0\n"
+    },
+    {
+      "entry": "œil\tpo:nom\tis:mas sg\tst:œil\tdi:*",
+      "text": "œils",
+      "morph": "nom mas sg",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 1,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 6.782320343052238e-10,
+      "frequencyIndex": "1",
+      "metagraphe": "2ils",
+      "metaphone": "LS",
+      "counts": [
+        1,
+        45
+      ],
+      "row": "0\t2\tœils\tœil\tnom mas sg\t2ils\tLS\t\t\t\t*/R\t1\t45\t1\t2\t3\t0.000000000678232\t1\n"
+    },
+    {
+      "entry": "œil\tpo:nom\tis:mas sg\tst:œil\tdi:*",
+      "text": "œils",
+      "morph": "nom mas sg",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 13,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 8.81701644596791e-09,
+      "frequencyIndex": "1",
+      "metagraphe": "2ils",
+      "metaphone": "LS",
+      "counts": [
+        13,
+        45
+      ],
+      "row": "0\t2\tœils\tœil\tnom mas sg\t2ils\tLS\t\t\t\t*/R\t13\t45\t13\t2\t3\t0.000000008817016\t1\n"
+    },
+    {
+      "entry": "œil\tpo:nom\tis:mas sg\tst:œil\tdi:*",
+      "text": "œils",
+      "morph": "nom mas sg",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 8818296701,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 5.980851310626274,
+      "frequencyIndex": "9",
+      "metagraphe": "2ils",
+      "metaphone": "LS",
+      "counts": [
+        8818296701,
+        45
+      ],
+      "row": "0\t2\tœils\tœil\tnom mas sg\t2ils\tLS\t\t\t\t*/R\t8818296701\t45\t8818296701\t2\t3\t5.980851310626274\t9\n"
+    },
+    {
+      "entry": "/\tpo:ponc",
+      "text": "/s",
+      "morph": "ponc",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 0,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 0.0,
+      "frequencyIndex": "0",
+      "metagraphe": "/s",
+      "metaphone": "S",
+      "counts": [
+        0,
+        45
+      ],
+      "row": "0\t2\t/s\t/\tponc\t/s\tS\t\t\t\t*/R\t0\t45\t0\t2\t3\t0.000000000000000\t0\n"
+    },
+    {
+      "entry": "/\tpo:ponc",
+      "text": "/s",
+      "morph": "ponc",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 1,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 6.782320343052238e-10,
+      "frequencyIndex": "1",
+      "metagraphe": "/s",
+      "metaphone": "S",
+      "counts": [
+        1,
+        45
+      ],
+      "row": "0\t2\t/s\t/\tponc\t/s\tS\t\t\t\t*/R\t1\t45\t1\t2\t3\t0.000000000678232\t1\n"
+    },
+    {
+      "entry": "/\tpo:ponc",
+      "text": "/s",
+      "morph": "ponc",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 13,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 8.81701644596791e-09,
+      "frequencyIndex": "1",
+      "metagraphe": "/s",
+      "metaphone": "S",
+      "counts": [
+        13,
+        45
+      ],
+      "row": "0\t2\t/s\t/\tponc\t/s\tS\t\t\t\t*/R\t13\t45\t13\t2\t3\t0.000000008817016\t1\n"
+    },
+    {
+      "entry": "/\tpo:ponc",
+      "text": "/s",
+      "morph": "ponc",
+      "dictionary": "R",
+      "index": 2,
+      "occurrences": 8818296701,
+      "duplicates": 2,
+      "multiple": 3,
+      "frequency": 5.980851310626274,
+      "frequencyIndex": "9",
+      "metagraphe": "/s",
+      "metaphone": "S",
+      "counts": [
+        8818296701,
+        45
+      ],
+      "row": "0\t2\t/s\t/\tponc\t/s\tS\t\t\t\t*/R\t8818296701\t45\t8818296701\t2\t3\t5.980851310626274\t9\n"
+    }
+  ],
+  "header": "id\tfid\tFlexion\tLemme\tÉtiquettes\tMétagraphe (β)\tMetaphone2\tNotes\tSémantique\tÉtymologie\tSous-dictionnaire\tGoogle 1-grams\tWikipédia\tTotal occurrences\tDoublons\tMultiples\tFréquence\tIndice de fréquence\n",
+  "ngrams": [
+    {
+      "word": "",
+      "n": -2,
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "word": "",
+      "n": -1,
+      "expected": []
+    },
+    {
+      "word": "",
+      "n": 0,
+      "expected": []
+    },
+    {
+      "word": "",
+      "n": 1,
+      "expected": []
+    },
+    {
+      "word": "",
+      "n": 2,
+      "expected": []
+    },
+    {
+      "word": "",
+      "n": 3,
+      "expected": []
+    },
+    {
+      "word": "",
+      "n": 5,
+      "expected": []
+    },
+    {
+      "word": "",
+      "n": 8,
+      "expected": []
+    },
+    {
+      "word": "a",
+      "n": -2,
+      "expected": [
+        "",
+        ""
+      ]
+    },
+    {
+      "word": "a",
+      "n": -1,
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "word": "a",
+      "n": 0,
+      "expected": []
+    },
+    {
+      "word": "a",
+      "n": 1,
+      "expected": []
+    },
+    {
+      "word": "a",
+      "n": 2,
+      "expected": []
+    },
+    {
+      "word": "a",
+      "n": 3,
+      "expected": []
+    },
+    {
+      "word": "a",
+      "n": 5,
+      "expected": []
+    },
+    {
+      "word": "a",
+      "n": 8,
+      "expected": []
+    },
+    {
+      "word": "abcd",
+      "n": -2,
+      "expected": [
+        "ab",
+        "bc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "word": "abcd",
+      "n": -1,
+      "expected": [
+        "abc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "word": "abcd",
+      "n": 0,
+      "expected": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "word": "abcd",
+      "n": 1,
+      "expected": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "word": "abcd",
+      "n": 2,
+      "expected": [
+        "ab"
+      ]
+    },
+    {
+      "word": "abcd",
+      "n": 3,
+      "expected": []
+    },
+    {
+      "word": "abcd",
+      "n": 5,
+      "expected": []
+    },
+    {
+      "word": "abcd",
+      "n": 8,
+      "expected": []
+    },
+    {
+      "word": "œuvre",
+      "n": -2,
+      "expected": [
+        "œuv",
+        "uvr",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "word": "œuvre",
+      "n": -1,
+      "expected": [
+        "œuvr",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "word": "œuvre",
+      "n": 0,
+      "expected": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "word": "œuvre",
+      "n": 1,
+      "expected": [
+        "œ",
+        "u",
+        "v"
+      ]
+    },
+    {
+      "word": "œuvre",
+      "n": 2,
+      "expected": [
+        "œu",
+        "uv"
+      ]
+    },
+    {
+      "word": "œuvre",
+      "n": 3,
+      "expected": [
+        "œuv"
+      ]
+    },
+    {
+      "word": "œuvre",
+      "n": 5,
+      "expected": []
+    },
+    {
+      "word": "œuvre",
+      "n": 8,
+      "expected": []
+    },
+    {
+      "word": "école",
+      "n": -2,
+      "expected": [
+        "éco",
+        "́col",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "word": "école",
+      "n": -1,
+      "expected": [
+        "écol",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "word": "école",
+      "n": 0,
+      "expected": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "word": "école",
+      "n": 1,
+      "expected": [
+        "e",
+        "́",
+        "c",
+        "o"
+      ]
+    },
+    {
+      "word": "école",
+      "n": 2,
+      "expected": [
+        "é",
+        "́c",
+        "co"
+      ]
+    },
+    {
+      "word": "école",
+      "n": 3,
+      "expected": [
+        "éc",
+        "́co"
+      ]
+    },
+    {
+      "word": "école",
+      "n": 5,
+      "expected": []
+    },
+    {
+      "word": "école",
+      "n": 8,
+      "expected": []
+    }
+  ],
+  "verbs": [
+    {
+      "input": "",
+      "expected": []
+    },
+    {
+      "input": "ipre spre 1sg 3sg",
+      "expected": [
+        "ipre 1sg",
+        "ipre 3sg",
+        "spre 1sg",
+        "spre 3sg"
+      ]
+    },
+    {
+      "input": "ipre 1sg spre 3pl",
+      "expected": [
+        "ipre 1sg",
+        "ipre 3pl"
+      ]
+    },
+    {
+      "input": "ppas adj mas sg",
+      "expected": []
+    },
+    {
+      "input": "ipre ²sg 3sg",
+      "expected": [
+        "ipre ²sg",
+        "ipre 3sg"
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "input": "",
+      "expected": []
+    },
+    {
+      "input": "A",
+      "expected": [
+        "A "
+      ]
+    },
+    {
+      "input": "ABC",
+      "expected": [
+        "AB",
+        "C "
+      ]
+    },
+    {
+      "input": "ABCD",
+      "expected": [
+        "AB",
+        "CD"
+      ]
+    },
+    {
+      "input": "œéÉ",
+      "expected": [
+        "œé",
+        "É "
+      ]
+    },
+    {
+      "input": "😀aé",
+      "expected": [
+        "😀a",
+        "é "
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "name": "po",
+      "value": "",
+      "expected": " po:"
+    },
+    {
+      "name": "po",
+      "value": "nom",
+      "expected": " po:nom"
+    },
+    {
+      "name": "po",
+      "value": "nom adj",
+      "expected": " po:nom po:adj"
+    },
+    {
+      "name": "po",
+      "value": "nom  adj",
+      "expected": " po:nom po: po:adj"
+    },
+    {
+      "name": "po",
+      "value": "nom\tadj",
+      "expected": " po:nom\tadj"
+    }
+  ]
+}

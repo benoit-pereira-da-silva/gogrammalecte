@@ -1,0 +1,17 @@
+{
+  "generator": "graphspell/dictionary.Build (native Go)",
+  "lexical_rows": 515693,
+  "license": "MPL-2.0",
+  "source_commit": "08511c222029b3be20bf547563315d10fb48d44b",
+  "source_file": "lexicons/French.lex",
+  "source_repository": "https://github.com/benoit-pereira-da-silva/grammalecte",
+  "source_sha256": "5938d8180b64e4f5320c358dab64e2eea1298c6c5967b147d5506f0ac4562c4a",
+  "stats": {
+    "Entries": 515637,
+    "Characters": 187,
+    "Affixes": 886,
+    "Tags": 9826,
+    "Nodes": 134094,
+    "Arcs": 272873
+  }
+}

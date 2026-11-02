@@ -1,0 +1,54 @@
+[
+  {
+    "line": "#\tpo:ponc\tpo:sign\tse:@\tdi:*",
+    "output": "   erreur  > lemme vide   sur   / "
+  },
+  {
+    "line": "",
+    "output": "   erreur  > lemme vide   sur   / "
+  },
+  {
+    "line": " a/S.\tpo:nope\tis:sg",
+    "output": "   erreur  > espace en début de lemme < a> > Étiquette inconnue pour l’attribut <po>: nope > étiquettes <is> incomplètes, genre non spécifié (mas/fem/epi) > étiquettes <is> incohérentes  > étiquettes <is> incohérentes  > drapeau () manquant   sur    a/S.  po:nope is:sg"
+  },
+  {
+    "line": "a /F.\tpo:nom\tis:mas sg",
+    "output": "   erreur  > espace en fin de lemme <a > > étiquettes <is> incohérentes > étiquettes <is> incohérentes  > étiquettes <is> incohérentes  > drapeau () manquant   sur   a /F.  po:nom is:mas is:sg"
+  },
+  {
+    "line": "manger/a0\tpo:v1wrong",
+    "output": "   erreur  > verbe mal étiqueté: v1wrong > verbe sans participe passé: v1wrong > drapeau () manquant   sur   manger/a0  po:v1wrong"
+  },
+  {
+    "line": "abc/f0p+\tpo:v2__t_____",
+    "output": "   erreur  > drapeau () manquant > drapeau pour verbe du 2ᵉ groupe sur un lemme qui ne finit pas par -ir   sur   abc/f0p+  po:v2__t_____"
+  },
+  {
+    "line": "faux/S.\tpo:adj\tis:mas",
+    "output": "   erreur  > drapeau inutile > drapeau () manquant   sur   faux/S.  po:adj is:mas"
+  },
+  {
+    "line": "cheval/X.\tpo:nom\tis:pl",
+    "output": "   erreur  > étiquettes <is> incomplètes, genre non spécifié (mas/fem/epi) > étiquettes <is> incohérentes  > étiquettes <is> incohérentes  > drapeau () manquant   sur   cheval/X.  po:nom is:pl"
+  },
+  {
+    "line": "mot/S.\tpo:nom",
+    "output": "   erreur  > étiquette <is> vide > drapeau () manquant   sur   mot/S.  po:nom"
+  },
+  {
+    "line": "mot/A.\tpo:nom\tis:epi sg",
+    "output": "   erreur  > étiquettes <is> incohérentes  > étiquettes <is> incohérentes  > drapeau () manquant   sur   mot/A.  po:nom is:epi is:sg"
+  },
+  {
+    "line": "test\tlx:unknown",
+    "output": "   erreur  > Étiquette inconnue pour l’attribut <lx>: unknown   sur   test/  lx:unknown"
+  },
+  {
+    "line": "test\tse:unknown",
+    "output": "   erreur  > Étiquette inconnue pour l’attribut <se>: unknown   sur   test/  se:unknown"
+  },
+  {
+    "line": "test\tet:unknown",
+    "output": "   erreur  > Étiquette inconnue pour l’attribut <et>: unknown   sur   test/  et:unknown"
+  }
+]

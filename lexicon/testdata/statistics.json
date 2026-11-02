@@ -1,0 +1,71 @@
+{
+  "corpora": [
+    "été 3\nde 6\ninconnu 100\nà 1\n",
+    "école\t4\nde\t7\nété\t5\n",
+    "été 2\nété 9\n"
+  ],
+  "words": [
+    "été",
+    "de",
+    "absent",
+    "à",
+    "école"
+  ],
+  "counts": {
+    "été": [
+      3,
+      5,
+      2,
+      9
+    ],
+    "de": [
+      6,
+      7,
+      0
+    ],
+    "absent": [
+      0,
+      0,
+      0
+    ],
+    "à": [
+      1,
+      0,
+      0
+    ],
+    "école": [
+      0,
+      4,
+      0
+    ]
+  },
+  "metadata": [
+    [
+      "0",
+      "corpus 0",
+      10,
+      110
+    ],
+    [
+      "1",
+      "corpus 1",
+      16,
+      16
+    ],
+    [
+      "2",
+      "corpus 2",
+      11,
+      11
+    ]
+  ],
+  "info": "Corpus :\n * corpus 0             ->                 10 mots reconnus /                110\n * corpus 1             ->                 16 mots reconnus /                 16\n * corpus 2             ->                 11 mots reconnus /                 11\n\n * TOTAL                ->                 37 mots reconnus /                137\n\n",
+  "totals": {
+    "été": 19,
+    "de": 13,
+    "absent": 0,
+    "à": 1,
+    "école": 4
+  },
+  "write": "('0', 'corpus 0', 10, 110)\n('1', 'corpus 1', 16, 16)\n('2', 'corpus 2', 11, 11)\nété - [3, 5, 2, 9]\nde - [6, 7, 0]\nabsent - [0, 0, 0]\nà - [1, 0, 0]\nécole - [0, 4, 0]\n"
+}

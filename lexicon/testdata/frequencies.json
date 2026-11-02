@@ -1,0 +1,180 @@
+{
+  "metadata": [
+    [
+      "G",
+      "Google 1-grams",
+      145635933409,
+      168120132966
+    ],
+    [
+      "W",
+      "Wikipédia",
+      1091867445,
+      1642516410
+    ],
+    [
+      "S",
+      "Wikisource",
+      569693331,
+      685439799
+    ],
+    [
+      "L",
+      "Littérature",
+      144656241,
+      157575024
+    ]
+  ],
+  "recognized": 147442165722,
+  "flexionSHA256": "428ffa221bb3c42c315575d79ee3dd73eb753dce6915372db464cd61d0342254",
+  "entrySHA256": "f6812b9ad5d58cae5d822a6fa327c58adb10526a5fec396029e969462041a21c",
+  "sortedGrammarSHA256": "297274a890b94e87f29a5ed800a25e9c5697e5d8dd2df285e5d22c4aa4a7235b",
+  "conjugationSHA256": "9a7ec08bf7d4800353229cb9ad70e805df5a97b78a533d2285ad0a7aaf73b594",
+  "declensionSHA256": "245a072e03fbbfa0dcf75bc75468b80dd0c8c1d5bfba6c7c445747c0fd48ecea",
+  "samples": [
+    {
+      "word": "de",
+      "lemma": "de",
+      "occur": 4478550761,
+      "frequency": 3.0374965933722384,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "de",
+      "lemma": "de",
+      "occur": 4478550761,
+      "frequency": 3.0374965933722384,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "et",
+      "lemma": "et",
+      "occur": 3907622781,
+      "frequency": 2.650274948055066,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "à",
+      "lemma": "à",
+      "occur": 3257020281,
+      "frequency": 2.2090154909560016,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "des",
+      "lemma": "des",
+      "occur": 2790131020,
+      "frequency": 1.8923562376727092,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "du",
+      "lemma": "du",
+      "occur": 1897525451,
+      "frequency": 1.2869625467776673,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "que",
+      "lemma": "que",
+      "occur": 1894336060,
+      "frequency": 1.2847993996315425,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "la",
+      "lemma": "la",
+      "occur": 1646820095,
+      "frequency": 1.116926143166572,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "la",
+      "lemma": "la",
+      "occur": 1646820095,
+      "frequency": 1.116926143166572,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "la",
+      "lemma": "la",
+      "occur": 1646820095,
+      "frequency": 1.116926143166572,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "un",
+      "lemma": "un",
+      "occur": 1618945468,
+      "frequency": 1.0980206781908626,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "le",
+      "lemma": "le",
+      "occur": 1579554309,
+      "frequency": 1.0713043322886522,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "le",
+      "lemma": "le",
+      "occur": 1579554309,
+      "frequency": 1.0713043322886522,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "les",
+      "lemma": "les",
+      "occur": 1569338627,
+      "frequency": 1.0643757295039769,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "les",
+      "lemma": "les",
+      "occur": 1569338627,
+      "frequency": 1.0643757295039769,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "une",
+      "lemma": "une",
+      "occur": 1537521854,
+      "frequency": 1.0427965748271593,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "est",
+      "lemma": "est",
+      "occur": 1534910293,
+      "frequency": 1.041025330497417,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "dans",
+      "lemma": "dans",
+      "occur": 1483885703,
+      "frequency": 1.0064188190221273,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "qui",
+      "lemma": "qui",
+      "occur": 1479202484,
+      "frequency": 1.0032425098726603,
+      "frequencyIndex": "9"
+    },
+    {
+      "word": "il",
+      "lemma": "il",
+      "occur": 1335102468,
+      "frequency": 0.905509262877565,
+      "frequencyIndex": "9"
+    }
+  ],
+  "fullLexiconSHA256": "b6b10890ae5e5b8a72cd34ed0b518c820c199f91beeaa546313318f5033df5e5",
+  "reportSHA256": "f22f9fc6cf5bdce001e11033482cc782023fe69709770cca5ed92f176d6a9175",
+  "hunspellMode2DictionarySHA256": "c94198b461902172ebcf6c5979f6c76f7a9fdfdfc1adae4b9887f00bf0d860bf",
+  "hunspellMode2AffixSHA256": "0e0566c4fe80924bae38ddeebede8cc97ff5dc5408355795df84d9e2d8feaa11"
+}

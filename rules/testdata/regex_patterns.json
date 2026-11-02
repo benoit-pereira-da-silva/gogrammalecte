@@ -1,0 +1,907 @@
+[
+  {
+    "id": "tab_début_ligne",
+    "line": "#357p",
+    "pattern": "^[      ]+"
+  },
+  {
+    "id": "tab_fin_ligne",
+    "line": "#358p",
+    "pattern": "[       ]+$"
+  },
+  {
+    "id": "esp_début_ligne",
+    "line": "#366p",
+    "pattern": "^[   ]+"
+  },
+  {
+    "id": "esp_fin_ligne",
+    "line": "#367p",
+    "pattern": "[   ]+$"
+  },
+  {
+    "id": "esp_milieu_ligne",
+    "line": "#368p",
+    "pattern": "(?:\\b|[.?!,:;%‰‱˚»”])(  +)"
+  },
+  {
+    "id": "esp_mélangés1",
+    "line": "#378p",
+    "pattern": "(?:  |  )"
+  },
+  {
+    "id": "esp_mélangés2",
+    "line": "#379p",
+    "pattern": "(?:\\u0009[  ]|[  ]\\u0009)"
+  },
+  {
+    "id": "esp_insécables_multiples",
+    "line": "#386p",
+    "pattern": "[  ][  ]+"
+  },
+  {
+    "id": "esp_avant_après_tiret",
+    "line": "#393p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]*)( [-–—]|[-–—] )(\\w[\\w-]*)(?![\\w–-])"
+  },
+  {
+    "id": "typo_espace_après_signe_ouvrant",
+    "line": "#418p",
+    "pattern": "([\\[(]) "
+  },
+  {
+    "id": "typo_espace_avant_signe_fermant",
+    "line": "#419p",
+    "pattern": " ([\\])])"
+  },
+  {
+    "id": "typo_parenthèse_fermante_collée",
+    "line": "#429p",
+    "pattern": "[)]\\b(?![s¹²³⁴⁵⁶⁷⁸⁹⁰]\\b)"
+  },
+  {
+    "id": "typo_parenthèse_ouvrante_collée",
+    "line": "#432p",
+    "pattern": "\\b[(](?=[^)][^)][^)])"
+  },
+  {
+    "id": "typo_point_entre_deux_espaces",
+    "line": "#444p",
+    "pattern": "[  ][.](?=[  ])"
+  },
+  {
+    "id": "typo_point_collé_à_mot_suivant",
+    "line": "#445p",
+    "pattern": "[  ][.](?=\\w)"
+  },
+  {
+    "id": "typo_points_suspension_après_espace",
+    "line": "#452p",
+    "pattern": "\\w+([  ]…)"
+  },
+  {
+    "id": "typo_virgule_entre_deux_espaces",
+    "line": "#460p",
+    "pattern": "[  ],(?=[  ])"
+  },
+  {
+    "id": "typo_virgule_collée_à_mot_suivant",
+    "line": "#461p",
+    "pattern": "[  ],(?=\\w)"
+  },
+  {
+    "id": "typo_guillemets_fermants_perdus",
+    "line": "#468p",
+    "pattern": "[  ]”[  ]"
+  },
+  {
+    "id": "typo_guillemets_ouvrants_perdus",
+    "line": "#471p",
+    "pattern": "[  ]“[  ]"
+  },
+  {
+    "id": "typo_guillemets_perdus",
+    "line": "#474p",
+    "pattern": "[   ](?:\"|['‘’]['‘’])[   ]"
+  },
+  {
+    "id": "typo_commencement_guillemets",
+    "line": "#477p",
+    "pattern": "^(?:\"|['‘’]['‘’])[   ]"
+  },
+  {
+    "id": "typo_guillemets_fin",
+    "line": "#480p",
+    "pattern": "([   ](?:\"|['‘’]['‘’]))(?:$|[.,;?!])"
+  },
+  {
+    "id": "typo_guillemets_fermants_inverses",
+    "line": "#491p",
+    "pattern": "[  ]”(?=\\w)"
+  },
+  {
+    "id": "typo_guillemets_ouvrants_inverses1",
+    "line": "#494p",
+    "pattern": "\\w([«“][  ])"
+  },
+  {
+    "id": "typo_guillemets_ouvrants_inverses2",
+    "line": "#497p",
+    "pattern": "([«“])[  ]*$"
+  },
+  {
+    "id": "typo_guillemets_ouvrants_inverses3",
+    "line": "#500p",
+    "pattern": "\\w([  ][«“])[  ]?[!?,:;.…](?![  ]?[»”])"
+  },
+  {
+    "id": "p_email",
+    "line": "#527p",
+    "pattern": "(?i)\\w[\\w.-]*@\\w[\\w.-]*\\w[.]\\w\\w+"
+  },
+  {
+    "id": "p_URL",
+    "line": "#531p",
+    "pattern": "(?i)(?:ht|f)tps?://[\\w./?&!%=+*\"'@$#-]+"
+  },
+  {
+    "id": "p_URL2",
+    "line": "#533p",
+    "pattern": "(?i)((?:\\w[\\w-]*[.])*)(\\w[\\w-]+)([.](?:com|net|org|info|fr|ca|be|ch|i[ot]|co[.]uk|tk|jp|zh|ru|us|nl|xyz))(?![\\w–-])"
+  },
+  {
+    "id": "p_chapitre",
+    "line": "#540p",
+    "pattern": "(?i)^\\d+[.][\\d.-]*"
+  },
+  {
+    "id": "p_num_chapitre",
+    "line": "#544p",
+    "pattern": "(?i)^\\d+(?:  +|\\t+)"
+  },
+  {
+    "id": "p_chap_coll_cf",
+    "line": "#548p",
+    "pattern": "(?<![\\w.,–-])[cC](?:f|hap|oll?)([.])"
+  },
+  {
+    "id": "p_page",
+    "line": "#549p",
+    "pattern": "(?<![\\w.,–-])p[.] ?\\d+(?:-\\d+|)(?![\\w–-])"
+  },
+  {
+    "id": "p_pages",
+    "line": "#550p",
+    "pattern": "(?<![\\w.,–-])pp[.] ?\\d+-\\d+(?![\\w–-])"
+  },
+  {
+    "id": "p_figure",
+    "line": "#551p",
+    "pattern": "(?i)(?<![\\w.,–-])figure (\\d+(?:[.:-]\\d+|))(?![\\w–-])"
+  },
+  {
+    "id": "p_article",
+    "line": "#552p",
+    "pattern": "(?i)(?<![\\w.,–-])art(?:icle|[.]) (1(?:er|ᵉʳ)|\\d+(?:[.:-]\\w+|))(?![\\w–-])"
+  },
+  {
+    "id": "p_av",
+    "line": "#553p",
+    "pattern": "(?<![\\w.,–-])av[.]"
+  },
+  {
+    "id": "p_vs",
+    "line": "#556p",
+    "pattern": "(?<![\\w.,–-])vs[.]"
+  },
+  {
+    "id": "p_version_numéro",
+    "line": "#562p",
+    "pattern": "(?i)(?<![\\w.,–-])(?:versions?|mises? [àa] jour) ([0-9]+(?:[.][0-9]+[a-z]?)*)(?![\\w–-])"
+  },
+  {
+    "id": "p_sigle1",
+    "line": "#566p",
+    "pattern": "([A-Z][.][A-Z][.](?:[A-Z][.])*) +[A-ZÉÀÂÊÎÈÔ]"
+  },
+  {
+    "id": "p_sigle2",
+    "line": "#568p",
+    "pattern": "(?<![\\w.,–-])[a-zA-Z][.][a-zA-Z][.](?:[a-zA-Z][.])*"
+  },
+  {
+    "id": "p_sigle3",
+    "line": "#575p",
+    "pattern": "(?<![\\w.,–-])J[.]-[A-Z][.]"
+  },
+  {
+    "id": "p_M_point",
+    "line": "#579p",
+    "pattern": "(?<![\\w.,–-])(M[.]) (?:[A-ZÉÈÎ]\\w*|l[ae'’])"
+  },
+  {
+    "id": "p_MM_point",
+    "line": "#581p",
+    "pattern": "(?<![\\w.,–-])MM[.]"
+  },
+  {
+    "id": "p_Mr_Mgr_Mme_point",
+    "line": "#583p",
+    "pattern": "(?<![\\w.,–-])M(?:r|gr|me) [A-ZÉ]([.])(?=\\W+[a-zéèêâîïû])"
+  },
+  {
+    "id": "p_prénom_lettre_point_patronyme",
+    "line": "#587p",
+    "pattern": "(?<![\\w.,–-])([A-ZÉÈÂÎ][\\w-]+)[  ][A-ZÉÈÂ]([.])[  ]([A-ZÉÈÂ][\\w-]+)(?![\\w–-])"
+  },
+  {
+    "id": "p_prénom_lettre_point",
+    "line": "#590p",
+    "pattern": "(?<![\\w.,–-])([A-ZÉÈÂÎ][\\w-]+)[  ][A-ZÉÈÂ]([.])"
+  },
+  {
+    "id": "p_patronyme_composé_avec_le_la_les",
+    "line": "#595p",
+    "pattern": "(?<![\\w.,–-])[A-ZÉÈÂÎ][\\w-]+[-–—]L(?:es?|a) [A-ZÉÈÂÎ][\\w-]+(?![\\w–-])"
+  },
+  {
+    "id": "p_adresse_IP",
+    "line": "#599p",
+    "pattern": "(?<![\\w.,–-])\\d+[.:]\\d+[.:]\\d+[.:]\\d+(?![\\w–-])"
+  },
+  {
+    "id": "p_arborescence_Linux_Mac",
+    "line": "#603p",
+    "pattern": "(?<![\\w.,–-])/(?:bin|boot|dev|etc|home|lib|mnt|opt|root|sbin|tmp|usr|var|Bureau|Documents|Images|Musique|Public|Téléchargements|Vidéos)(?:/[\\w.()]+)*"
+  },
+  {
+    "id": "p_arborescence_Windows",
+    "line": "#606p",
+    "pattern": "(?i)(?<![\\w.,–-])[a-z]:\\\\(?:Program Files(?: [(]x86[)]|)|[\\w.()]+)(?:\\\\[\\w.()]+)*"
+  },
+  {
+    "id": "p_chiffres_m",
+    "line": "#610p",
+    "pattern": "(?<![\\w.,–-])\\d+ (m) "
+  },
+  {
+    "id": "apostrophe_typographique",
+    "line": "#647p",
+    "pattern": "(?i)(?<![\\w.,–-])([ldsncjmç]|jusqu|lorsqu|aujourd|presqu|quelqu|puisqu|qu|prud|entr)['ʼ‘‛´`′‵՚ꞌꞋ](?=[\\w\"«<])"
+  },
+  {
+    "id": "apostrophe_typographique_après_t",
+    "line": "#649p",
+    "pattern": "(?i)(?<![\\w.,–-])t['ʼ‘‛´`′‵՚ꞌꞋ](?!ils?|elles?|on)(?=[\\w\"«<])"
+  },
+  {
+    "id": "typo_apostrophe_incorrecte",
+    "line": "#658p",
+    "pattern": "(?i)(?<![\\w.,–-])(([ldsncjmtç]|lorsqu|puisqu|presqu|quoiqu|quelqu|jusqu|qu|aujourd|entr)(?:['’ʼ‘‛´`′‵՚ꞌꞋ]['’ʼ‘‛´`′‵՚ꞌꞋ ]|”|“|\"| ['’ʼ‘‛´`′‵՚ꞌꞋ] ?))[aeéiouhœæyàîèêôû<]"
+  },
+  {
+    "id": "typo_apostrophe_manquante",
+    "line": "#669p",
+    "pattern": "(?i)(?<![\\w.,–-])((lorsqu|puisqu|presqu|quoiqu|jusqu|qu|aujourd|entr) )[aeéiouhyàîèêôû<]"
+  },
+  {
+    "id": "typo_apostrophe_manquante_prudence1",
+    "line": "#674p",
+    "pattern": "(?i)(?<![\\w.,–-])ne ([mtsl] )[aeéiouhyàîèêôû<]"
+  },
+  {
+    "id": "typo_apostrophe_manquante_prudence2",
+    "line": "#677p",
+    "pattern": "(?i)(?<![\\w.,–-])(?:je|tu|ie?ls?|nous|vous|on|ça|elles?) ([nmtsl] )([aeéiouhyàîèêôû][\\w-]*|<)"
+  },
+  {
+    "id": "typo_apostrophe_manquante_audace1",
+    "line": "#681p",
+    "pattern": "(?<![\\w.,–-])([ldsncjmtç] )[aeéiouhAEÉIOUHyîèêôûYÎÈÊÔÛ<]"
+  },
+  {
+    "id": "typo_guillemets_typographiques_doubles_ouvrants",
+    "line": "#705p",
+    "pattern": "\"(?=\\w)"
+  },
+  {
+    "id": "typo_guillemets_typographiques_doubles_fermants",
+    "line": "#708p",
+    "pattern": "[\\w.?!…,](\")(?!\\w)"
+  },
+  {
+    "id": "typo_guillemets_typographiques_simples_doubles_ouvrants",
+    "line": "#716p",
+    "pattern": "(?:^|[ –—-])(['’‘]['’‘])(?=\\w)"
+  },
+  {
+    "id": "typo_guillemets_typographiques_simples_doubles_fermants",
+    "line": "#719p",
+    "pattern": "[\\w.?!…,](['’]['’])(?![\\w'’])"
+  },
+  {
+    "id": "typo_guillemets_typographiques_simples_ouvrants",
+    "line": "#729p",
+    "pattern": "(?:^|[ –—-])(['’])(?=\\w)"
+  },
+  {
+    "id": "typo_guillemets_typographiques_simples_fermants",
+    "line": "#732p",
+    "pattern": "[\\w.?!](')(?:[   ]|$)"
+  },
+  {
+    "id": "p_html_balise_ouvrante",
+    "line": "#751p",
+    "pattern": "(?i)<\\w+.*?>"
+  },
+  {
+    "id": "p_html_balise_fermante",
+    "line": "#752p",
+    "pattern": "(?i)</\\w+ *>"
+  },
+  {
+    "id": "p_html_amp_xxx",
+    "line": "#753p",
+    "pattern": "(?i)&amp;[a-zA-Z]+;"
+  },
+  {
+    "id": "p_html_lt",
+    "line": "#754p",
+    "pattern": "(?i)&lt;"
+  },
+  {
+    "id": "p_html_gt",
+    "line": "#755p",
+    "pattern": "(?i)&gt;"
+  },
+  {
+    "id": "p_html_amp",
+    "line": "#756p",
+    "pattern": "(?i)&amp;"
+  },
+  {
+    "id": "p_html_nbsp",
+    "line": "#757p",
+    "pattern": "(?i)&nbsp;"
+  },
+  {
+    "id": "p_html_nbsp2",
+    "line": "#758p",
+    "pattern": "(?i)&#(?:160|8239);"
+  },
+  {
+    "id": "p_html_pseudo_balise1",
+    "line": "#759p",
+    "pattern": "(?i)\\[(?:[buiqa]|blockquote|quote)\\]"
+  },
+  {
+    "id": "p_html_pseudo_balise2",
+    "line": "#760p",
+    "pattern": "(?i)\\[/\\w+\\]"
+  },
+  {
+    "id": "p_latex1",
+    "line": "#768p",
+    "pattern": "(?i)\\\\[a-z]+(?![\\w–-])"
+  },
+  {
+    "id": "p_latex2",
+    "line": "#769p",
+    "pattern": "(?i)\\\\[,;/\\\\]"
+  },
+  {
+    "id": "p_latex3",
+    "line": "#770p",
+    "pattern": "\\{(?:abstract|align|cases|center|description|enumerate|equation|figure|flush(?:left|right)|gather|minipage|multline|quot(?:ation|e)|SaveVerbatim|table|tabular|thebibliography|[vV]erbatim|verse|wrapfigure)\\}"
+  },
+  {
+    "id": "p_md_span_ouvrant",
+    "line": "#773p",
+    "pattern": "(?:[   ]|^)([*_]+)\\w"
+  },
+  {
+    "id": "p_md_span_fermant",
+    "line": "#774p",
+    "pattern": "(?i)[a-z0-9àéîïôûüù]([*_]+)(?:[,.;:!?)   ]|$)"
+  },
+  {
+    "id": "p_md_titre_début",
+    "line": "#775p",
+    "pattern": "^#+"
+  },
+  {
+    "id": "p_md_titre_fin",
+    "line": "#776p",
+    "pattern": "#+ *$"
+  },
+  {
+    "id": "p_md_liste",
+    "line": "#777p",
+    "pattern": "^ *[*+] "
+  },
+  {
+    "id": "p_md_citation",
+    "line": "#778p",
+    "pattern": "^>[ >]+ "
+  },
+  {
+    "id": "eepi_écriture_épicène_tous_toutes",
+    "line": "#796p",
+    "pattern": "(?i)(?<![\\w.,–-])tous?[.(/·•⋅–—-]te[.)/·•⋅–—-]?s(?![\\w–-])"
+  },
+  {
+    "id": "eepi_écriture_épicène_ceux_celles",
+    "line": "#806p",
+    "pattern": "(?i)(?<![\\w.,–-])c[./·•⋅–—-]?eux?[./·•⋅–—-]elles(?![\\w–-])"
+  },
+  {
+    "id": "eepi_écriture_épicène_pluriel_eur_divers",
+    "line": "#816p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]+)eurs?[.(/·•⋅–—-][tdp]?(rice|euse|se|[oe]resse)[.)/·•⋅–—-]?s(?![\\w–-])"
+  },
+  {
+    "id": "eepi_écriture_épicène_pluriel_eux_euses",
+    "line": "#828p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]+)eux[.(/·•⋅–—-](?:[tdsi]?euse|se)[.)/·•⋅–—-]?s(?![\\w–-])"
+  },
+  {
+    "id": "eepi_écriture_épicène_pluriel_if_ive",
+    "line": "#837p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]+)ifs?[.(/·•⋅–—-][std]?i?ve[.)/·•⋅–—-]?s(?![\\w–-])"
+  },
+  {
+    "id": "eepi_écriture_épicène_pluriel_er_ère",
+    "line": "#847p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]+)[eè]rs?[.(/·•⋅–—-](?:i?è?re|e)[.)/·•⋅–—-]?s(?![\\w–-])"
+  },
+  {
+    "id": "eepi_écriture_épicène_pluriel_aux_ales",
+    "line": "#859p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]+)aux[.(/·•⋅–—-][tnmcpbd]?a?le[.)/·•⋅–—-]?s(?![\\w–-])"
+  },
+  {
+    "id": "eepi_écriture_épicène_pluriel_e",
+    "line": "#870p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]*[éuitsnldf])[-·–—.•⋅(/]([ntlf]?e)[-·–—.•⋅)/]?s(?![\\w–-])"
+  },
+  {
+    "id": "eepi_écriture_épicène_singulier",
+    "line": "#900p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]*[éuitsrnldf])([-·–—.•⋅/][ntl]?e|[(][ntl]?e[)])(?![\\w–-])"
+  },
+  {
+    "id": "typo_écriture_invariable",
+    "line": "#920p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]+\\w)([-·–—.•⋅/]s|[(]s[)])(?![\\w–-])"
+  },
+  {
+    "id": "majuscule_après_point",
+    "line": "#937p",
+    "pattern": "(?<![\\w.,–-])(\\w[\\w-]+)[.] ([a-zàâéèêîôç]\\w*)(?![\\w–-])"
+  },
+  {
+    "id": "majuscule_début_paragraphe",
+    "line": "#946p",
+    "pattern": "^ *([a-zàâéèêîôç](?:[\\w-]+[’'`‘]?|[’'`‘]))"
+  },
+  {
+    "id": "poncfin_règle1",
+    "line": "#962p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]*) *$"
+  },
+  {
+    "id": "typo_espace_manquant_après1",
+    "line": "#980p",
+    "pattern": "(\\w+)[,:](\\w[\\w-]*)"
+  },
+  {
+    "id": "typo_espace_manquant_après2",
+    "line": "#982p",
+    "pattern": "[?!;%‰‱˚»}](\\w[\\w-]*|[({[])"
+  },
+  {
+    "id": "typo_espace_manquant_après3",
+    "line": "#984p",
+    "pattern": "(?<![\\w.,–-])\\w[\\w-]*[.](\\w[\\w-]*|[({[])"
+  },
+  {
+    "id": "typo_espace_manquant_après4",
+    "line": "#987p",
+    "pattern": "(?<![\\w.,–-])\\w[\\w-]+[…](\\w[\\w-]*|[({[])"
+  },
+  {
+    "id": "typo_et_cetera",
+    "line": "#1021p",
+    "pattern": "(?i)(?<![\\w.,–-])etc(?:[.]{3,5}|…)"
+  },
+  {
+    "id": "typo_point_après_titre",
+    "line": "#1027p",
+    "pattern": "(?<![\\w.,–-])(M(?:me|gr|lle)s?[.]) [A-ZÉÈ]"
+  },
+  {
+    "id": "typo_point_après_numéro",
+    "line": "#1033p",
+    "pattern": "(?<![\\w.,–-])([nN]os?[.])[  ]\\d+"
+  },
+  {
+    "id": "typo_points_suspension1",
+    "line": "#1042p",
+    "pattern": "(?<![.])[.]{3,5}(?![.])"
+  },
+  {
+    "id": "typo_points_suspension2",
+    "line": "#1043p",
+    "pattern": "[.]{6,}"
+  },
+  {
+    "id": "typo_points_suspension3",
+    "line": "#1044p",
+    "pattern": "(?<![.…])[.][.](?![.])"
+  },
+  {
+    "id": "typo_points_superflus",
+    "line": "#1045p",
+    "pattern": "…[.][.]?(?![.])"
+  },
+  {
+    "id": "typo_virgules_points",
+    "line": "#1065p",
+    "pattern": ",[.,]{2,}"
+  },
+  {
+    "id": "typo_ponctuation_superflue1",
+    "line": "#1072p",
+    "pattern": ", ?([.,;:!?])"
+  },
+  {
+    "id": "typo_ponctuation_superflue2",
+    "line": "#1073p",
+    "pattern": "; ?([.,;:…!?])"
+  },
+  {
+    "id": "typo_ponctuation_superflue3",
+    "line": "#1074p",
+    "pattern": ":[.,;:…!?]"
+  },
+  {
+    "id": "typo_ponctuation_superflue4",
+    "line": "#1075p",
+    "pattern": "[?!][.](?![.])"
+  },
+  {
+    "id": "nbsp_ajout_avant_double_ponctuation",
+    "line": "#1090p",
+    "pattern": "\\b[?!;]"
+  },
+  {
+    "id": "nbsp_avant_double_ponctuation",
+    "line": "#1092p",
+    "pattern": " ([?!;])"
+  },
+  {
+    "id": "nbsp_avant_deux_points",
+    "line": "#1094p",
+    "pattern": "(?: |\\b):(?= |$)"
+  },
+  {
+    "id": "nbsp_après_chevrons_ouvrants",
+    "line": "#1096p",
+    "pattern": "«(?: |\\b)"
+  },
+  {
+    "id": "nbsp_après_chevrons_fermants",
+    "line": "#1098p",
+    "pattern": "^»(?: |\\b)"
+  },
+  {
+    "id": "nbsp_avant_chevrons_fermants1",
+    "line": "#1100p",
+    "pattern": "(?: |\\b)»"
+  },
+  {
+    "id": "nbsp_avant_chevrons_fermants2",
+    "line": "#1102p",
+    "pattern": "([].!?)])»"
+  },
+  {
+    "id": "nbsp_après_double_ponctuation",
+    "line": "#1104p",
+    "pattern": "([:;!?]) (?=[\\w«“\"])"
+  },
+  {
+    "id": "unit_nbsp_avant_unités1",
+    "line": "#1120p",
+    "pattern": "(?<![\\w.,–-])((\\d+(?:,\\d+[⁰¹²³⁴⁵⁶⁷⁸⁹]?|[⁰¹²³⁴⁵⁶⁷⁸⁹]|)) ?)([kcmµn]?(?:[slgJKVΩ]|m[²³]?|Wh?|Hz|dB)|[%‰€$£¥Åℓhj]|min|jours?|semaines|mois|ans?|euros?|heures?|px|MHz|°C|℃)(?![’'])(?![\\w–-])"
+  },
+  {
+    "id": "unit_nbsp_avant_unités2",
+    "line": "#1125p",
+    "pattern": "(?<![\\w.,–-])((\\d+(?:,\\d+[⁰¹²³⁴⁵⁶⁷⁸⁹]?|[⁰¹²³⁴⁵⁶⁷⁸⁹])) ?)([a-zA-Zµ][a-zA-Z0-9Ωℓ⁰¹²³⁴⁵⁶⁷⁸⁹/·]*)(?![\\w–-])"
+  },
+  {
+    "id": "unit_nbsp_avant_unités3",
+    "line": "#1131p",
+    "pattern": "(?<![\\w.,–-])((\\d+) )([a-zA-Zµ][a-zA-Z0-9Ωℓ⁰¹²³⁴⁵⁶⁷⁸⁹/·]*)(?![’'])(?![\\w–-])"
+  },
+  {
+    "id": "typo_math",
+    "line": "#1162p",
+    "pattern": "(?<![\\w.,–-])(?:cos|sin|tan|cotan|log|ln)²? [2-9]?[a-zA-Zα-ωΑ-Ω](?![’'])(?![\\w–-])"
+  },
+  {
+    "id": "typo_tiret_début_ligne",
+    "line": "#1178p",
+    "pattern": "^[-_][  ]"
+  },
+  {
+    "id": "typo_tiret_dans_dialogue",
+    "line": "#1179p",
+    "pattern": "^ *«[  ](-[  ])"
+  },
+  {
+    "id": "nbsp_après_tiret1",
+    "line": "#1181p",
+    "pattern": "^([—–]) +"
+  },
+  {
+    "id": "nbsp_après_tiret2",
+    "line": "#1182p",
+    "pattern": "^([—–-])\\d"
+  },
+  {
+    "id": "nbsp_après_tiret3",
+    "line": "#1183p",
+    "pattern": "^([—–-])[\\w«“‘]"
+  },
+  {
+    "id": "typo_tiret_incise1",
+    "line": "#1184p",
+    "pattern": " - (?=[0-9])"
+  },
+  {
+    "id": "typo_tiret_incise2",
+    "line": "#1185p",
+    "pattern": " - (?![0-9])"
+  },
+  {
+    "id": "typo_signe_moins",
+    "line": "#1204p",
+    "pattern": "-(\\d+)(?![\\w–-])"
+  },
+  {
+    "id": "typo_signe_multiplication",
+    "line": "#1211p",
+    "pattern": "(\\d+) ?[x*] ?(\\d+)"
+  },
+  {
+    "id": "typo_inférieur_ou_égal",
+    "line": "#1220p",
+    "pattern": "[\\w  ](<=)[\\w  ]"
+  },
+  {
+    "id": "typo_supérieur_ou_égal",
+    "line": "#1221p",
+    "pattern": "[\\w  ](>=)[\\w  ]"
+  },
+  {
+    "id": "ligatures_typographiques",
+    "line": "#1228p",
+    "pattern": "[ﬁﬂﬀﬃﬄﬅﬆ]"
+  },
+  {
+    "id": "nf_norme_française",
+    "line": "#1244p",
+    "pattern": "(?<![\\w.,–-])[nN][fF][  -]?(?:c|C|e|E|p|P|q|Q|s|S|x|X|z|Z|[eE][nN](?:[  -][iI][sS][oO]|))[  -]?[0-9]+(?:[/ ‑-][0-9]+|)(?![\\w–-])"
+  },
+  {
+    "id": "typo_cohérence_guillemets_chevrons_ouvrants",
+    "line": "#1259p",
+    "pattern": "(«[  ])[^»“]+?(”)"
+  },
+  {
+    "id": "typo_cohérence_guillemets_chevrons_fermants",
+    "line": "#1263p",
+    "pattern": "(“)[^”«]+?([  ]»)"
+  },
+  {
+    "id": "typo_cohérence_guillemets_doubles_ouvrants",
+    "line": "#1272p",
+    "pattern": "(“)[^”’“«]+?(’)(?![\\w'’)])"
+  },
+  {
+    "id": "typo_cohérence_guillemets_doubles_fermants",
+    "line": "#1277p",
+    "pattern": "(‘)[^’“«]+?(”)"
+  },
+  {
+    "id": "typo_guillemets_doubles_ouvrants_non_fermés",
+    "line": "#1288p",
+    "pattern": "(?i)(?<![\\w.,–-])(“)\\w[^”\"»]+$"
+  },
+  {
+    "id": "typo_guillemets_doubles_fermants_non_ouverts",
+    "line": "#1291p",
+    "pattern": "(?i)^[^“„«\"]+\\w(”)(?![\\w–-])"
+  },
+  {
+    "id": "typo_guillemet_simple_ouvrant_non_fermé",
+    "line": "#1299p",
+    "pattern": "(?i)(?<![\\w.,–-])(‘)\\w\\w[^’']+$"
+  },
+  {
+    "id": "typo_guillemet_simple_fermant_non_ouvert",
+    "line": "#1302p",
+    "pattern": "(?i)^[^‘']+\\w\\w(’)(?![\\w–-])"
+  },
+  {
+    "id": "num_grand_nombre_soudé",
+    "line": "#1320p",
+    "pattern": "(?<![\\w.,–-])\\d\\d\\d\\d+(?![\\w–-])"
+  },
+  {
+    "id": "num_nombre_quatre_chiffres",
+    "line": "#1328p",
+    "pattern": "(?<![\\w.,–-])(?<!,)(\\d\\d\\d\\d)[  ]([a-zA-Zµ][a-zA-Z0-9Ωℓ⁰¹²³⁴⁵⁶⁷⁸⁹/·]*)(?![’'])(?![\\w–-])"
+  },
+  {
+    "id": "num_grand_nombre_avec_points",
+    "line": "#1355p",
+    "pattern": "(?<![\\w.,–-])\\d\\d?\\d?(?:[.]\\d\\d\\d)+(?![0-9])"
+  },
+  {
+    "id": "num_grand_nombre_avec_espaces",
+    "line": "#1363p",
+    "pattern": "(?<![\\w.,–-])\\d\\d?\\d?(?: \\d\\d\\d)+(?![\\w–-])"
+  },
+  {
+    "id": "date_nombres",
+    "line": "#1376p",
+    "pattern": "(?i)(?<![\\w.,–-])(?<!\\d[ ./-])(\\d\\d?)([ ./-])(\\d\\d?)([ ./-])(\\d\\d\\d+)(?![ ./-]\\d)(?![\\w–-])"
+  },
+  {
+    "id": "redondances_paragraphe",
+    "line": "#1395p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-][\\w-]+\\w)[  ,.;!?:].*[  ](\\1)(?![\\w–-])"
+  },
+  {
+    "id": "ocr_point_interrogation",
+    "line": "#1413p",
+    "pattern": "[  ]7(?![\\w–-])"
+  },
+  {
+    "id": "ocr_exclamation1",
+    "line": "#1422p",
+    "pattern": "[  ]I(?![ ’'][aâeéèêëiîïoôuy])(?![\\w–-])"
+  },
+  {
+    "id": "ocr_exclamation2",
+    "line": "#1425p",
+    "pattern": "[  ]1(?= [A-ZÉÈÂÎ])(?![\\w–-])"
+  },
+  {
+    "id": "ocr_nombres",
+    "line": "#1436p",
+    "pattern": "(?i)(?<![\\w.,–-])[\\dOI][\\dOI]+(?![\\w–-])"
+  },
+  {
+    "id": "ocr_casse_pronom_vconj",
+    "line": "#1446p",
+    "pattern": "(?<![\\w.,–-])\\w\\w+-(On|Ils?|Elles?|Tu|Je|Nous|Vous|Mêmes?|Ci|Là|Une?s|Les?|La|Leur)(?![\\w–-])"
+  },
+  {
+    "id": "mots_composés_inconnus",
+    "line": "#1456p",
+    "pattern": "(?<![\\w.,–-])\\w+-\\w+(?![\\w–-])"
+  },
+  {
+    "id": "tu_trait_union_conditionnel",
+    "line": "#1470p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w+)‑(\\w+)(?![\\w–-])"
+  },
+  {
+    "id": "ocr_caractères_rares",
+    "line": "#1478p",
+    "pattern": "\\w*[{}<>&*#£^|]+\\w*"
+  },
+  {
+    "id": "ocr_doublons_caractères_rares",
+    "line": "#1488p",
+    "pattern": "[\\]\\[({}][\\]\\[({}]+"
+  },
+  {
+    "id": "ocr_le_la_les_regex",
+    "line": "#1497p",
+    "pattern": "(?i)(?<![\\w.,–-])[1[\\]][easrnxiocuwàéè](?![\\w–-])"
+  },
+  {
+    "id": "conf_1e_1a_1es",
+    "line": "#1511p",
+    "pattern": "(?i)(?<![\\w.,–-])[1[\\]][ea]s?(?![\\w–-])"
+  },
+  {
+    "id": "ocr_les",
+    "line": "#1523p",
+    "pattern": "(?i)(?<![\\w.,–-])[1[\\]][ea]s(?![\\w–-])"
+  },
+  {
+    "id": "ocr_l_regex",
+    "line": "#1531p",
+    "pattern": "(?i)(?<![\\w.,–-])([1[][’'`‘])[aâeéèêëiîïoôuyh][\\w-]*(?![\\w–-])"
+  },
+  {
+    "id": "ocr_il_regex",
+    "line": "#1539p",
+    "pattern": "(?i)(?<![\\w.,–-])1fs?(?![\\w–-])"
+  },
+  {
+    "id": "p_trait_union_conditionnel1",
+    "line": "#1556p",
+    "pattern": "(?i)(?<![\\w.,–-])\\w+‑\\w+‑\\w+(?![\\w–-])"
+  },
+  {
+    "id": "p_trait_union_conditionnel2",
+    "line": "#1557p",
+    "pattern": "(?i)(?<![\\w.,–-])\\w+‑\\w+(?![\\w–-])"
+  },
+  {
+    "id": "p_fin_dialogue",
+    "line": "#1560p",
+    "pattern": "([?!…][?!…  ]*)[ \"'”» ]*,"
+  },
+  {
+    "id": "p_exposants",
+    "line": "#1571p",
+    "pattern": "[¹²³⁴⁵⁶⁷⁸⁹⁰]+"
+  },
+  {
+    "id": "p_références_aux_notes",
+    "line": "#1575p",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-]+)(\\d+)(?![\\w–-])"
+  },
+  {
+    "id": "tu_t_euphonique_incorrect",
+    "line": "#1584p",
+    "pattern": "(?i)([-–—− ]t(?:[’' ][-–—−]?|[-–—−][’' ]?))(ie?ls?|elles?|on|tu)(?![\\w–-])"
+  },
+  {
+    "id": "tu_t_euphonique_superflu",
+    "line": "#1589p",
+    "pattern": "(?i)[td]([- ]t[-’' ])(?:ie?l|elle|on)(?![\\w–-])"
+  },
+  {
+    "id": "eleu_t_euphonique_manquant",
+    "line": "#1593p",
+    "pattern": "(?i)[aec](-(ie?l|elle|on))(?![\\w–-])"
+  },
+  {
+    "id": "doublon",
+    "line": "#1679s",
+    "pattern": "(?<![\\w.,–-])(\\w+) {1,3}\\1(?![\\w–-])"
+  },
+  {
+    "id": "num_lettre_O_zéro1",
+    "line": "#1693s",
+    "pattern": "(?<![\\w.,–-])[\\dO]+[O][\\dO]+(?![\\w–-])"
+  },
+  {
+    "id": "num_lettre_O_zéro2",
+    "line": "#1694s",
+    "pattern": "(?<![\\w.,–-])[1-9]O(?![\\w–-])"
+  },
+  {
+    "id": "tu_trait_union_douteux",
+    "line": "#1703s",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w+)(?:--|—|–|−|⁃)(\\w+)(?![\\w–-])"
+  },
+  {
+    "id": "redondances_phrase",
+    "line": "#21901s",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w[\\w-][\\w-]+\\w)[ ,].* (\\1)(?![\\w–-])"
+  },
+  {
+    "id": "mc_mot_composé",
+    "line": "#21915s",
+    "pattern": "(?i)(?<![\\w.,–-])(\\w\\w+)-(\\w\\w+)(?![\\w–-])"
+  }
+]

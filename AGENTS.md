@@ -2,6 +2,9 @@
 
 - This repository is a standalone Go library and command line program. Its
   build, tests and runtime must work from an independent checkout.
+- Deliver one executable containing all required dictionaries and linguistic
+  resources through `go:embed`. Normal operation must not read sibling checkouts,
+  require installed data files, invoke Python or download runtime resources.
 - Use the Go toolchain directly: `go build`, `go test`, `go vet` and `gofmt`.
 - Write all code, identifiers, comments and documentation in English. Preserve
   French linguistic data, rule identifiers and test inputs where fidelity requires it.

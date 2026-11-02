@@ -1,0 +1,73 @@
+{
+  "source_repository": "https://github.com/benoit-pereira-da-silva/grammalecte",
+  "source_commit": "08511c222029b3be20bf547563315d10fb48d44b",
+  "generator": "Native rules.CompileGraphs",
+  "files": {
+    "compile_rules_graph.py": "783df2780d7e12473b8a7a3b3efe8479240b81f4d4efb354f55af0afd7682697",
+    "darg.py": "4d06f8edf0a98fe474bc6b854c22b14cd61358cfd88146fdd3892b2f03a5d509",
+    "gc_lang/fr/rules.grx": "08e8aaa48e43b2fc9cd860ba0916a4d9aed3aa49e4feffe7d60a09354374e77c"
+  },
+  "expanded_paths": 4396046,
+  "graphs": [
+    {
+      "name": "graphe0",
+      "nodes": 2161,
+      "actions": 159,
+      "paths": 389365
+    },
+    {
+      "name": "graphe1",
+      "nodes": 7805,
+      "actions": 435,
+      "paths": 135583
+    },
+    {
+      "name": "ocr",
+      "nodes": 288,
+      "actions": 141,
+      "paths": 359
+    },
+    {
+      "name": "graphe2",
+      "nodes": 12570,
+      "actions": 1875,
+      "paths": 325772
+    },
+    {
+      "name": "intergraphe23a",
+      "nodes": 564,
+      "actions": 84,
+      "paths": 3651
+    },
+    {
+      "name": "intergraphe23b",
+      "nodes": 675,
+      "actions": 44,
+      "paths": 41900
+    },
+    {
+      "name": "graphe3",
+      "nodes": 7291,
+      "actions": 1523,
+      "paths": 1180483
+    },
+    {
+      "name": "prégraphe_gv1",
+      "nodes": 372,
+      "actions": 57,
+      "paths": 185869
+    },
+    {
+      "name": "verbes1",
+      "nodes": 4968,
+      "actions": 652,
+      "paths": 1928183
+    },
+    {
+      "name": "verbes2",
+      "nodes": 1654,
+      "actions": 361,
+      "paths": 204881
+    }
+  ]
+}

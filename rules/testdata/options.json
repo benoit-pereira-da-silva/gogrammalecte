@@ -1,0 +1,702 @@
+{
+  "colors": {
+    "Default": {
+      "typo": [
+        217,
+        128,
+        38
+      ],
+      "apos": [
+        242,
+        166,
+        13
+      ],
+      "eepi": [
+        242,
+        166,
+        13
+      ],
+      "esp": [
+        217,
+        128,
+        38
+      ],
+      "tab": [
+        217,
+        128,
+        38
+      ],
+      "nbsp": [
+        217,
+        128,
+        38
+      ],
+      "tu": [
+        217,
+        128,
+        38
+      ],
+      "maj": [
+        217,
+        128,
+        38
+      ],
+      "minis": [
+        217,
+        128,
+        38
+      ],
+      "num": [
+        217,
+        128,
+        38
+      ],
+      "virg": [
+        217,
+        128,
+        38
+      ],
+      "poncfin": [
+        217,
+        128,
+        38
+      ],
+      "unit": [
+        217,
+        128,
+        38
+      ],
+      "nf": [
+        217,
+        128,
+        38
+      ],
+      "liga": [
+        217,
+        128,
+        38
+      ],
+      "mapos": [
+        217,
+        128,
+        38
+      ],
+      "chim": [
+        217,
+        128,
+        38
+      ],
+      "ocr": [
+        112,
+        112,
+        194
+      ],
+      "conf": [
+        89,
+        49,
+        129
+      ],
+      "loc": [
+        89,
+        49,
+        129
+      ],
+      "gn": [
+        64,
+        127,
+        191
+      ],
+      "infi": [
+        133,
+        71,
+        133
+      ],
+      "conj": [
+        133,
+        71,
+        133
+      ],
+      "ppas": [
+        133,
+        71,
+        133
+      ],
+      "imp": [
+        133,
+        71,
+        133
+      ],
+      "inte": [
+        133,
+        71,
+        133
+      ],
+      "vmode": [
+        133,
+        71,
+        133
+      ],
+      "bs": [
+        51,
+        153,
+        153
+      ],
+      "pleo": [
+        51,
+        153,
+        153
+      ],
+      "eleu": [
+        51,
+        153,
+        153
+      ],
+      "neg": [
+        51,
+        153,
+        153
+      ],
+      "redon1": [
+        51,
+        153,
+        153
+      ],
+      "redon2": [
+        51,
+        153,
+        153
+      ],
+      "date": [
+        51,
+        153,
+        153
+      ],
+      "mc": [
+        51,
+        153,
+        153
+      ]
+    },
+    "Writer": {
+      "typo": [
+        255,
+        153,
+        51
+      ],
+      "apos": [
+        204,
+        187,
+        0
+      ],
+      "eepi": [
+        204,
+        187,
+        0
+      ],
+      "esp": [
+        255,
+        153,
+        51
+      ],
+      "tab": [
+        255,
+        153,
+        51
+      ],
+      "nbsp": [
+        255,
+        153,
+        51
+      ],
+      "tu": [
+        255,
+        153,
+        51
+      ],
+      "maj": [
+        255,
+        153,
+        51
+      ],
+      "minis": [
+        255,
+        153,
+        51
+      ],
+      "num": [
+        255,
+        153,
+        51
+      ],
+      "virg": [
+        255,
+        153,
+        51
+      ],
+      "poncfin": [
+        255,
+        153,
+        51
+      ],
+      "unit": [
+        255,
+        153,
+        51
+      ],
+      "nf": [
+        255,
+        153,
+        51
+      ],
+      "liga": [
+        255,
+        153,
+        51
+      ],
+      "mapos": [
+        255,
+        153,
+        51
+      ],
+      "chim": [
+        255,
+        153,
+        51
+      ],
+      "ocr": [
+        125,
+        125,
+        232
+      ],
+      "conf": [
+        178,
+        102,
+        255
+      ],
+      "loc": [
+        178,
+        102,
+        255
+      ],
+      "gn": [
+        0,
+        127,
+        255
+      ],
+      "infi": [
+        0,
+        204,
+        0
+      ],
+      "conj": [
+        0,
+        204,
+        0
+      ],
+      "ppas": [
+        0,
+        204,
+        0
+      ],
+      "imp": [
+        0,
+        204,
+        0
+      ],
+      "inte": [
+        0,
+        204,
+        0
+      ],
+      "vmode": [
+        0,
+        204,
+        0
+      ],
+      "bs": [
+        0,
+        204,
+        204
+      ],
+      "pleo": [
+        0,
+        204,
+        204
+      ],
+      "eleu": [
+        0,
+        204,
+        204
+      ],
+      "neg": [
+        0,
+        204,
+        204
+      ],
+      "redon1": [
+        0,
+        204,
+        204
+      ],
+      "redon2": [
+        0,
+        204,
+        204
+      ],
+      "date": [
+        0,
+        204,
+        204
+      ],
+      "mc": [
+        0,
+        204,
+        204
+      ]
+    }
+  },
+  "labels": {
+    "fr": {
+      "__optiontitle__": "Grammalecte (Français)",
+      "basic": [
+        "Typographie",
+        ""
+      ],
+      "typo": [
+        "Signes typographiques",
+        ""
+      ],
+      "apos": [
+        "Apostrophe typographique",
+        "Correction des apostrophes droites. Automatisme possible dans le menu Outils > Options d’autocorrection > Options linguistiques > Guillemets simples > Remplacer (à cocher)"
+      ],
+      "eepi": [
+        "Écriture épicène",
+        "Normalisation de l’écriture épicène avec points médians."
+      ],
+      "esp": [
+        "Espaces surnuméraires",
+        "Signale les espaces inutiles entre les mots, en début et en fin de ligne."
+      ],
+      "tab": [
+        "Tabulations surnuméraires",
+        "Signale les tabulations inutiles en début et en fin de ligne."
+      ],
+      "nbsp": [
+        "Espaces insécables",
+        "Vérifie les espaces insécables avec les ponctuations « ! ? : ; » (à désactiver si vous utilisez une police Graphite)"
+      ],
+      "maj": [
+        "Majuscules",
+        "Vérifie l’utilisation des majuscules et des minuscules (par exemple, « la raison d’État », « les Européens »)."
+      ],
+      "minis": [
+        "Majuscules pour ministères",
+        "Majuscules pour les intitulés des ministères."
+      ],
+      "virg": [
+        "Virgules",
+        "Virgules manquantes avant “mais”, “car” et “etc.”."
+      ],
+      "poncfin": [
+        "Ponctuation finale [!]",
+        "Vérifie s’il manque une ponctuation finale au paragraphe (seulement pour les paragraphes constitués de plusieurs phrases)."
+      ],
+      "tu": [
+        "Traits d’union et soudures",
+        "Cherche les traits d’union manquants ou inutiles."
+      ],
+      "num": [
+        "Nombres",
+        "Espaces insécables sur les grands nombres (> 10 000). Vérifie la présence de « O » au lieu de « 0 »."
+      ],
+      "unit": [
+        "Espaces insécables avant unités de mesure",
+        ""
+      ],
+      "nf": [
+        "Normes françaises",
+        ""
+      ],
+      "liga": [
+        "Signaler ligatures typographiques",
+        "Ligatures de fi, fl, ff, ffi, ffl, ft, st."
+      ],
+      "mapos": [
+        "Apostrophe manquante après lettres isolées [!]",
+        "Apostrophe manquante après les lettres l d s n c j m t ç. Cette option sert surtout à repérer les défauts de numérisation des textes et est déconseillée pour les textes scientifiques."
+      ],
+      "chim": [
+        "Chimie",
+        "Typographie des composés chimiques (H₂O, CO₂, etc.)."
+      ],
+      "ocr": [
+        "Erreurs de numérisation (OCR) [!]",
+        "Erreurs de reconnaissance optique des caractères. Beaucoup de faux positifs."
+      ],
+      "gramm": [
+        "Noms et adjectifs",
+        ""
+      ],
+      "conf": [
+        "Confusions et faux-amis",
+        "Cherche des erreurs souvent dues à l’homonymie (par exemple, les confusions entre « faîte » et « faite »)."
+      ],
+      "loc": [
+        "Locutions",
+        "Écriture des locutions usuelles."
+      ],
+      "gn": [
+        "Accords (genre et nombre)",
+        "Accords des noms et des adjectifs."
+      ],
+      "verbs": [
+        "Verbes",
+        ""
+      ],
+      "conj": [
+        "Conjugaisons",
+        "Accord des verbes avec leur sujet."
+      ],
+      "infi": [
+        "Infinitif",
+        "Confusion entre l’infinitif et d’autres formes."
+      ],
+      "imp": [
+        "Impératif",
+        "Vérifie notamment la deuxième personne du singulier (par exemple, les erreurs : « vas… », « prend… », « manges… »)."
+      ],
+      "inte": [
+        "Interrogatif",
+        "Vérifie les formes interrogatives et suggère de lier les pronoms personnels avec les verbes."
+      ],
+      "ppas": [
+        "Participes passés, adjectifs",
+        ""
+      ],
+      "vmode": [
+        "Modes verbaux",
+        ""
+      ],
+      "style": [
+        "Style",
+        ""
+      ],
+      "bs": [
+        "Populaire",
+        "Souligne un langage courant considéré comme erroné, comme « malgré que »."
+      ],
+      "pleo": [
+        "Pléonasmes",
+        "Repère des redondances sémantiques, comme « au jour d’aujourd’hui », « monter en haut », etc."
+      ],
+      "eleu": [
+        "Élisions et euphonies",
+        "Signale les élisions incorrectes et les tournures dysphoniques."
+      ],
+      "neg": [
+        "Adverbe de négation [!]",
+        "Ne … pas, ne … jamais, etc."
+      ],
+      "redon1": [
+        "Répétitions dans le paragraphe [!]",
+        "Sont exclus les mots grammaticaux, ceux commençant par une majuscule, ainsi que “être” et “avoir”."
+      ],
+      "redon2": [
+        "Répétitions dans la phrase [!]",
+        "Sont exclus les mots grammaticaux, ainsi que “être” et “avoir”."
+      ],
+      "misc": [
+        "Divers",
+        ""
+      ],
+      "mc": [
+        "Mots composés [!]",
+        "Vérifie si les mots composés à trait d’union existent dans le dictionnaire (hormis ceux commençant par ex-, mi-, quasi-, semi-, non-, demi- et d’autres préfixes communs)."
+      ],
+      "date": [
+        "Validité des dates",
+        ""
+      ],
+      "debug": [
+        "Débogage",
+        ""
+      ],
+      "idrule": [
+        "Identifiant des règles de contrôle [!]",
+        "Affiche l’identifiant de la règle de contrôle dans les messages d’erreur."
+      ]
+    },
+    "en": {
+      "__optiontitle__": "Grammar checking (French)",
+      "basic": [
+        "Typography",
+        ""
+      ],
+      "typo": [
+        "Typographical glyphs",
+        ""
+      ],
+      "apos": [
+        "Typographical apostrophe",
+        "Detects typewriter apostrophes. You may get automatically typographical apostrophes in Tools > Autocorrect options > Localized options > Single quote > Replace (checkbox)."
+      ],
+      "eepi": [
+        "Epicene writing",
+        "Normalization of epicene writing (usage of middle dots)."
+      ],
+      "esp": [
+        "Useless spaces",
+        "Checks spaces within words and at the beginning and the end of lines."
+      ],
+      "tab": [
+        "Useless tabulations",
+        "Checks tabulations at the beginning and the end of lines."
+      ],
+      "nbsp": [
+        "Non-breakable spaces",
+        "Checks the use of non-breakable spaces with the following punctuation marks: « ! ? : ; » (deactivate it if you use a Graphite font)."
+      ],
+      "maj": [
+        "Capitals",
+        "Checks the use of uppercase and lowercase letters (i.e. « la raison d’État », « les Européens »)."
+      ],
+      "minis": [
+        "Capitals for ministry",
+        "Capital letters for ministry."
+      ],
+      "virg": [
+        "Commas",
+        "Missing commas before “mais”, “car” and “etc.”."
+      ],
+      "poncfin": [
+        "Ending punctuation [!]",
+        "Checks if an ending punctuation is missing on paragraphs (only for multi-sentences paragraphs)."
+      ],
+      "tu": [
+        "Hyphens and junctions",
+        "Checks missing or useless hyphens."
+      ],
+      "num": [
+        "Numerals",
+        "Large numerals and « O » instead of « 0 »."
+      ],
+      "unit": [
+        "Non-breaking spaces before units of measurement",
+        ""
+      ],
+      "nf": [
+        "French standards",
+        ""
+      ],
+      "liga": [
+        "Report typographical ligatures",
+        "Ligatures of fi, fl, ff, ffi, ffl, ft, st."
+      ],
+      "mapos": [
+        "Missing apostrophes after single letters [!]",
+        "Missing apostrophes after l d s n c j m t ç. This option is mostly useful to detect defects of digitized texts and is not recommended for scientific texts."
+      ],
+      "chim": [
+        "Chemistry",
+        "Typography for molecules (H₂O, CO₂, etc.)"
+      ],
+      "ocr": [
+        "OCR errors [!]",
+        "Warning: many false positives."
+      ],
+      "gramm": [
+        "Nouns and Adjectives",
+        ""
+      ],
+      "conf": [
+        "Confusions and false friends",
+        "Seeks errors often due to homonymy (i.e. confusions between « faîte » et « faite »)."
+      ],
+      "loc": [
+        "Locutions",
+        "Writing of common locutions."
+      ],
+      "gn": [
+        "Agreement (gender and number)",
+        "Agreement between nouns and adjectives."
+      ],
+      "verbs": [
+        "Verbs",
+        ""
+      ],
+      "conj": [
+        "Conjugation",
+        "Agreement between verbs and their subject."
+      ],
+      "infi": [
+        "Infinitive",
+        "Checks confusions between infinitive forms and other forms."
+      ],
+      "imp": [
+        "Imperative mood",
+        "Checks particularly verbs at second person singular (i.e. errors such as: « vas … », « prend … », « manges … »)."
+      ],
+      "inte": [
+        "Interrogative mood",
+        "Checks interrogative forms and suggests linking the personal pronouns with verbs."
+      ],
+      "ppas": [
+        "Past participles, adjectives",
+        "Checks subject agreement with past participles and adjectives."
+      ],
+      "vmode": [
+        "Verbal modes",
+        ""
+      ],
+      "style": [
+        "Style",
+        ""
+      ],
+      "bs": [
+        "Popular style",
+        "Underlines misuse of language though informal and commonly used."
+      ],
+      "pleo": [
+        "Pleonasms",
+        "Semantic replications, like « au jour d’aujourd’hui », « monter en haut », etc."
+      ],
+      "eleu": [
+        "Élisions et euphonies",
+        "Signale les élisions incorrectes et les tournures dysphoniques."
+      ],
+      "neg": [
+        "Negation adverb [!]",
+        "Ne … pas, ne … jamais, etc."
+      ],
+      "redon1": [
+        "Duplicates in paragraph [!]",
+        "Are excluded grammatical words, words beginning by a capital letter, and also “être” and “avoir”."
+      ],
+      "redon2": [
+        "Duplicates in sentence [!]",
+        "Are excluded grammatical words, and also “être” and “avoir”."
+      ],
+      "misc": [
+        "Miscellaneous",
+        ""
+      ],
+      "mc": [
+        "Compound words [!]",
+        "Check if words with hyphen exist in the dictionary (except those beginning by ex-, mi-, quasi-, semi-, non-, demi- and other common prefixes)."
+      ],
+      "date": [
+        "Date validity.",
+        ""
+      ],
+      "debug": [
+        "Debug",
+        ""
+      ],
+      "idrule": [
+        "Display control rule identifier [!]",
+        "Display control rule identifier in the context menu message."
+      ]
+    }
+  }
+}

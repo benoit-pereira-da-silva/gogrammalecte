@@ -1,0 +1,373 @@
+{
+  "source": {
+    "commit": "08511c222029b3be20bf547563315d10fb48d44b",
+    "file": "graphspell/spellchecker.py",
+    "sha256": "71407cbd7880bd4fa4ddda44e3fa62c0053950473d353e025999098e1d90148e",
+    "dictionary": "Native generated full graph; dictionary generation separately verified against Python.",
+    "lexicographer": "graphspell.lexgraph_fr loaded explicitly on both IBDAWG and SpellChecker, as in an installed Python package."
+  },
+  "paragraphs": [
+    {
+      "input": "",
+      "errors": [],
+      "counts": {},
+      "lemmas": {},
+      "unknown": {}
+    },
+    {
+      "input": "Bonjour bonjouur.",
+      "errors": [
+        {
+          "i": 2,
+          "sType": "WORD",
+          "sValue": "bonjouur",
+          "nStart": 8,
+          "nEnd": 16
+        }
+      ],
+      "counts": {
+        "Bonjour": 1,
+        "bonjouur": 1
+      },
+      "lemmas": {
+        "bonjour": 1
+      },
+      "unknown": {
+        "bonjouur": 1
+      }
+    },
+    {
+      "input": "😀 Les chevaus sont beaux.",
+      "errors": [
+        {
+          "i": 3,
+          "sType": "WORD",
+          "sValue": "chevaus",
+          "nStart": 6,
+          "nEnd": 13
+        }
+      ],
+      "counts": {
+        "Les": 1,
+        "chevaus": 1,
+        "sont": 1,
+        "beaux": 1
+      },
+      "lemmas": {
+        "les": 1,
+        "être": 1,
+        "beau": 1
+      },
+      "unknown": {
+        "chevaus": 1
+      }
+    },
+    {
+      "input": "Un élève.",
+      "errors": [],
+      "counts": {
+        "Un": 1,
+        "élève": 1
+      },
+      "lemmas": {
+        "un": 1,
+        "élever": 1,
+        "élève": 1
+      },
+      "unknown": {}
+    },
+    {
+      "input": "123 abcxyz.",
+      "errors": [
+        {
+          "i": 2,
+          "sType": "WORD",
+          "sValue": "abcxyz",
+          "nStart": 4,
+          "nEnd": 10
+        }
+      ],
+      "counts": {
+        "abcxyz": 1
+      },
+      "lemmas": {},
+      "unknown": {
+        "abcxyz": 1
+      }
+    },
+    {
+      "input": "bcp de pb",
+      "errors": [
+        {
+          "i": 1,
+          "sType": "WORD",
+          "sValue": "bcp",
+          "nStart": 0,
+          "nEnd": 3
+        },
+        {
+          "i": 3,
+          "sType": "WORD",
+          "sValue": "pb",
+          "nStart": 7,
+          "nEnd": 9
+        }
+      ],
+      "counts": {
+        "bcp": 1,
+        "de": 1,
+        "pb": 1
+      },
+      "lemmas": {
+        "de": 1
+      },
+      "unknown": {
+        "bcp": 1,
+        "pb": 1
+      }
+    },
+    {
+      "input": "l’homme est ici.",
+      "errors": [],
+      "counts": {
+        "l’": 1,
+        "homme": 1,
+        "est": 1,
+        "ici": 1
+      },
+      "lemmas": {
+        "l’": 1,
+        "homme": 1,
+        "être": 1,
+        "est": 1,
+        "ici": 1
+      },
+      "unknown": {}
+    },
+    {
+      "input": "Une URL https://example.com et #inconnu.",
+      "errors": [],
+      "counts": {
+        "Une": 1,
+        "URL": 1,
+        "et": 1
+      },
+      "lemmas": {
+        "une": 1,
+        "un": 1,
+        "URL": 1,
+        "et": 1
+      },
+      "unknown": {}
+    },
+    {
+      "input": "Vive l’orthographe !",
+      "errors": [],
+      "counts": {
+        "Vive": 1,
+        "l’": 1,
+        "orthographe": 1
+      },
+      "lemmas": {
+        "vive": 1,
+        "vif": 1,
+        "vivre": 1,
+        "l’": 1,
+        "orthographe": 1
+      },
+      "unknown": {}
+    },
+    {
+      "input": "Des porte-monnaie, azertyinexistantxyz.",
+      "errors": [
+        {
+          "i": 4,
+          "sType": "WORD",
+          "sValue": "azertyinexistantxyz",
+          "nStart": 19,
+          "nEnd": 38
+        }
+      ],
+      "counts": {
+        "Des": 1,
+        "porte-monnaie": 1,
+        "azertyinexistantxyz": 1
+      },
+      "lemmas": {
+        "des": 1,
+        "porte-monnaie": 1
+      },
+      "unknown": {
+        "azertyinexistantxyz": 1
+      }
+    },
+    {
+      "input": "mot_inconnu",
+      "errors": [],
+      "counts": {
+        "mot": 1,
+        "inconnu": 1
+      },
+      "lemmas": {
+        "mot": 1,
+        "inconnu": 1
+      },
+      "unknown": {}
+    },
+    {
+      "input": "Bonjour\r\nBonjouur",
+      "errors": [
+        {
+          "i": 2,
+          "sType": "WORD",
+          "sValue": "Bonjouur",
+          "nStart": 9,
+          "nEnd": 17
+        }
+      ],
+      "counts": {
+        "Bonjour": 1,
+        "Bonjouur": 1
+      },
+      "lemmas": {
+        "bonjour": 1
+      },
+      "unknown": {
+        "Bonjouur": 1
+      }
+    }
+  ],
+  "suggestions": [
+    {
+      "word": "bcp",
+      "groups": [
+        [
+          "beaucoup"
+        ]
+      ]
+    },
+    {
+      "word": "Bcp",
+      "groups": [
+        [
+          "Beaucoup"
+        ]
+      ]
+    },
+    {
+      "word": "BCP",
+      "groups": [
+        [
+          "BEAUCOUP"
+        ]
+      ]
+    },
+    {
+      "word": "email",
+      "groups": [
+        [
+          "courriel",
+          "e-mail",
+          "émail"
+        ]
+      ]
+    },
+    {
+      "word": "Email",
+      "groups": [
+        [
+          "Courriel",
+          "E-mail",
+          "Émail"
+        ]
+      ]
+    },
+    {
+      "word": "EMAIL",
+      "groups": [
+        [
+          "COURRIEL",
+          "E-MAIL",
+          "ÉMAIL"
+        ]
+      ]
+    },
+    {
+      "word": "oeil",
+      "groups": [
+        [
+          "œil"
+        ]
+      ]
+    },
+    {
+      "word": "Etes-vous",
+      "groups": [
+        [
+          "Êtes-vous"
+        ]
+      ]
+    },
+    {
+      "word": "bonjouur",
+      "groups": [
+        [
+          "bonjour",
+          "bonjours"
+        ]
+      ]
+    },
+    {
+      "word": "chevaus",
+      "groups": [
+        [
+          "chevaux",
+          "chewas",
+          "écheveaux",
+          "achevas",
+          "cheveu"
+        ]
+      ]
+    },
+    {
+      "word": "l’ami",
+      "groups": [
+        [
+          "l’Amy",
+          "l’ami",
+          "l’ammi",
+          "l’AMD",
+          "l’API"
+        ]
+      ]
+    },
+    {
+      "word": "c’ami",
+      "groups": [
+        []
+      ]
+    },
+    {
+      "word": "d’ami",
+      "groups": [
+        [
+          "d’ami",
+          "d’ammi",
+          "d’API"
+        ]
+      ]
+    },
+    {
+      "word": "zè",
+      "groups": [
+        [
+          "se",
+          "z",
+          "zA",
+          "zC",
+          "zF"
+        ]
+      ]
+    }
+  ]
+}

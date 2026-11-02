@@ -1,0 +1,4062 @@
+{
+  "source": {
+    "commit": "08511c222029b3be20bf547563315d10fb48d44b",
+    "python": "3.14.3",
+    "files": {
+      "str_transform.py": "03cf28e43a8bc6823ceeb589f45068676d989b58fdee45b8880f6da9c3f285f3",
+      "char_player.py": "8146b30adc60ae07afae3aa0ba83bbd6ac6b8be3cb54e47314f1e3f203481f1f",
+      "tokenizer.py": "4c419494440b3d4319429fc52018001fac0af555ada754e6e090d56ccca24bb2",
+      "keyboard_chars_proximity.py": "f3d06f345368ff1e8c75ee7ebd9a870ee150c7ec06381f7810823eee66df084a"
+    }
+  },
+  "distances": [
+    {
+      "a": "a",
+      "b": "a",
+      "want": 0
+    },
+    {
+      "a": "a",
+      "b": "á",
+      "want": 0.1
+    },
+    {
+      "a": "a",
+      "b": "à",
+      "want": 0.1
+    },
+    {
+      "a": "a",
+      "b": "â",
+      "want": 0.1
+    },
+    {
+      "a": "a",
+      "b": "ã",
+      "want": 0.1
+    },
+    {
+      "a": "á",
+      "b": "a",
+      "want": 0.1
+    },
+    {
+      "a": "á",
+      "b": "á",
+      "want": 0
+    },
+    {
+      "a": "á",
+      "b": "à",
+      "want": 0.1
+    },
+    {
+      "a": "á",
+      "b": "â",
+      "want": 0.1
+    },
+    {
+      "a": "á",
+      "b": "ã",
+      "want": 0.1
+    },
+    {
+      "a": "à",
+      "b": "a",
+      "want": 0.1
+    },
+    {
+      "a": "à",
+      "b": "á",
+      "want": 0.1
+    },
+    {
+      "a": "à",
+      "b": "à",
+      "want": 0
+    },
+    {
+      "a": "à",
+      "b": "â",
+      "want": 0.1
+    },
+    {
+      "a": "à",
+      "b": "ã",
+      "want": 0.1
+    },
+    {
+      "a": "â",
+      "b": "a",
+      "want": 0.1
+    },
+    {
+      "a": "â",
+      "b": "á",
+      "want": 0.1
+    },
+    {
+      "a": "â",
+      "b": "à",
+      "want": 0.1
+    },
+    {
+      "a": "â",
+      "b": "â",
+      "want": 0
+    },
+    {
+      "a": "â",
+      "b": "ã",
+      "want": 0.1
+    },
+    {
+      "a": "ã",
+      "b": "a",
+      "want": 0.1
+    },
+    {
+      "a": "ã",
+      "b": "á",
+      "want": 0.1
+    },
+    {
+      "a": "ã",
+      "b": "à",
+      "want": 0.1
+    },
+    {
+      "a": "ã",
+      "b": "â",
+      "want": 0.1
+    },
+    {
+      "a": "ã",
+      "b": "ã",
+      "want": 0
+    },
+    {
+      "a": "e",
+      "b": "e",
+      "want": 0
+    },
+    {
+      "a": "e",
+      "b": "é",
+      "want": 0.1
+    },
+    {
+      "a": "e",
+      "b": "è",
+      "want": 0.1
+    },
+    {
+      "a": "e",
+      "b": "ê",
+      "want": 0.1
+    },
+    {
+      "a": "e",
+      "b": "ẽ",
+      "want": 0.1
+    },
+    {
+      "a": "é",
+      "b": "e",
+      "want": 0.1
+    },
+    {
+      "a": "é",
+      "b": "é",
+      "want": 0
+    },
+    {
+      "a": "é",
+      "b": "è",
+      "want": 0.1
+    },
+    {
+      "a": "é",
+      "b": "ê",
+      "want": 0.1
+    },
+    {
+      "a": "é",
+      "b": "ẽ",
+      "want": 0.1
+    },
+    {
+      "a": "è",
+      "b": "e",
+      "want": 0.1
+    },
+    {
+      "a": "è",
+      "b": "é",
+      "want": 0.1
+    },
+    {
+      "a": "è",
+      "b": "è",
+      "want": 0
+    },
+    {
+      "a": "è",
+      "b": "ê",
+      "want": 0.1
+    },
+    {
+      "a": "è",
+      "b": "ẽ",
+      "want": 0.1
+    },
+    {
+      "a": "ê",
+      "b": "e",
+      "want": 0.1
+    },
+    {
+      "a": "ê",
+      "b": "é",
+      "want": 0.1
+    },
+    {
+      "a": "ê",
+      "b": "è",
+      "want": 0.1
+    },
+    {
+      "a": "ê",
+      "b": "ê",
+      "want": 0
+    },
+    {
+      "a": "ê",
+      "b": "ẽ",
+      "want": 0.1
+    },
+    {
+      "a": "ẽ",
+      "b": "e",
+      "want": 0.1
+    },
+    {
+      "a": "ẽ",
+      "b": "é",
+      "want": 0.1
+    },
+    {
+      "a": "ẽ",
+      "b": "è",
+      "want": 0.1
+    },
+    {
+      "a": "ẽ",
+      "b": "ê",
+      "want": 0.1
+    },
+    {
+      "a": "ẽ",
+      "b": "ẽ",
+      "want": 0
+    },
+    {
+      "a": "i",
+      "b": "i",
+      "want": 0
+    },
+    {
+      "a": "i",
+      "b": "í",
+      "want": 0.1
+    },
+    {
+      "a": "i",
+      "b": "ì",
+      "want": 0.1
+    },
+    {
+      "a": "i",
+      "b": "î",
+      "want": 0.1
+    },
+    {
+      "a": "i",
+      "b": "ĩ",
+      "want": 0.1
+    },
+    {
+      "a": "í",
+      "b": "i",
+      "want": 0.1
+    },
+    {
+      "a": "í",
+      "b": "í",
+      "want": 0
+    },
+    {
+      "a": "í",
+      "b": "ì",
+      "want": 0.1
+    },
+    {
+      "a": "í",
+      "b": "î",
+      "want": 0.1
+    },
+    {
+      "a": "í",
+      "b": "ĩ",
+      "want": 0.1
+    },
+    {
+      "a": "ì",
+      "b": "i",
+      "want": 0.1
+    },
+    {
+      "a": "ì",
+      "b": "í",
+      "want": 0.1
+    },
+    {
+      "a": "ì",
+      "b": "ì",
+      "want": 0
+    },
+    {
+      "a": "ì",
+      "b": "î",
+      "want": 0.1
+    },
+    {
+      "a": "ì",
+      "b": "ĩ",
+      "want": 0.1
+    },
+    {
+      "a": "î",
+      "b": "i",
+      "want": 0.1
+    },
+    {
+      "a": "î",
+      "b": "í",
+      "want": 0.1
+    },
+    {
+      "a": "î",
+      "b": "ì",
+      "want": 0.1
+    },
+    {
+      "a": "î",
+      "b": "î",
+      "want": 0
+    },
+    {
+      "a": "î",
+      "b": "ĩ",
+      "want": 0.1
+    },
+    {
+      "a": "ĩ",
+      "b": "i",
+      "want": 0.1
+    },
+    {
+      "a": "ĩ",
+      "b": "í",
+      "want": 0.1
+    },
+    {
+      "a": "ĩ",
+      "b": "ì",
+      "want": 0.1
+    },
+    {
+      "a": "ĩ",
+      "b": "î",
+      "want": 0.1
+    },
+    {
+      "a": "ĩ",
+      "b": "ĩ",
+      "want": 0
+    },
+    {
+      "a": "o",
+      "b": "o",
+      "want": 0
+    },
+    {
+      "a": "o",
+      "b": "ó",
+      "want": 0.1
+    },
+    {
+      "a": "o",
+      "b": "ò",
+      "want": 0.1
+    },
+    {
+      "a": "o",
+      "b": "ô",
+      "want": 0.1
+    },
+    {
+      "a": "o",
+      "b": "õ",
+      "want": 0.1
+    },
+    {
+      "a": "ó",
+      "b": "o",
+      "want": 0.1
+    },
+    {
+      "a": "ó",
+      "b": "ó",
+      "want": 0
+    },
+    {
+      "a": "ó",
+      "b": "ò",
+      "want": 0.1
+    },
+    {
+      "a": "ó",
+      "b": "ô",
+      "want": 0.1
+    },
+    {
+      "a": "ó",
+      "b": "õ",
+      "want": 0.1
+    },
+    {
+      "a": "ò",
+      "b": "o",
+      "want": 0.1
+    },
+    {
+      "a": "ò",
+      "b": "ó",
+      "want": 0.1
+    },
+    {
+      "a": "ò",
+      "b": "ò",
+      "want": 0
+    },
+    {
+      "a": "ò",
+      "b": "ô",
+      "want": 0.1
+    },
+    {
+      "a": "ò",
+      "b": "õ",
+      "want": 0.1
+    },
+    {
+      "a": "ô",
+      "b": "o",
+      "want": 0.1
+    },
+    {
+      "a": "ô",
+      "b": "ó",
+      "want": 0.1
+    },
+    {
+      "a": "ô",
+      "b": "ò",
+      "want": 0.1
+    },
+    {
+      "a": "ô",
+      "b": "ô",
+      "want": 0
+    },
+    {
+      "a": "ô",
+      "b": "õ",
+      "want": 0.1
+    },
+    {
+      "a": "õ",
+      "b": "o",
+      "want": 0.1
+    },
+    {
+      "a": "õ",
+      "b": "ó",
+      "want": 0.1
+    },
+    {
+      "a": "õ",
+      "b": "ò",
+      "want": 0.1
+    },
+    {
+      "a": "õ",
+      "b": "ô",
+      "want": 0.1
+    },
+    {
+      "a": "õ",
+      "b": "õ",
+      "want": 0
+    },
+    {
+      "a": "u",
+      "b": "u",
+      "want": 0
+    },
+    {
+      "a": "u",
+      "b": "ú",
+      "want": 0.1
+    },
+    {
+      "a": "u",
+      "b": "ù",
+      "want": 0.1
+    },
+    {
+      "a": "u",
+      "b": "û",
+      "want": 0.1
+    },
+    {
+      "a": "u",
+      "b": "ũ",
+      "want": 0.1
+    },
+    {
+      "a": "ú",
+      "b": "u",
+      "want": 0.1
+    },
+    {
+      "a": "ú",
+      "b": "ú",
+      "want": 0
+    },
+    {
+      "a": "ú",
+      "b": "ù",
+      "want": 0.1
+    },
+    {
+      "a": "ú",
+      "b": "û",
+      "want": 0.1
+    },
+    {
+      "a": "ú",
+      "b": "ũ",
+      "want": 0.1
+    },
+    {
+      "a": "ù",
+      "b": "u",
+      "want": 0.1
+    },
+    {
+      "a": "ù",
+      "b": "ú",
+      "want": 0.1
+    },
+    {
+      "a": "ù",
+      "b": "ù",
+      "want": 0
+    },
+    {
+      "a": "ù",
+      "b": "û",
+      "want": 0.1
+    },
+    {
+      "a": "ù",
+      "b": "ũ",
+      "want": 0.1
+    },
+    {
+      "a": "û",
+      "b": "u",
+      "want": 0.1
+    },
+    {
+      "a": "û",
+      "b": "ú",
+      "want": 0.1
+    },
+    {
+      "a": "û",
+      "b": "ù",
+      "want": 0.1
+    },
+    {
+      "a": "û",
+      "b": "û",
+      "want": 0
+    },
+    {
+      "a": "û",
+      "b": "ũ",
+      "want": 0.1
+    },
+    {
+      "a": "ũ",
+      "b": "u",
+      "want": 0.1
+    },
+    {
+      "a": "ũ",
+      "b": "ú",
+      "want": 0.1
+    },
+    {
+      "a": "ũ",
+      "b": "ù",
+      "want": 0.1
+    },
+    {
+      "a": "ũ",
+      "b": "û",
+      "want": 0.1
+    },
+    {
+      "a": "ũ",
+      "b": "ũ",
+      "want": 0
+    },
+    {
+      "a": "y",
+      "b": "y",
+      "want": 0
+    },
+    {
+      "a": "y",
+      "b": "ý",
+      "want": 0.1
+    },
+    {
+      "a": "y",
+      "b": "ỳ",
+      "want": 0.1
+    },
+    {
+      "a": "y",
+      "b": "ŷ",
+      "want": 0.1
+    },
+    {
+      "a": "y",
+      "b": "ỹ",
+      "want": 0.1
+    },
+    {
+      "a": "ý",
+      "b": "y",
+      "want": 0.1
+    },
+    {
+      "a": "ý",
+      "b": "ý",
+      "want": 0
+    },
+    {
+      "a": "ý",
+      "b": "ỳ",
+      "want": 0.1
+    },
+    {
+      "a": "ý",
+      "b": "ŷ",
+      "want": 0.1
+    },
+    {
+      "a": "ý",
+      "b": "ỹ",
+      "want": 0.1
+    },
+    {
+      "a": "ỳ",
+      "b": "y",
+      "want": 0.1
+    },
+    {
+      "a": "ỳ",
+      "b": "ý",
+      "want": 0.1
+    },
+    {
+      "a": "ỳ",
+      "b": "ỳ",
+      "want": 0
+    },
+    {
+      "a": "ỳ",
+      "b": "ŷ",
+      "want": 0.1
+    },
+    {
+      "a": "ỳ",
+      "b": "ỹ",
+      "want": 0.1
+    },
+    {
+      "a": "ŷ",
+      "b": "y",
+      "want": 0.1
+    },
+    {
+      "a": "ŷ",
+      "b": "ý",
+      "want": 0.1
+    },
+    {
+      "a": "ŷ",
+      "b": "ỳ",
+      "want": 0.1
+    },
+    {
+      "a": "ŷ",
+      "b": "ŷ",
+      "want": 0
+    },
+    {
+      "a": "ŷ",
+      "b": "ỹ",
+      "want": 0.1
+    },
+    {
+      "a": "ỹ",
+      "b": "y",
+      "want": 0.1
+    },
+    {
+      "a": "ỹ",
+      "b": "ý",
+      "want": 0.1
+    },
+    {
+      "a": "ỹ",
+      "b": "ỳ",
+      "want": 0.1
+    },
+    {
+      "a": "ỹ",
+      "b": "ŷ",
+      "want": 0.1
+    },
+    {
+      "a": "ỹ",
+      "b": "ỹ",
+      "want": 0
+    },
+    {
+      "a": "b",
+      "b": "b",
+      "want": 0
+    },
+    {
+      "a": "b",
+      "b": "d",
+      "want": 0.8
+    },
+    {
+      "a": "b",
+      "b": "h",
+      "want": 0.9
+    },
+    {
+      "a": "c",
+      "b": "c",
+      "want": 0
+    },
+    {
+      "a": "c",
+      "b": "ç",
+      "want": 0.1
+    },
+    {
+      "a": "c",
+      "b": "k",
+      "want": 0.5
+    },
+    {
+      "a": "c",
+      "b": "q",
+      "want": 0.5
+    },
+    {
+      "a": "c",
+      "b": "s",
+      "want": 0.5
+    },
+    {
+      "a": "c",
+      "b": "x",
+      "want": 0.5
+    },
+    {
+      "a": "c",
+      "b": "z",
+      "want": 0.8
+    },
+    {
+      "a": "ç",
+      "b": "c",
+      "want": 0.1
+    },
+    {
+      "a": "ç",
+      "b": "ç",
+      "want": 0
+    },
+    {
+      "a": "ç",
+      "b": "k",
+      "want": 0.5
+    },
+    {
+      "a": "ç",
+      "b": "q",
+      "want": 0.5
+    },
+    {
+      "a": "ç",
+      "b": "s",
+      "want": 0.5
+    },
+    {
+      "a": "ç",
+      "b": "x",
+      "want": 0.5
+    },
+    {
+      "a": "ç",
+      "b": "z",
+      "want": 0.8
+    },
+    {
+      "a": "d",
+      "b": "d",
+      "want": 0
+    },
+    {
+      "a": "d",
+      "b": "b",
+      "want": 0.8
+    },
+    {
+      "a": "f",
+      "b": "f",
+      "want": 0
+    },
+    {
+      "a": "f",
+      "b": "v",
+      "want": 0.8
+    },
+    {
+      "a": "g",
+      "b": "g",
+      "want": 0
+    },
+    {
+      "a": "g",
+      "b": "j",
+      "want": 0.5
+    },
+    {
+      "a": "g",
+      "b": "q",
+      "want": 0.8
+    },
+    {
+      "a": "h",
+      "b": "h",
+      "want": 0
+    },
+    {
+      "a": "h",
+      "b": "b",
+      "want": 0.9
+    },
+    {
+      "a": "j",
+      "b": "j",
+      "want": 0
+    },
+    {
+      "a": "j",
+      "b": "g",
+      "want": 0.5
+    },
+    {
+      "a": "j",
+      "b": "i",
+      "want": 0.8
+    },
+    {
+      "a": "k",
+      "b": "k",
+      "want": 0
+    },
+    {
+      "a": "k",
+      "b": "c",
+      "want": 0.5
+    },
+    {
+      "a": "k",
+      "b": "q",
+      "want": 0.1
+    },
+    {
+      "a": "k",
+      "b": "x",
+      "want": 0.5
+    },
+    {
+      "a": "l",
+      "b": "l",
+      "want": 0
+    },
+    {
+      "a": "l",
+      "b": "i",
+      "want": 0.8
+    },
+    {
+      "a": "m",
+      "b": "m",
+      "want": 0
+    },
+    {
+      "a": "m",
+      "b": "n",
+      "want": 0.6
+    },
+    {
+      "a": "n",
+      "b": "n",
+      "want": 0
+    },
+    {
+      "a": "n",
+      "b": "ñ",
+      "want": 0.1
+    },
+    {
+      "a": "n",
+      "b": "m",
+      "want": 0.6
+    },
+    {
+      "a": "n",
+      "b": "r",
+      "want": 0.8
+    },
+    {
+      "a": "p",
+      "b": "p",
+      "want": 0
+    },
+    {
+      "a": "p",
+      "b": "q",
+      "want": 0.8
+    },
+    {
+      "a": "q",
+      "b": "q",
+      "want": 0
+    },
+    {
+      "a": "q",
+      "b": "c",
+      "want": 0.5
+    },
+    {
+      "a": "q",
+      "b": "k",
+      "want": 0.1
+    },
+    {
+      "a": "q",
+      "b": "p",
+      "want": 0.8
+    },
+    {
+      "a": "q",
+      "b": "g",
+      "want": 0.8
+    },
+    {
+      "a": "r",
+      "b": "r",
+      "want": 0
+    },
+    {
+      "a": "r",
+      "b": "n",
+      "want": 0.8
+    },
+    {
+      "a": "r",
+      "b": "j",
+      "want": 0.9
+    },
+    {
+      "a": "s",
+      "b": "s",
+      "want": 0
+    },
+    {
+      "a": "s",
+      "b": "c",
+      "want": 0.5
+    },
+    {
+      "a": "s",
+      "b": "ç",
+      "want": 0.1
+    },
+    {
+      "a": "s",
+      "b": "x",
+      "want": 0.5
+    },
+    {
+      "a": "s",
+      "b": "z",
+      "want": 0.5
+    },
+    {
+      "a": "t",
+      "b": "t",
+      "want": 0
+    },
+    {
+      "a": "t",
+      "b": "d",
+      "want": 0.9
+    },
+    {
+      "a": "v",
+      "b": "v",
+      "want": 0
+    },
+    {
+      "a": "v",
+      "b": "f",
+      "want": 0.8
+    },
+    {
+      "a": "v",
+      "b": "w",
+      "want": 0.2
+    },
+    {
+      "a": "w",
+      "b": "w",
+      "want": 0
+    },
+    {
+      "a": "w",
+      "b": "v",
+      "want": 0.2
+    },
+    {
+      "a": "x",
+      "b": "x",
+      "want": 0
+    },
+    {
+      "a": "x",
+      "b": "c",
+      "want": 0.5
+    },
+    {
+      "a": "x",
+      "b": "k",
+      "want": 0.5
+    },
+    {
+      "a": "x",
+      "b": "q",
+      "want": 0.5
+    },
+    {
+      "a": "x",
+      "b": "s",
+      "want": 0.5
+    },
+    {
+      "a": "z",
+      "b": "z",
+      "want": 0
+    },
+    {
+      "a": "z",
+      "b": "s",
+      "want": 0.5
+    }
+  ],
+  "replacements": [
+    {
+      "previous": "",
+      "current": "æ",
+      "next": "",
+      "want": [
+        "ae"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "æ",
+      "next": "a",
+      "want": [
+        "ae"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "æ",
+      "next": "b",
+      "want": [
+        "ae"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "Æ",
+      "next": "",
+      "want": [
+        "AE"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "Æ",
+      "next": "a",
+      "want": [
+        "AE"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "Æ",
+      "next": "b",
+      "want": [
+        "AE"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "b",
+      "next": "",
+      "want": [
+        "bb"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "b",
+      "next": "a",
+      "want": [
+        "bb"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "b",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "B",
+      "next": "",
+      "want": [
+        "BB"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "B",
+      "next": "a",
+      "want": [
+        "BB"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "B",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "c",
+      "next": "",
+      "want": [
+        "cc",
+        "ss",
+        "qu",
+        "ch"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "c",
+      "next": "a",
+      "want": [
+        "cc",
+        "ss",
+        "qu",
+        "ch"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "c",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "C",
+      "next": "",
+      "want": [
+        "CC",
+        "SS",
+        "QU",
+        "CH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "C",
+      "next": "a",
+      "want": [
+        "CC",
+        "SS",
+        "QU",
+        "CH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "C",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "d",
+      "next": "",
+      "want": [
+        "dd"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "d",
+      "next": "a",
+      "want": [
+        "dd"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "d",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "D",
+      "next": "",
+      "want": [
+        "DD"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "D",
+      "next": "a",
+      "want": [
+        "DD"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "D",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "é",
+      "next": "",
+      "want": [
+        "ai",
+        "ei"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "é",
+      "next": "a",
+      "want": [
+        "ai",
+        "ei"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "é",
+      "next": "b",
+      "want": [
+        "ai",
+        "ei"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "É",
+      "next": "",
+      "want": [
+        "AI",
+        "EI"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "É",
+      "next": "a",
+      "want": [
+        "AI",
+        "EI"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "É",
+      "next": "b",
+      "want": [
+        "AI",
+        "EI"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "f",
+      "next": "",
+      "want": [
+        "ff",
+        "ph"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "f",
+      "next": "a",
+      "want": [
+        "ff",
+        "ph"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "f",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "F",
+      "next": "",
+      "want": [
+        "FF",
+        "PH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "F",
+      "next": "a",
+      "want": [
+        "FF",
+        "PH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "F",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "g",
+      "next": "",
+      "want": [
+        "gu",
+        "ge",
+        "gg",
+        "gh"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "g",
+      "next": "a",
+      "want": [
+        "gu",
+        "ge",
+        "gg",
+        "gh"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "g",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "G",
+      "next": "",
+      "want": [
+        "GU",
+        "GE",
+        "GG",
+        "GH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "G",
+      "next": "a",
+      "want": [
+        "GU",
+        "GE",
+        "GG",
+        "GH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "G",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "j",
+      "next": "",
+      "want": [
+        "jj",
+        "dj"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "j",
+      "next": "a",
+      "want": [
+        "jj",
+        "dj"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "j",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "J",
+      "next": "",
+      "want": [
+        "JJ",
+        "DJ"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "J",
+      "next": "a",
+      "want": [
+        "JJ",
+        "DJ"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "J",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "k",
+      "next": "",
+      "want": [
+        "qu",
+        "ck",
+        "ch",
+        "cu",
+        "kk",
+        "kh"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "k",
+      "next": "a",
+      "want": [
+        "qu",
+        "ck",
+        "ch",
+        "cu",
+        "kk",
+        "kh"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "k",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "K",
+      "next": "",
+      "want": [
+        "QU",
+        "CK",
+        "CH",
+        "CU",
+        "KK",
+        "KH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "K",
+      "next": "a",
+      "want": [
+        "QU",
+        "CK",
+        "CH",
+        "CU",
+        "KK",
+        "KH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "K",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "l",
+      "next": "",
+      "want": [
+        "ll"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "l",
+      "next": "a",
+      "want": [
+        "ll"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "l",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "L",
+      "next": "",
+      "want": [
+        "LL"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "L",
+      "next": "a",
+      "want": [
+        "LL"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "L",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "m",
+      "next": "",
+      "want": [
+        "mm",
+        "mn"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "m",
+      "next": "a",
+      "want": [
+        "mm",
+        "mn"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "m",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "M",
+      "next": "",
+      "want": [
+        "MM",
+        "MN"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "M",
+      "next": "a",
+      "want": [
+        "MM",
+        "MN"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "M",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "n",
+      "next": "",
+      "want": [
+        "nn",
+        "nm",
+        "mn"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "n",
+      "next": "a",
+      "want": [
+        "nn",
+        "nm",
+        "mn"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "n",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "N",
+      "next": "",
+      "want": [
+        "NN",
+        "NM",
+        "MN"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "N",
+      "next": "a",
+      "want": [
+        "NN",
+        "NM",
+        "MN"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "N",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "o",
+      "next": "",
+      "want": [
+        "au",
+        "eau"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "o",
+      "next": "a",
+      "want": [
+        "au",
+        "eau"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "o",
+      "next": "b",
+      "want": [
+        "au",
+        "eau"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "O",
+      "next": "",
+      "want": [
+        "AU",
+        "EAU"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "O",
+      "next": "a",
+      "want": [
+        "AU",
+        "EAU"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "O",
+      "next": "b",
+      "want": [
+        "AU",
+        "EAU"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "œ",
+      "next": "",
+      "want": [
+        "oe",
+        "eu"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "œ",
+      "next": "a",
+      "want": [
+        "oe",
+        "eu"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "œ",
+      "next": "b",
+      "want": [
+        "oe",
+        "eu"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "Œ",
+      "next": "",
+      "want": [
+        "OE",
+        "EU"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "Œ",
+      "next": "a",
+      "want": [
+        "OE",
+        "EU"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "Œ",
+      "next": "b",
+      "want": [
+        "OE",
+        "EU"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "p",
+      "next": "",
+      "want": [
+        "pp",
+        "ph"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "p",
+      "next": "a",
+      "want": [
+        "pp",
+        "ph"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "p",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "P",
+      "next": "",
+      "want": [
+        "PP",
+        "PH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "P",
+      "next": "a",
+      "want": [
+        "PP",
+        "PH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "P",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "q",
+      "next": "",
+      "want": [
+        "qu",
+        "ch",
+        "cq",
+        "ck",
+        "kk"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "q",
+      "next": "a",
+      "want": [
+        "qu",
+        "ch",
+        "cq",
+        "ck",
+        "kk"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "q",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "Q",
+      "next": "",
+      "want": [
+        "QU",
+        "CH",
+        "CQ",
+        "CK",
+        "KK"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "Q",
+      "next": "a",
+      "want": [
+        "QU",
+        "CH",
+        "CQ",
+        "CK",
+        "KK"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "Q",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "r",
+      "next": "",
+      "want": [
+        "rr"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "r",
+      "next": "a",
+      "want": [
+        "rr"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "r",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "R",
+      "next": "",
+      "want": [
+        "RR"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "R",
+      "next": "a",
+      "want": [
+        "RR"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "R",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "s",
+      "next": "",
+      "want": [
+        "ss",
+        "sh"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "s",
+      "next": "a",
+      "want": [
+        "ss",
+        "sh"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "s",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "S",
+      "next": "",
+      "want": [
+        "SS",
+        "SH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "S",
+      "next": "a",
+      "want": [
+        "SS",
+        "SH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "S",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "t",
+      "next": "",
+      "want": [
+        "tt",
+        "th"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "t",
+      "next": "a",
+      "want": [
+        "tt",
+        "th"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "t",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "T",
+      "next": "",
+      "want": [
+        "TT",
+        "TH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "T",
+      "next": "a",
+      "want": [
+        "TT",
+        "TH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "T",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "x",
+      "next": "",
+      "want": [
+        "cc",
+        "ct",
+        "xx"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "x",
+      "next": "a",
+      "want": [
+        "cc",
+        "ct",
+        "xx"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "x",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "X",
+      "next": "",
+      "want": [
+        "CC",
+        "CT",
+        "XX"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "X",
+      "next": "a",
+      "want": [
+        "CC",
+        "CT",
+        "XX"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "X",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "z",
+      "next": "",
+      "want": [
+        "ss",
+        "zh"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "z",
+      "next": "a",
+      "want": [
+        "ss",
+        "zh"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "z",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "",
+      "current": "Z",
+      "next": "",
+      "want": [
+        "SS",
+        "ZH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "Z",
+      "next": "a",
+      "want": [
+        "SS",
+        "ZH"
+      ]
+    },
+    {
+      "previous": "",
+      "current": "Z",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "æ",
+      "next": "",
+      "want": [
+        "ae"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "æ",
+      "next": "a",
+      "want": [
+        "ae"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "æ",
+      "next": "b",
+      "want": [
+        "ae"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "Æ",
+      "next": "",
+      "want": [
+        "AE"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "Æ",
+      "next": "a",
+      "want": [
+        "AE"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "Æ",
+      "next": "b",
+      "want": [
+        "AE"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "b",
+      "next": "",
+      "want": [
+        "bb"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "b",
+      "next": "a",
+      "want": [
+        "bb"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "b",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "B",
+      "next": "",
+      "want": [
+        "BB"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "B",
+      "next": "a",
+      "want": [
+        "BB"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "B",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "c",
+      "next": "",
+      "want": [
+        "cc",
+        "ss",
+        "qu",
+        "ch"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "c",
+      "next": "a",
+      "want": [
+        "cc",
+        "ss",
+        "qu",
+        "ch"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "c",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "C",
+      "next": "",
+      "want": [
+        "CC",
+        "SS",
+        "QU",
+        "CH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "C",
+      "next": "a",
+      "want": [
+        "CC",
+        "SS",
+        "QU",
+        "CH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "C",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "d",
+      "next": "",
+      "want": [
+        "dd"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "d",
+      "next": "a",
+      "want": [
+        "dd"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "d",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "D",
+      "next": "",
+      "want": [
+        "DD"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "D",
+      "next": "a",
+      "want": [
+        "DD"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "D",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "é",
+      "next": "",
+      "want": [
+        "ai",
+        "ei"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "é",
+      "next": "a",
+      "want": [
+        "ai",
+        "ei"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "é",
+      "next": "b",
+      "want": [
+        "ai",
+        "ei"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "É",
+      "next": "",
+      "want": [
+        "AI",
+        "EI"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "É",
+      "next": "a",
+      "want": [
+        "AI",
+        "EI"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "É",
+      "next": "b",
+      "want": [
+        "AI",
+        "EI"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "f",
+      "next": "",
+      "want": [
+        "ff",
+        "ph"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "f",
+      "next": "a",
+      "want": [
+        "ff",
+        "ph"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "f",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "F",
+      "next": "",
+      "want": [
+        "FF",
+        "PH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "F",
+      "next": "a",
+      "want": [
+        "FF",
+        "PH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "F",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "g",
+      "next": "",
+      "want": [
+        "gu",
+        "ge",
+        "gg",
+        "gh"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "g",
+      "next": "a",
+      "want": [
+        "gu",
+        "ge",
+        "gg",
+        "gh"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "g",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "G",
+      "next": "",
+      "want": [
+        "GU",
+        "GE",
+        "GG",
+        "GH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "G",
+      "next": "a",
+      "want": [
+        "GU",
+        "GE",
+        "GG",
+        "GH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "G",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "j",
+      "next": "",
+      "want": [
+        "jj",
+        "dj"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "j",
+      "next": "a",
+      "want": [
+        "jj",
+        "dj"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "j",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "J",
+      "next": "",
+      "want": [
+        "JJ",
+        "DJ"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "J",
+      "next": "a",
+      "want": [
+        "JJ",
+        "DJ"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "J",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "k",
+      "next": "",
+      "want": [
+        "qu",
+        "ck",
+        "ch",
+        "cu",
+        "kk",
+        "kh"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "k",
+      "next": "a",
+      "want": [
+        "qu",
+        "ck",
+        "ch",
+        "cu",
+        "kk",
+        "kh"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "k",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "K",
+      "next": "",
+      "want": [
+        "QU",
+        "CK",
+        "CH",
+        "CU",
+        "KK",
+        "KH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "K",
+      "next": "a",
+      "want": [
+        "QU",
+        "CK",
+        "CH",
+        "CU",
+        "KK",
+        "KH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "K",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "l",
+      "next": "",
+      "want": [
+        "ll"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "l",
+      "next": "a",
+      "want": [
+        "ll"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "l",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "L",
+      "next": "",
+      "want": [
+        "LL"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "L",
+      "next": "a",
+      "want": [
+        "LL"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "L",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "m",
+      "next": "",
+      "want": [
+        "mm",
+        "mn"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "m",
+      "next": "a",
+      "want": [
+        "mm",
+        "mn"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "m",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "M",
+      "next": "",
+      "want": [
+        "MM",
+        "MN"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "M",
+      "next": "a",
+      "want": [
+        "MM",
+        "MN"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "M",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "n",
+      "next": "",
+      "want": [
+        "nn",
+        "nm",
+        "mn"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "n",
+      "next": "a",
+      "want": [
+        "nn",
+        "nm",
+        "mn"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "n",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "N",
+      "next": "",
+      "want": [
+        "NN",
+        "NM",
+        "MN"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "N",
+      "next": "a",
+      "want": [
+        "NN",
+        "NM",
+        "MN"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "N",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "o",
+      "next": "",
+      "want": [
+        "au",
+        "eau"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "o",
+      "next": "a",
+      "want": [
+        "au",
+        "eau"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "o",
+      "next": "b",
+      "want": [
+        "au",
+        "eau"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "O",
+      "next": "",
+      "want": [
+        "AU",
+        "EAU"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "O",
+      "next": "a",
+      "want": [
+        "AU",
+        "EAU"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "O",
+      "next": "b",
+      "want": [
+        "AU",
+        "EAU"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "œ",
+      "next": "",
+      "want": [
+        "oe",
+        "eu"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "œ",
+      "next": "a",
+      "want": [
+        "oe",
+        "eu"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "œ",
+      "next": "b",
+      "want": [
+        "oe",
+        "eu"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "Œ",
+      "next": "",
+      "want": [
+        "OE",
+        "EU"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "Œ",
+      "next": "a",
+      "want": [
+        "OE",
+        "EU"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "Œ",
+      "next": "b",
+      "want": [
+        "OE",
+        "EU"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "p",
+      "next": "",
+      "want": [
+        "pp",
+        "ph"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "p",
+      "next": "a",
+      "want": [
+        "pp",
+        "ph"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "p",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "P",
+      "next": "",
+      "want": [
+        "PP",
+        "PH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "P",
+      "next": "a",
+      "want": [
+        "PP",
+        "PH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "P",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "q",
+      "next": "",
+      "want": [
+        "qu",
+        "ch",
+        "cq",
+        "ck",
+        "kk"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "q",
+      "next": "a",
+      "want": [
+        "qu",
+        "ch",
+        "cq",
+        "ck",
+        "kk"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "q",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "Q",
+      "next": "",
+      "want": [
+        "QU",
+        "CH",
+        "CQ",
+        "CK",
+        "KK"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "Q",
+      "next": "a",
+      "want": [
+        "QU",
+        "CH",
+        "CQ",
+        "CK",
+        "KK"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "Q",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "r",
+      "next": "",
+      "want": [
+        "rr"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "r",
+      "next": "a",
+      "want": [
+        "rr"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "r",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "R",
+      "next": "",
+      "want": [
+        "RR"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "R",
+      "next": "a",
+      "want": [
+        "RR"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "R",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "s",
+      "next": "",
+      "want": [
+        "ss",
+        "sh"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "s",
+      "next": "a",
+      "want": [
+        "ss",
+        "sh"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "s",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "S",
+      "next": "",
+      "want": [
+        "SS",
+        "SH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "S",
+      "next": "a",
+      "want": [
+        "SS",
+        "SH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "S",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "t",
+      "next": "",
+      "want": [
+        "tt",
+        "th"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "t",
+      "next": "a",
+      "want": [
+        "tt",
+        "th"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "t",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "T",
+      "next": "",
+      "want": [
+        "TT",
+        "TH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "T",
+      "next": "a",
+      "want": [
+        "TT",
+        "TH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "T",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "x",
+      "next": "",
+      "want": [
+        "cc",
+        "ct",
+        "xx"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "x",
+      "next": "a",
+      "want": [
+        "cc",
+        "ct",
+        "xx"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "x",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "X",
+      "next": "",
+      "want": [
+        "CC",
+        "CT",
+        "XX"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "X",
+      "next": "a",
+      "want": [
+        "CC",
+        "CT",
+        "XX"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "X",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "z",
+      "next": "",
+      "want": [
+        "ss",
+        "zh"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "z",
+      "next": "a",
+      "want": [
+        "ss",
+        "zh"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "z",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "a",
+      "current": "Z",
+      "next": "",
+      "want": [
+        "SS",
+        "ZH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "Z",
+      "next": "a",
+      "want": [
+        "SS",
+        "ZH"
+      ]
+    },
+    {
+      "previous": "a",
+      "current": "Z",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "æ",
+      "next": "",
+      "want": [
+        "ae"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "æ",
+      "next": "a",
+      "want": [
+        "ae"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "æ",
+      "next": "b",
+      "want": [
+        "ae"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "Æ",
+      "next": "",
+      "want": [
+        "AE"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "Æ",
+      "next": "a",
+      "want": [
+        "AE"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "Æ",
+      "next": "b",
+      "want": [
+        "AE"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "b",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "b",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "b",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "B",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "B",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "B",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "c",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "c",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "c",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "C",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "C",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "C",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "d",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "d",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "d",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "D",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "D",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "D",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "é",
+      "next": "",
+      "want": [
+        "ai",
+        "ei"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "é",
+      "next": "a",
+      "want": [
+        "ai",
+        "ei"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "é",
+      "next": "b",
+      "want": [
+        "ai",
+        "ei"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "É",
+      "next": "",
+      "want": [
+        "AI",
+        "EI"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "É",
+      "next": "a",
+      "want": [
+        "AI",
+        "EI"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "É",
+      "next": "b",
+      "want": [
+        "AI",
+        "EI"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "f",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "f",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "f",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "F",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "F",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "F",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "g",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "g",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "g",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "G",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "G",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "G",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "j",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "j",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "j",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "J",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "J",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "J",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "k",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "k",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "k",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "K",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "K",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "K",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "l",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "l",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "l",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "L",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "L",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "L",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "m",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "m",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "m",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "M",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "M",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "M",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "n",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "n",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "n",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "N",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "N",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "N",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "o",
+      "next": "",
+      "want": [
+        "au",
+        "eau"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "o",
+      "next": "a",
+      "want": [
+        "au",
+        "eau"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "o",
+      "next": "b",
+      "want": [
+        "au",
+        "eau"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "O",
+      "next": "",
+      "want": [
+        "AU",
+        "EAU"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "O",
+      "next": "a",
+      "want": [
+        "AU",
+        "EAU"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "O",
+      "next": "b",
+      "want": [
+        "AU",
+        "EAU"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "œ",
+      "next": "",
+      "want": [
+        "oe",
+        "eu"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "œ",
+      "next": "a",
+      "want": [
+        "oe",
+        "eu"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "œ",
+      "next": "b",
+      "want": [
+        "oe",
+        "eu"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "Œ",
+      "next": "",
+      "want": [
+        "OE",
+        "EU"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "Œ",
+      "next": "a",
+      "want": [
+        "OE",
+        "EU"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "Œ",
+      "next": "b",
+      "want": [
+        "OE",
+        "EU"
+      ]
+    },
+    {
+      "previous": "b",
+      "current": "p",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "p",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "p",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "P",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "P",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "P",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "q",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "q",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "q",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "Q",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "Q",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "Q",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "r",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "r",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "r",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "R",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "R",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "R",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "s",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "s",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "s",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "S",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "S",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "S",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "t",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "t",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "t",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "T",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "T",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "T",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "x",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "x",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "x",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "X",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "X",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "X",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "z",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "z",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "z",
+      "next": "b",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "Z",
+      "next": "",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "Z",
+      "next": "a",
+      "want": []
+    },
+    {
+      "previous": "b",
+      "current": "Z",
+      "next": "b",
+      "want": []
+    }
+  ]
+}

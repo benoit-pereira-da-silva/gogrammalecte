@@ -1,0 +1,3056 @@
+{
+  "source": {
+    "repository": "https://github.com/benoit-pereira-da-silva/grammalecte",
+    "commit": "08511c222029b3be20bf547563315d10fb48d44b",
+    "python": "3.14.3",
+    "dawg_sha256": "fadba4494f53e737c5c6b93b3610296870ee8223785d7f561a8b817b642a796e",
+    "ibdawg_sha256": "ea98ff64690228ef689071e9b657c597d9c08b839f2d97b3cf9d82e4600e5c26"
+  },
+  "lexicon": [
+    [
+      "chat",
+      "chat",
+      ":N:m:s"
+    ],
+    [
+      "chats",
+      "chat",
+      ":N:m:p"
+    ],
+    [
+      "chat",
+      "chat",
+      ":N:m:s"
+    ],
+    [
+      "chante",
+      "chanter",
+      ":V1:Ip:1s"
+    ],
+    [
+      "chante",
+      "chanter",
+      ":V1:Ip:3s"
+    ],
+    [
+      "chantent",
+      "chanter",
+      ":V1:Ip:3p"
+    ],
+    [
+      "chien",
+      "chien",
+      ":N:m:s"
+    ],
+    [
+      "chiens",
+      "chien",
+      ":N:m:p"
+    ],
+    [
+      "école",
+      "école",
+      ":N:f:s"
+    ],
+    [
+      "écoles",
+      "école",
+      ":N:f:p"
+    ],
+    [
+      "École",
+      "École",
+      ":M1:f:s"
+    ],
+    [
+      "Paris",
+      "Paris",
+      ":MP"
+    ],
+    [
+      "arc",
+      "arc",
+      ":N:m:s"
+    ],
+    [
+      "en",
+      "en",
+      ":P"
+    ],
+    [
+      "ciel",
+      "ciel",
+      ":N:m:s"
+    ],
+    [
+      "aujourd’hui",
+      "aujourd’hui",
+      ":W"
+    ],
+    [
+      "ffi",
+      "ffi",
+      ":N"
+    ],
+    [
+      "s",
+      "s",
+      ":N"
+    ],
+    [
+      "œil",
+      "œil",
+      ":N:m:s"
+    ],
+    [
+      "yeux",
+      "œil",
+      ":N:m:p"
+    ],
+    [
+      "mangé",
+      "manger",
+      ":V1:Q"
+    ],
+    [
+      "mangeaient",
+      "manger",
+      ":V1:Ii:3p"
+    ],
+    [
+      "a😀b",
+      "😀",
+      ":X"
+    ],
+    [
+      "rebâtissions",
+      "bâtir",
+      ":V2"
+    ],
+    [
+      "Straße",
+      "Straße",
+      ":N"
+    ],
+    [
+      "strasse",
+      "strasse",
+      ":N"
+    ],
+    [
+      "a",
+      "a",
+      ":X"
+    ],
+    [
+      "a-b",
+      "a-b",
+      ":X"
+    ]
+  ],
+  "dictionaries": [
+    {
+      "mode": "S",
+      "data": {
+        "sHeader": "/grammalecte-fsa/",
+        "sLangCode": "fr",
+        "sLangName": "French",
+        "sDicName": "fixture",
+        "sDescription": "Golden test dictionary",
+        "sFileName": "[None]",
+        "sDate": "2026-11-02 16:32:11",
+        "nEntry": 27,
+        "nChar": 30,
+        "nAff": 9,
+        "nTag": 17,
+        "cStemming": "S",
+        "dChar": {
+          "c": 1,
+          "h": 2,
+          "a": 3,
+          "t": 4,
+          "s": 5,
+          "n": 6,
+          "e": 7,
+          "i": 8,
+          "é": 9,
+          "o": 10,
+          "l": 11,
+          "É": 12,
+          "P": 13,
+          "r": 14,
+          "u": 15,
+          "j": 16,
+          "d": 17,
+          "’": 18,
+          "f": 19,
+          "œ": 20,
+          "y": 21,
+          "x": 22,
+          "m": 23,
+          "g": 24,
+          "😀": 25,
+          "b": 26,
+          "â": 27,
+          "S": 28,
+          "ß": 29,
+          "-": 30
+        },
+        "nNode": 106,
+        "nArc": 131,
+        "nArcVal": 56,
+        "lArcVal": [
+          "",
+          "c",
+          "h",
+          "a",
+          "t",
+          "s",
+          "n",
+          "e",
+          "i",
+          "é",
+          "o",
+          "l",
+          "É",
+          "P",
+          "r",
+          "u",
+          "j",
+          "d",
+          "’",
+          "f",
+          "œ",
+          "y",
+          "x",
+          "m",
+          "g",
+          "😀",
+          "b",
+          "â",
+          "S",
+          "ß",
+          "-",
+          "0",
+          "1",
+          "0r",
+          "2r",
+          "4œil",
+          "1er",
+          "5r",
+          "3😀",
+          "<bâtir",
+          ":N:m:s",
+          ":N:m:p",
+          ":V1:Ip:1s",
+          ":V1:Ip:3s",
+          ":V1:Ip:3p",
+          ":N:f:s",
+          ":N:f:p",
+          ":M1:f:s",
+          ":MP",
+          ":P",
+          ":W",
+          ":N",
+          ":V1:Q",
+          ":V1:Ii:3p",
+          ":X",
+          ":V2"
+        ],
+        "nBytesArc": 2,
+        "nBytesNodeAddress": 2,
+        "nBytesOffset": 0,
+        "lByDic": [
+          3,
+          112,
+          7,
+          144,
+          1,
+          74,
+          5,
+          136,
+          14,
+          212,
+          9,
+          162,
+          19,
+          216,
+          23,
+          254,
+          12,
+          174,
+          13,
+          186,
+          20,
+          218,
+          21,
+          226,
+          16412,
+          262,
+          49152,
+          0,
+          16425,
+          26,
+          49184,
+          28,
+          16424,
+          26,
+          32799,
+          32,
+          16389,
+          30,
+          16428,
+          26,
+          49186,
+          38,
+          16388,
+          40,
+          42,
+          26,
+          16427,
+          26,
+          32774,
+          42,
+          16417,
+          44,
+          16391,
+          48,
+          16388,
+          52,
+          4,
+          34,
+          16390,
+          54,
+          16390,
+          34,
+          16391,
+          60,
+          3,
+          56,
+          16392,
+          62,
+          49183,
+          32,
+          16395,
+          68,
+          16391,
+          70,
+          8,
+          72,
+          16386,
+          64,
+          16385,
+          68,
+          16434,
+          26,
+          49183,
+          80,
+          16392,
+          82,
+          16399,
+          84,
+          16386,
+          86,
+          16402,
+          88,
+          16401,
+          90,
+          16398,
+          92,
+          16399,
+          94,
+          16394,
+          96,
+          16400,
+          98,
+          16438,
+          26,
+          49190,
+          102,
+          16410,
+          104,
+          49183,
+          102,
+          16410,
+          108,
+          32799,
+          102,
+          14,
+          78,
+          15,
+          100,
+          25,
+          106,
+          16414,
+          110,
+          16435,
+          26,
+          49183,
+          122,
+          16391,
+          124,
+          16389,
+          126,
+          16389,
+          128,
+          16387,
+          130,
+          16398,
+          132,
+          32799,
+          122,
+          16388,
+          134,
+          16433,
+          26,
+          49183,
+          140,
+          16390,
+          142,
+          16430,
+          26,
+          49184,
+          146,
+          16429,
+          26,
+          32799,
+          150,
+          16389,
+          148,
+          16391,
+          152,
+          16395,
+          156,
+          16394,
+          158,
+          16385,
+          160,
+          16431,
+          26,
+          49183,
+          164,
+          16391,
+          166,
+          16395,
+          168,
+          16394,
+          170,
+          16385,
+          172,
+          16432,
+          26,
+          49183,
+          176,
+          16389,
+          178,
+          16392,
+          180,
+          16398,
+          182,
+          16387,
+          184,
+          16439,
+          26,
+          49191,
+          188,
+          16389,
+          190,
+          16390,
+          192,
+          16394,
+          194,
+          16392,
+          196,
+          16389,
+          198,
+          16389,
+          200,
+          16392,
+          202,
+          16388,
+          204,
+          16411,
+          206,
+          16410,
+          208,
+          16391,
+          210,
+          16392,
+          124,
+          16403,
+          214,
+          16392,
+          70,
+          49187,
+          28,
+          16406,
+          220,
+          16399,
+          222,
+          16391,
+          224,
+          16437,
+          26,
+          49189,
+          228,
+          16388,
+          230,
+          16390,
+          232,
+          16391,
+          234,
+          16392,
+          236,
+          16387,
+          238,
+          16436,
+          26,
+          49188,
+          242,
+          7,
+          240,
+          16393,
+          244,
+          16408,
+          246,
+          16390,
+          250,
+          16387,
+          252,
+          16413,
+          126,
+          16387,
+          256,
+          16398,
+          258,
+          16388,
+          260
+        ],
+        "l2grams": [
+          "ai",
+          "eb",
+          "co",
+          "a-",
+          "es",
+          "ng",
+          "ts",
+          "ux",
+          "ch",
+          "d’",
+          "Éc",
+          "ou",
+          "ff",
+          "le",
+          "aß",
+          "eu",
+          "si",
+          "Pa",
+          "en",
+          "re",
+          "ra",
+          "is",
+          "an",
+          "ge",
+          "tr",
+          "ur",
+          "ci",
+          "rd",
+          "a😀",
+          "ti",
+          "ss",
+          "ma",
+          "jo",
+          "ie",
+          "’h",
+          "il",
+          "uj",
+          "as",
+          "hu",
+          "nt",
+          "ns",
+          "gé",
+          "ol",
+          "ât",
+          "fi",
+          "ui",
+          "st",
+          "au",
+          "œi",
+          "éc",
+          "bâ",
+          "el",
+          "ar",
+          "ha",
+          "ea",
+          "at",
+          "te",
+          "hi",
+          "St",
+          "ße",
+          "rc",
+          "se",
+          "on",
+          "ye",
+          "ri",
+          "😀b",
+          "io",
+          "-b"
+        ]
+      },
+      "entries": [
+        [
+          "a",
+          "a",
+          ":X"
+        ],
+        [
+          "arc",
+          "arc",
+          ":N:m:s"
+        ],
+        [
+          "aujourd’hui",
+          "aujourd’hui",
+          ":W"
+        ],
+        [
+          "a😀b",
+          "😀",
+          ":X"
+        ],
+        [
+          "a-b",
+          "a-b",
+          ":X"
+        ],
+        [
+          "en",
+          "en",
+          ":P"
+        ],
+        [
+          "ciel",
+          "ciel",
+          ":N:m:s"
+        ],
+        [
+          "chat",
+          "chat",
+          ":N:m:s"
+        ],
+        [
+          "chats",
+          "chat",
+          ":N:m:p"
+        ],
+        [
+          "chantent",
+          "chanter",
+          ":V1:Ip:3p"
+        ],
+        [
+          "chante",
+          "chanter",
+          ":V1:Ip:1s"
+        ],
+        [
+          "chante",
+          "chanter",
+          ":V1:Ip:3s"
+        ],
+        [
+          "chien",
+          "chien",
+          ":N:m:s"
+        ],
+        [
+          "chiens",
+          "chien",
+          ":N:m:p"
+        ],
+        [
+          "s",
+          "s",
+          ":N"
+        ],
+        [
+          "strasse",
+          "strasse",
+          ":N"
+        ],
+        [
+          "rebâtissions",
+          "bâtir",
+          ":V2"
+        ],
+        [
+          "école",
+          "école",
+          ":N:f:s"
+        ],
+        [
+          "écoles",
+          "école",
+          ":N:f:p"
+        ],
+        [
+          "ffi",
+          "ffi",
+          ":N"
+        ],
+        [
+          "mangeaient",
+          "manger",
+          ":V1:Ii:3p"
+        ],
+        [
+          "mangé",
+          "manger",
+          ":V1:Q"
+        ],
+        [
+          "École",
+          "École",
+          ":M1:f:s"
+        ],
+        [
+          "Paris",
+          "Paris",
+          ":MP"
+        ],
+        [
+          "œil",
+          "œil",
+          ":N:m:s"
+        ],
+        [
+          "yeux",
+          "œil",
+          ":N:m:p"
+        ],
+        [
+          "Straße",
+          "Straße",
+          ":N"
+        ]
+      ],
+      "queries": [
+        {
+          "word": "",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "chat",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:s"
+          ],
+          "stems": [
+            "chat"
+          ]
+        },
+        {
+          "word": "chats",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:p"
+          ],
+          "stems": [
+            "chat"
+          ]
+        },
+        {
+          "word": "CHAT",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "Chat",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "cHaT",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "chante",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chanter/:V1:Ip:1s",
+            ">chanter/:V1:Ip:3s"
+          ],
+          "stems": [
+            "chanter"
+          ]
+        },
+        {
+          "word": "CHANTE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chanter/:V1:Ip:1s",
+            ">chanter/:V1:Ip:3s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "ÉCOLE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:s",
+            ">École/:M1:f:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "École",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">École/:M1:f:s",
+            ">école/:N:f:s"
+          ],
+          "stems": [
+            "École"
+          ]
+        },
+        {
+          "word": "école",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:s"
+          ],
+          "stems": [
+            "école"
+          ]
+        },
+        {
+          "word": "école",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "écoles",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:p"
+          ],
+          "stems": [
+            "école"
+          ]
+        },
+        {
+          "word": "Paris",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Paris/:MP"
+          ],
+          "stems": [
+            "Paris"
+          ]
+        },
+        {
+          "word": "PARIS",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Paris/:MP"
+          ],
+          "stems": []
+        },
+        {
+          "word": "paris",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "arc-en-ciel",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "a-b-c-d-e-f",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "a-b-c",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "inconnu",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "3xyz",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "²chats",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "10",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "œil",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">œil/:N:m:s"
+          ],
+          "stems": [
+            "œil"
+          ]
+        },
+        {
+          "word": "ŒIL",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">œil/:N:m:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "aujourd'hui",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">aujourd’hui/:W"
+          ],
+          "stems": []
+        },
+        {
+          "word": "a·b",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "x.y",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "ﬃ",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">ffi/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "ſ",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">s/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "😀",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "a😀b",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">😀/:X"
+          ],
+          "stems": [
+            "😀"
+          ]
+        },
+        {
+          "word": "Straße",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Straße/:N"
+          ],
+          "stems": [
+            "Straße"
+          ]
+        },
+        {
+          "word": "STRAẞE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Straße/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "STRASSE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">strasse/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "MANGÉ",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">manger/:V1:Q"
+          ],
+          "stems": []
+        },
+        {
+          "word": "rebâtissions",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">bâtir/:V2"
+          ],
+          "stems": [
+            "bâtir"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "A",
+      "data": {
+        "sHeader": "/grammalecte-fsa/",
+        "sLangCode": "fr",
+        "sLangName": "French",
+        "sDicName": "fixture",
+        "sDescription": "Golden test dictionary",
+        "sFileName": "[None]",
+        "sDate": "2026-11-02 16:32:11",
+        "nEntry": 27,
+        "nChar": 30,
+        "nAff": 9,
+        "nTag": 17,
+        "cStemming": "A",
+        "dChar": {
+          "c": 1,
+          "h": 2,
+          "a": 3,
+          "t": 4,
+          "s": 5,
+          "n": 6,
+          "e": 7,
+          "i": 8,
+          "é": 9,
+          "o": 10,
+          "l": 11,
+          "É": 12,
+          "P": 13,
+          "r": 14,
+          "u": 15,
+          "j": 16,
+          "d": 17,
+          "’": 18,
+          "f": 19,
+          "œ": 20,
+          "y": 21,
+          "x": 22,
+          "m": 23,
+          "g": 24,
+          "😀": 25,
+          "b": 26,
+          "â": 27,
+          "S": 28,
+          "ß": 29,
+          "-": 30
+        },
+        "nNode": 106,
+        "nArc": 131,
+        "nArcVal": 56,
+        "lArcVal": [
+          "",
+          "c",
+          "h",
+          "a",
+          "t",
+          "s",
+          "n",
+          "e",
+          "i",
+          "é",
+          "o",
+          "l",
+          "É",
+          "P",
+          "r",
+          "u",
+          "j",
+          "d",
+          "’",
+          "f",
+          "œ",
+          "y",
+          "x",
+          "m",
+          "g",
+          "😀",
+          "b",
+          "â",
+          "S",
+          "ß",
+          "-",
+          "0",
+          "0/1",
+          "0/0r",
+          "0/2r",
+          "œil",
+          "0/1er",
+          "0/5r",
+          "1/1",
+          "2/6r",
+          ":N:m:s",
+          ":N:m:p",
+          ":V1:Ip:1s",
+          ":V1:Ip:3s",
+          ":V1:Ip:3p",
+          ":N:f:s",
+          ":N:f:p",
+          ":M1:f:s",
+          ":MP",
+          ":P",
+          ":W",
+          ":N",
+          ":V1:Q",
+          ":V1:Ii:3p",
+          ":X",
+          ":V2"
+        ],
+        "nBytesArc": 2,
+        "nBytesNodeAddress": 2,
+        "nBytesOffset": 0,
+        "lByDic": [
+          3,
+          112,
+          7,
+          144,
+          1,
+          74,
+          5,
+          136,
+          14,
+          212,
+          9,
+          162,
+          19,
+          216,
+          23,
+          254,
+          12,
+          174,
+          13,
+          186,
+          20,
+          218,
+          21,
+          226,
+          16412,
+          262,
+          49152,
+          0,
+          16425,
+          26,
+          49184,
+          28,
+          16424,
+          26,
+          32799,
+          32,
+          16389,
+          30,
+          16428,
+          26,
+          49186,
+          38,
+          16388,
+          40,
+          42,
+          26,
+          16427,
+          26,
+          32774,
+          42,
+          16417,
+          44,
+          16391,
+          48,
+          16388,
+          52,
+          4,
+          34,
+          16390,
+          54,
+          16390,
+          34,
+          16391,
+          60,
+          3,
+          56,
+          16392,
+          62,
+          49183,
+          32,
+          16395,
+          68,
+          16391,
+          70,
+          8,
+          72,
+          16386,
+          64,
+          16385,
+          68,
+          16434,
+          26,
+          49183,
+          80,
+          16392,
+          82,
+          16399,
+          84,
+          16386,
+          86,
+          16402,
+          88,
+          16401,
+          90,
+          16398,
+          92,
+          16399,
+          94,
+          16394,
+          96,
+          16400,
+          98,
+          16438,
+          26,
+          49190,
+          102,
+          16410,
+          104,
+          49183,
+          102,
+          16410,
+          108,
+          32799,
+          102,
+          14,
+          78,
+          15,
+          100,
+          25,
+          106,
+          16414,
+          110,
+          16435,
+          26,
+          49183,
+          122,
+          16391,
+          124,
+          16389,
+          126,
+          16389,
+          128,
+          16387,
+          130,
+          16398,
+          132,
+          32799,
+          122,
+          16388,
+          134,
+          16433,
+          26,
+          49183,
+          140,
+          16390,
+          142,
+          16430,
+          26,
+          49184,
+          146,
+          16429,
+          26,
+          32799,
+          150,
+          16389,
+          148,
+          16391,
+          152,
+          16395,
+          156,
+          16394,
+          158,
+          16385,
+          160,
+          16431,
+          26,
+          49183,
+          164,
+          16391,
+          166,
+          16395,
+          168,
+          16394,
+          170,
+          16385,
+          172,
+          16432,
+          26,
+          49183,
+          176,
+          16389,
+          178,
+          16392,
+          180,
+          16398,
+          182,
+          16387,
+          184,
+          16439,
+          26,
+          49191,
+          188,
+          16389,
+          190,
+          16390,
+          192,
+          16394,
+          194,
+          16392,
+          196,
+          16389,
+          198,
+          16389,
+          200,
+          16392,
+          202,
+          16388,
+          204,
+          16411,
+          206,
+          16410,
+          208,
+          16391,
+          210,
+          16392,
+          124,
+          16403,
+          214,
+          16392,
+          70,
+          49187,
+          28,
+          16406,
+          220,
+          16399,
+          222,
+          16391,
+          224,
+          16437,
+          26,
+          49189,
+          228,
+          16388,
+          230,
+          16390,
+          232,
+          16391,
+          234,
+          16392,
+          236,
+          16387,
+          238,
+          16436,
+          26,
+          49188,
+          242,
+          7,
+          240,
+          16393,
+          244,
+          16408,
+          246,
+          16390,
+          250,
+          16387,
+          252,
+          16413,
+          126,
+          16387,
+          256,
+          16398,
+          258,
+          16388,
+          260
+        ],
+        "l2grams": [
+          "ai",
+          "eb",
+          "co",
+          "a-",
+          "es",
+          "ng",
+          "ts",
+          "ux",
+          "ch",
+          "d’",
+          "Éc",
+          "ou",
+          "ff",
+          "le",
+          "aß",
+          "eu",
+          "si",
+          "Pa",
+          "en",
+          "re",
+          "ra",
+          "is",
+          "an",
+          "ge",
+          "tr",
+          "ur",
+          "ci",
+          "rd",
+          "a😀",
+          "ti",
+          "ss",
+          "ma",
+          "jo",
+          "ie",
+          "’h",
+          "il",
+          "uj",
+          "as",
+          "hu",
+          "nt",
+          "ns",
+          "gé",
+          "ol",
+          "ât",
+          "fi",
+          "ui",
+          "st",
+          "au",
+          "œi",
+          "éc",
+          "bâ",
+          "el",
+          "ar",
+          "ha",
+          "ea",
+          "at",
+          "te",
+          "hi",
+          "St",
+          "ße",
+          "rc",
+          "se",
+          "on",
+          "ye",
+          "ri",
+          "😀b",
+          "io",
+          "-b"
+        ]
+      },
+      "entries": [
+        [
+          "a",
+          "a",
+          ":X"
+        ],
+        [
+          "arc",
+          "arc",
+          ":N:m:s"
+        ],
+        [
+          "aujourd’hui",
+          "aujourd’hui",
+          ":W"
+        ],
+        [
+          "a😀b",
+          "😀",
+          ":X"
+        ],
+        [
+          "a-b",
+          "a-b",
+          ":X"
+        ],
+        [
+          "en",
+          "en",
+          ":P"
+        ],
+        [
+          "ciel",
+          "ciel",
+          ":N:m:s"
+        ],
+        [
+          "chat",
+          "chat",
+          ":N:m:s"
+        ],
+        [
+          "chats",
+          "chat",
+          ":N:m:p"
+        ],
+        [
+          "chantent",
+          "chanter",
+          ":V1:Ip:3p"
+        ],
+        [
+          "chante",
+          "chanter",
+          ":V1:Ip:1s"
+        ],
+        [
+          "chante",
+          "chanter",
+          ":V1:Ip:3s"
+        ],
+        [
+          "chien",
+          "chien",
+          ":N:m:s"
+        ],
+        [
+          "chiens",
+          "chien",
+          ":N:m:p"
+        ],
+        [
+          "s",
+          "s",
+          ":N"
+        ],
+        [
+          "strasse",
+          "strasse",
+          ":N"
+        ],
+        [
+          "rebâtissions",
+          "bâtir",
+          ":V2"
+        ],
+        [
+          "école",
+          "école",
+          ":N:f:s"
+        ],
+        [
+          "écoles",
+          "école",
+          ":N:f:p"
+        ],
+        [
+          "ffi",
+          "ffi",
+          ":N"
+        ],
+        [
+          "mangeaient",
+          "manger",
+          ":V1:Ii:3p"
+        ],
+        [
+          "mangé",
+          "manger",
+          ":V1:Q"
+        ],
+        [
+          "École",
+          "École",
+          ":M1:f:s"
+        ],
+        [
+          "Paris",
+          "Paris",
+          ":MP"
+        ],
+        [
+          "œil",
+          "œil",
+          ":N:m:s"
+        ],
+        [
+          "yeux",
+          "œil",
+          ":N:m:p"
+        ],
+        [
+          "Straße",
+          "Straße",
+          ":N"
+        ]
+      ],
+      "queries": [
+        {
+          "word": "",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "chat",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:s"
+          ],
+          "stems": [
+            "chat"
+          ]
+        },
+        {
+          "word": "chats",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:p"
+          ],
+          "stems": [
+            "chat"
+          ]
+        },
+        {
+          "word": "CHAT",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "Chat",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "cHaT",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "chante",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chanter/:V1:Ip:1s",
+            ">chanter/:V1:Ip:3s"
+          ],
+          "stems": [
+            "chanter"
+          ]
+        },
+        {
+          "word": "CHANTE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chanter/:V1:Ip:1s",
+            ">chanter/:V1:Ip:3s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "ÉCOLE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:s",
+            ">École/:M1:f:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "École",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">École/:M1:f:s",
+            ">école/:N:f:s"
+          ],
+          "stems": [
+            "École"
+          ]
+        },
+        {
+          "word": "école",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:s"
+          ],
+          "stems": [
+            "école"
+          ]
+        },
+        {
+          "word": "école",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "écoles",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:p"
+          ],
+          "stems": [
+            "école"
+          ]
+        },
+        {
+          "word": "Paris",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Paris/:MP"
+          ],
+          "stems": [
+            "Paris"
+          ]
+        },
+        {
+          "word": "PARIS",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Paris/:MP"
+          ],
+          "stems": []
+        },
+        {
+          "word": "paris",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "arc-en-ciel",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "a-b-c-d-e-f",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "a-b-c",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "inconnu",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "3xyz",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "²chats",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "10",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "œil",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">œil/:N:m:s"
+          ],
+          "stems": [
+            "œil"
+          ]
+        },
+        {
+          "word": "ŒIL",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">œil/:N:m:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "aujourd'hui",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">aujourd’hui/:W"
+          ],
+          "stems": []
+        },
+        {
+          "word": "a·b",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "x.y",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "ﬃ",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">ffi/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "ſ",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">s/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "😀",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "a😀b",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">😀/:X"
+          ],
+          "stems": [
+            "😀"
+          ]
+        },
+        {
+          "word": "Straße",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Straße/:N"
+          ],
+          "stems": [
+            "Straße"
+          ]
+        },
+        {
+          "word": "STRAẞE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Straße/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "STRASSE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">strasse/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "MANGÉ",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">manger/:V1:Q"
+          ],
+          "stems": []
+        },
+        {
+          "word": "rebâtissions",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">bâtir/:V2"
+          ],
+          "stems": [
+            "bâtir"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "N",
+      "data": {
+        "sHeader": "/grammalecte-fsa/",
+        "sLangCode": "fr",
+        "sLangName": "French",
+        "sDicName": "fixture",
+        "sDescription": "Golden test dictionary",
+        "sFileName": "[None]",
+        "sDate": "2026-11-02 16:32:11",
+        "nEntry": 27,
+        "nChar": 30,
+        "nAff": 20,
+        "nTag": 17,
+        "cStemming": "N",
+        "dChar": {
+          "c": 1,
+          "h": 2,
+          "a": 3,
+          "t": 4,
+          "s": 5,
+          "n": 6,
+          "e": 7,
+          "i": 8,
+          "é": 9,
+          "o": 10,
+          "l": 11,
+          "É": 12,
+          "P": 13,
+          "r": 14,
+          "u": 15,
+          "j": 16,
+          "d": 17,
+          "’": 18,
+          "f": 19,
+          "œ": 20,
+          "y": 21,
+          "x": 22,
+          "m": 23,
+          "g": 24,
+          "😀": 25,
+          "b": 26,
+          "â": 27,
+          "S": 28,
+          "ß": 29,
+          "-": 30
+        },
+        "nNode": 114,
+        "nArc": 140,
+        "nArcVal": 67,
+        "lArcVal": [
+          "",
+          "c",
+          "h",
+          "a",
+          "t",
+          "s",
+          "n",
+          "e",
+          "i",
+          "é",
+          "o",
+          "l",
+          "É",
+          "P",
+          "r",
+          "u",
+          "j",
+          "d",
+          "’",
+          "f",
+          "œ",
+          "y",
+          "x",
+          "m",
+          "g",
+          "😀",
+          "b",
+          "â",
+          "S",
+          "ß",
+          "-",
+          "chat",
+          "chanter",
+          "chien",
+          "école",
+          "École",
+          "Paris",
+          "arc",
+          "en",
+          "ciel",
+          "aujourd’hui",
+          "ffi",
+          "s",
+          "œil",
+          "manger",
+          "😀",
+          "bâtir",
+          "Straße",
+          "strasse",
+          "a",
+          "a-b",
+          ":N:m:s",
+          ":N:m:p",
+          ":V1:Ip:1s",
+          ":V1:Ip:3s",
+          ":V1:Ip:3p",
+          ":N:f:s",
+          ":N:f:p",
+          ":M1:f:s",
+          ":MP",
+          ":P",
+          ":W",
+          ":N",
+          ":V1:Q",
+          ":V1:Ii:3p",
+          ":X",
+          ":V2"
+        ],
+        "nBytesArc": 2,
+        "nBytesNodeAddress": 2,
+        "nBytesOffset": 0,
+        "lByDic": [
+          3,
+          120,
+          7,
+          152,
+          1,
+          80,
+          5,
+          144,
+          14,
+          220,
+          9,
+          170,
+          19,
+          226,
+          23,
+          268,
+          12,
+          182,
+          13,
+          194,
+          20,
+          232,
+          21,
+          240,
+          16412,
+          280,
+          49152,
+          0,
+          16436,
+          26,
+          49183,
+          28,
+          16435,
+          26,
+          32773,
+          30,
+          16415,
+          32,
+          16439,
+          26,
+          49184,
+          38,
+          16388,
+          40,
+          53,
+          26,
+          16438,
+          26,
+          32774,
+          42,
+          16416,
+          44,
+          16391,
+          48,
+          16388,
+          52,
+          4,
+          34,
+          16390,
+          54,
+          49185,
+          28,
+          32773,
+          60,
+          16417,
+          32,
+          16390,
+          62,
+          16391,
+          66,
+          3,
+          56,
+          16392,
+          68,
+          49191,
+          32,
+          16395,
+          74,
+          16391,
+          76,
+          8,
+          78,
+          16386,
+          70,
+          49189,
+          32,
+          16385,
+          84,
+          16445,
+          26,
+          49192,
+          88,
+          16392,
+          90,
+          16399,
+          92,
+          16386,
+          94,
+          16402,
+          96,
+          16401,
+          98,
+          16398,
+          100,
+          16399,
+          102,
+          16394,
+          104,
+          16400,
+          106,
+          16449,
+          26,
+          49197,
+          110,
+          16410,
+          112,
+          49202,
+          110,
+          16410,
+          116,
+          32782,
+          86,
+          15,
+          108,
+          25,
+          114,
+          30,
+          118,
+          16433,
+          110,
+          16446,
+          26,
+          49200,
+          130,
+          16391,
+          132,
+          16389,
+          134,
+          16389,
+          136,
+          16387,
+          138,
+          16398,
+          140,
+          32772,
+          142,
+          16426,
+          130,
+          16444,
+          26,
+          49190,
+          148,
+          16390,
+          150,
+          16441,
+          26,
+          49186,
+          154,
+          16440,
+          26,
+          32773,
+          156,
+          16418,
+          158,
+          16391,
+          160,
+          16395,
+          164,
+          16394,
+          166,
+          16385,
+          168,
+          16442,
+          26,
+          49187,
+          172,
+          16391,
+          174,
+          16395,
+          176,
+          16394,
+          178,
+          16385,
+          180,
+          16443,
+          26,
+          49188,
+          184,
+          16389,
+          186,
+          16392,
+          188,
+          16398,
+          190,
+          16387,
+          192,
+          16450,
+          26,
+          49198,
+          196,
+          16389,
+          198,
+          16390,
+          200,
+          16394,
+          202,
+          16392,
+          204,
+          16389,
+          206,
+          16389,
+          208,
+          16392,
+          210,
+          16388,
+          212,
+          16411,
+          214,
+          16410,
+          216,
+          16391,
+          218,
+          49193,
+          130,
+          16392,
+          222,
+          16403,
+          224,
+          49195,
+          32,
+          16395,
+          228,
+          16392,
+          230,
+          49195,
+          28,
+          16406,
+          234,
+          16399,
+          236,
+          16391,
+          238,
+          16448,
+          26,
+          49196,
+          242,
+          16388,
+          244,
+          16390,
+          246,
+          16391,
+          248,
+          16392,
+          250,
+          16387,
+          252,
+          16447,
+          26,
+          49196,
+          256,
+          7,
+          254,
+          16393,
+          258,
+          16408,
+          260,
+          16390,
+          264,
+          16387,
+          266,
+          49199,
+          130,
+          16391,
+          270,
+          16413,
+          272,
+          16387,
+          274,
+          16398,
+          276,
+          16388,
+          278
+        ],
+        "l2grams": [
+          "ai",
+          "eb",
+          "co",
+          "a-",
+          "es",
+          "ng",
+          "ts",
+          "ux",
+          "ch",
+          "d’",
+          "Éc",
+          "ou",
+          "ff",
+          "le",
+          "aß",
+          "eu",
+          "si",
+          "Pa",
+          "en",
+          "re",
+          "ra",
+          "is",
+          "an",
+          "ge",
+          "tr",
+          "ur",
+          "ci",
+          "rd",
+          "a😀",
+          "ti",
+          "ss",
+          "ma",
+          "jo",
+          "ie",
+          "’h",
+          "il",
+          "uj",
+          "as",
+          "hu",
+          "nt",
+          "ns",
+          "gé",
+          "ol",
+          "ât",
+          "fi",
+          "ui",
+          "st",
+          "au",
+          "œi",
+          "éc",
+          "bâ",
+          "el",
+          "ar",
+          "ha",
+          "ea",
+          "at",
+          "te",
+          "hi",
+          "St",
+          "ße",
+          "rc",
+          "se",
+          "on",
+          "ye",
+          "ri",
+          "😀b",
+          "io",
+          "-b"
+        ]
+      },
+      "entries": [
+        [
+          "arc",
+          "arc",
+          ":N:m:s"
+        ],
+        [
+          "aujourd’hui",
+          "aujourd’hui",
+          ":W"
+        ],
+        [
+          "a😀b",
+          "😀",
+          ":X"
+        ],
+        [
+          "a-b",
+          "a-b",
+          ":X"
+        ],
+        [
+          "a",
+          "a",
+          ":X"
+        ],
+        [
+          "en",
+          "en",
+          ":P"
+        ],
+        [
+          "ciel",
+          "ciel",
+          ":N:m:s"
+        ],
+        [
+          "chats",
+          "chat",
+          ":N:m:p"
+        ],
+        [
+          "chat",
+          "chat",
+          ":N:m:s"
+        ],
+        [
+          "chantent",
+          "chanter",
+          ":V1:Ip:3p"
+        ],
+        [
+          "chante",
+          "chanter",
+          ":V1:Ip:1s"
+        ],
+        [
+          "chante",
+          "chanter",
+          ":V1:Ip:3s"
+        ],
+        [
+          "chiens",
+          "chien",
+          ":N:m:p"
+        ],
+        [
+          "chien",
+          "chien",
+          ":N:m:s"
+        ],
+        [
+          "strasse",
+          "strasse",
+          ":N"
+        ],
+        [
+          "s",
+          "s",
+          ":N"
+        ],
+        [
+          "rebâtissions",
+          "bâtir",
+          ":V2"
+        ],
+        [
+          "écoles",
+          "école",
+          ":N:f:p"
+        ],
+        [
+          "école",
+          "école",
+          ":N:f:s"
+        ],
+        [
+          "ffi",
+          "ffi",
+          ":N"
+        ],
+        [
+          "mangeaient",
+          "manger",
+          ":V1:Ii:3p"
+        ],
+        [
+          "mangé",
+          "manger",
+          ":V1:Q"
+        ],
+        [
+          "École",
+          "École",
+          ":M1:f:s"
+        ],
+        [
+          "Paris",
+          "Paris",
+          ":MP"
+        ],
+        [
+          "œil",
+          "œil",
+          ":N:m:s"
+        ],
+        [
+          "yeux",
+          "œil",
+          ":N:m:p"
+        ],
+        [
+          "Straße",
+          "Straße",
+          ":N"
+        ]
+      ],
+      "queries": [
+        {
+          "word": "",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "chat",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:s"
+          ],
+          "stems": [
+            "chat"
+          ]
+        },
+        {
+          "word": "chats",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:p"
+          ],
+          "stems": [
+            "chat"
+          ]
+        },
+        {
+          "word": "CHAT",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "Chat",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chat/:N:m:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "cHaT",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "chante",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chanter/:V1:Ip:1s",
+            ">chanter/:V1:Ip:3s"
+          ],
+          "stems": [
+            "chanter"
+          ]
+        },
+        {
+          "word": "CHANTE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">chanter/:V1:Ip:1s",
+            ">chanter/:V1:Ip:3s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "ÉCOLE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:s",
+            ">École/:M1:f:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "École",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">École/:M1:f:s",
+            ">école/:N:f:s"
+          ],
+          "stems": [
+            "École"
+          ]
+        },
+        {
+          "word": "école",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:s"
+          ],
+          "stems": [
+            "école"
+          ]
+        },
+        {
+          "word": "école",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "écoles",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">école/:N:f:p"
+          ],
+          "stems": [
+            "école"
+          ]
+        },
+        {
+          "word": "Paris",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Paris/:MP"
+          ],
+          "stems": [
+            "Paris"
+          ]
+        },
+        {
+          "word": "PARIS",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Paris/:MP"
+          ],
+          "stems": []
+        },
+        {
+          "word": "paris",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "arc-en-ciel",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "a-b-c-d-e-f",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "a-b-c",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "inconnu",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "3xyz",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "²chats",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "10",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "œil",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">œil/:N:m:s"
+          ],
+          "stems": [
+            "œil"
+          ]
+        },
+        {
+          "word": "ŒIL",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">œil/:N:m:s"
+          ],
+          "stems": []
+        },
+        {
+          "word": "aujourd'hui",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">aujourd’hui/:W"
+          ],
+          "stems": []
+        },
+        {
+          "word": "a·b",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "x.y",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "ﬃ",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">ffi/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "ſ",
+          "lookup": false,
+          "valid": false,
+          "token_valid": true,
+          "morph": [
+            ">s/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "😀",
+          "lookup": false,
+          "valid": false,
+          "token_valid": false,
+          "morph": [],
+          "stems": []
+        },
+        {
+          "word": "a😀b",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">😀/:X"
+          ],
+          "stems": [
+            "😀"
+          ]
+        },
+        {
+          "word": "Straße",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Straße/:N"
+          ],
+          "stems": [
+            "Straße"
+          ]
+        },
+        {
+          "word": "STRAẞE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">Straße/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "STRASSE",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">strasse/:N"
+          ],
+          "stems": []
+        },
+        {
+          "word": "MANGÉ",
+          "lookup": false,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">manger/:V1:Q"
+          ],
+          "stems": []
+        },
+        {
+          "word": "rebâtissions",
+          "lookup": true,
+          "valid": true,
+          "token_valid": true,
+          "morph": [
+            ">bâtir/:V2"
+          ],
+          "stems": [
+            "bâtir"
+          ]
+        }
+      ]
+    }
+  ]
+}

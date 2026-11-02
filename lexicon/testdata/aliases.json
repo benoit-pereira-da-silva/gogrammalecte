@@ -1,0 +1,8 @@
+{
+  "lines": [
+    "a/AB\tpo:nom\tis:mas",
+    "b/AB\tpo:nom\tis:fem",
+    "c/CD\tpo:nom\tis:fem"
+  ],
+  "expected": "\n\nDrapeaux :\n  >        2 : AB\n  >        1 : CD\n\n\nMorphologies :\n  >        2 : po:nom is:fem\n  >        1 : po:nom is:mas\n"
+}

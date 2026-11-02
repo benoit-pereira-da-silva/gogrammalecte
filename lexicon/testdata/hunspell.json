@@ -1,0 +1,170 @@
+[
+  {
+    "variant": "fr-toutesvariantes",
+    "mode": 0,
+    "aliases": false,
+    "simplified": false,
+    "dictionarySHA256": "cc3a8689a3897608a5c13f743bd28bc0fd1bd94ecbbd0873799e6bfc1b6f72f0",
+    "affixSHA256": "eb17ba2fbe0c3410831e5a74d39deace7affecb19dad835f549803877bb9c933"
+  },
+  {
+    "variant": "fr-classique",
+    "mode": 0,
+    "aliases": false,
+    "simplified": false,
+    "dictionarySHA256": "dfd04decb3e8754caf6a774416cb84ebbedd0e3020b283e49d60276fb3dc9599",
+    "affixSHA256": "a067d66d2edf168b1dc92e64d74c6231922330e9a6c15b3d374434388a455d28"
+  },
+  {
+    "variant": "fr-reforme1990",
+    "mode": 0,
+    "aliases": false,
+    "simplified": false,
+    "dictionarySHA256": "178be81867fcaab380cd1aca41074254fe51a8bd117c2a8fa28ee2cd6c69d94a",
+    "affixSHA256": "caf5e0637bf86d013a1530c2425a9462a3fa5f11a14895a7e682d02fe4f542d6"
+  },
+  {
+    "variant": "fr-toutesvariantes",
+    "mode": 0,
+    "aliases": true,
+    "simplified": false,
+    "dictionarySHA256": "dac28293ab1d77c3f09e74aaeb636107f27604c0f40384077ed101fec9a96690",
+    "affixSHA256": "aa34a44be2a05bd9adc710f23bdd39ce448dca2074cd50931ccd1e05db1e9787"
+  },
+  {
+    "variant": "fr-classique",
+    "mode": 0,
+    "aliases": true,
+    "simplified": false,
+    "dictionarySHA256": "b17883b5d10a8afeb98b9fbefca5f6147ef31bc4254dce42bb517e8a928ab6ad",
+    "affixSHA256": "de5cd75625d639bbc532dac7fb5a9a3daa585e58224e33ad50fec06fb196ed38"
+  },
+  {
+    "variant": "fr-reforme1990",
+    "mode": 0,
+    "aliases": true,
+    "simplified": false,
+    "dictionarySHA256": "f486f69e915721d3bc0b1bc5900d12bfa1d7c662f778c296a2c6af9263dd921e",
+    "affixSHA256": "2a0f34e2c0160b4905b248a8cc0fc37ac5494a2fe9e93f3c64981db5d1988cc7"
+  },
+  {
+    "variant": "fr-toutesvariantes",
+    "mode": 1,
+    "aliases": false,
+    "simplified": false,
+    "dictionarySHA256": "c43dbc17e752921974b2e66364377af8c9694209d592169d7480c827a0cbc68d",
+    "affixSHA256": "16af36ec7abb22fff23f12f5126a573e71de2dc5a4382a58ddb7a1345294d1b6"
+  },
+  {
+    "variant": "fr-classique",
+    "mode": 1,
+    "aliases": false,
+    "simplified": false,
+    "dictionarySHA256": "532306d629903793e9550a919566288a33f8c05a2a4b9fdbc27c3c4fdae2d6c2",
+    "affixSHA256": "bfa9bafde419b19b98d1db671cd1e9f7c5a133d927f255d7fc268528efeba497"
+  },
+  {
+    "variant": "fr-reforme1990",
+    "mode": 1,
+    "aliases": false,
+    "simplified": false,
+    "dictionarySHA256": "1f50726658e6ff34e4dcccec1c098e9a9132684dd71c00fc62f607d397235460",
+    "affixSHA256": "11616dc1e8b35be783e3385fcf6e15a2272450770650146185e5b60034f58a72"
+  },
+  {
+    "variant": "fr-toutesvariantes",
+    "mode": 1,
+    "aliases": true,
+    "simplified": false,
+    "dictionarySHA256": "0f57c4bcdbc1e2d14806cadf4a64e431e90514dd89e9fe7fc6ff5c1021b531ab",
+    "affixSHA256": "12532e96e0026706536c1def905fb7f3dce3a7343c54821dd2d62643807ad0c9"
+  },
+  {
+    "variant": "fr-classique",
+    "mode": 1,
+    "aliases": true,
+    "simplified": false,
+    "dictionarySHA256": "6626dc74f2e1c9457056a2a132ea580600d1a3a5bbc794a43cf9c01e82277aed",
+    "affixSHA256": "76ce86f3c4fbc15f4560aec65ebdd495ba9b73f0d7a60734f389a93ba594ffc0"
+  },
+  {
+    "variant": "fr-reforme1990",
+    "mode": 1,
+    "aliases": true,
+    "simplified": false,
+    "dictionarySHA256": "5f900b512a03e7f3cb21a006aca66ec95d1f117893b5a750b26e7d395292c17c",
+    "affixSHA256": "5a744fb147c379ad0d390b2ff930babd6cc431ea736481dcdb5542284d80b77f"
+  },
+  {
+    "variant": "fr-toutesvariantes",
+    "mode": 2,
+    "aliases": false,
+    "simplified": false,
+    "dictionarySHA256": "6e40320273dd12957dac13e7ad063943f4455c35d58a1c06eedde3a782fb66b8",
+    "affixSHA256": "c0f90ee6460d41eb7fbfb1ef9ba718660c691e7b919fe1f2d6b9d9b311b7ec9f"
+  },
+  {
+    "variant": "fr-classique",
+    "mode": 2,
+    "aliases": false,
+    "simplified": false,
+    "dictionarySHA256": "0943c1dd5f1da14e1d5343fdc528a8942093cedbc761b4b186d328f4d16b3cfe",
+    "affixSHA256": "3e79ae23c88fd0c9e37e01795d4334d58ddffb1fe59a8a7f65f6a591dc1ad98c"
+  },
+  {
+    "variant": "fr-reforme1990",
+    "mode": 2,
+    "aliases": false,
+    "simplified": false,
+    "dictionarySHA256": "e24b62e74764acfb17e930c70bfab1bcd4c672b8f4cd35f4264df86cf12cbc7d",
+    "affixSHA256": "46ed3d43f6399526b98ae2da515dc80c65cbe64062ecd301d82d412007057a88"
+  },
+  {
+    "variant": "fr-toutesvariantes",
+    "mode": 2,
+    "aliases": true,
+    "simplified": false,
+    "dictionarySHA256": "01be1294a95ae6a1440c49dd20374684cf773e97aeff0e55a11c8403a0a093bf",
+    "affixSHA256": "6cf2bab602284b8081294b52041bc9aa4ac9806c68db0ba79ef20aacda1a8453"
+  },
+  {
+    "variant": "fr-classique",
+    "mode": 2,
+    "aliases": true,
+    "simplified": false,
+    "dictionarySHA256": "8341ad30305693f0e7e22d7c19560edc50a561c8f961ffe4b618b8c9fbc4f75c",
+    "affixSHA256": "ffb78e1934ba859b3a32a722830e9991d9896de20ddd6ae2570b5a2637146378"
+  },
+  {
+    "variant": "fr-reforme1990",
+    "mode": 2,
+    "aliases": true,
+    "simplified": false,
+    "dictionarySHA256": "78545f769ad2397307c8c9ffe9af83f41b474c8a825a22e7be2f257db5669ee3",
+    "affixSHA256": "a0d65b1b8907da656d4b0aff8e0f1b256cda921b9c51d37c8f043864abc76ce0"
+  },
+  {
+    "variant": "fr-toutesvariantes",
+    "mode": 0,
+    "aliases": false,
+    "simplified": true,
+    "dictionarySHA256": "140c5296b514bc55af7433f8913a73245b9b18116830a7db48e2aabfa85fcbed",
+    "affixSHA256": "4a3b42a224b6b7b3194809358bd9bb2c8863d8a612544b4364e43377495fc4a5"
+  },
+  {
+    "variant": "fr-classique",
+    "mode": 0,
+    "aliases": false,
+    "simplified": true,
+    "dictionarySHA256": "b78a868e31dd6e373b6c3217969afb898a9acde828a5e7ef97308da42218c88c",
+    "affixSHA256": "d30d8678f642b5f962625d36ffb0f6219a53f0792bbd6e17bb3354a3082ad85d"
+  },
+  {
+    "variant": "fr-reforme1990",
+    "mode": 0,
+    "aliases": false,
+    "simplified": true,
+    "dictionarySHA256": "66874125c8827331e53e9184e5581e8e0a7d8a2371b4a0f9374a9a7bbcff2cb5",
+    "affixSHA256": "028a455f713633a64545f149a5ebf4f2ed6b68bcbdd893cec1aad81e35e9e83b"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "full": {
+    "dat": "52efa736c37f98d7f0abfe5dd4345b6f712880ca0ca664c15a8168d9475a0b46",
+    "idx": "f402d0c411cd1ad409be18b1f6152941aa185430f5ac3c11972ad81a54b3fff4",
+    "json": "0040c2024651912d6734623beebf30834d24dc355a7b1c48dc7bc740e9764e9e"
+  },
+  "entries": 36241,
+  "small": {
+    "base": "UTF-8\nété|1\n(nom)| saison|saison |saison|<été>\nété indien|1\n(nom)|automne\n",
+    "synsets": "(nom)|été|saison (chaude)|exclu*|été\n(adj)|chaud|été (torride)|chaud\n",
+    "dat": "UTF-8\nété|3\n(nom)|saison|saison|saison|<été>\n(nom)|été|saison (chaude)|exclu*\n(adj)|chaud|été (torride)\nété indien|1\n(nom)|automne\nsaison|1\n(nom)|été|saison (chaude)|exclu*\nchaud|1\n(adj)|chaud|été (torride)\n",
+    "idx": "UTF-8\n4\nchaud|185\nsaison|141\nété|6\nété indien|112\n",
+    "json": "{\"été\": [[\"(nom)\", [\"saison\", \"saison\", \"saison\", \"<été>\"]], [\"(nom)\", [\"été\", \"saison (chaude)\", \"exclu*\"]], [\"(adj)\", [\"chaud\", \"été (torride)\"]]], \"été indien\": [[\"(nom)\", [\"automne\"]]], \"saison\": [[\"(nom)\", [\"été\", \"saison (chaude)\", \"exclu*\"]]], \"chaud\": [[\"(adj)\", [\"chaud\", \"été (torride)\"]]]}"
+  }
+}

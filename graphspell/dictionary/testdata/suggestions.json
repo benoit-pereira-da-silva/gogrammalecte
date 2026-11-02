@@ -1,0 +1,620 @@
+{
+  "source": {
+    "commit": "08511c222029b3be20bf547563315d10fb48d44b",
+    "python": "3.14.3",
+    "python_hash_seed": 0,
+    "ibdawg_sha256": "ea98ff64690228ef689071e9b657c597d9c08b839f2d97b3cf9d82e4600e5c26"
+  },
+  "cases": [
+    {
+      "dictionary": "small",
+      "word": "",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "a",
+        "s"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "chat",
+      "limit": 1,
+      "split_numbers": false,
+      "suggestions": [
+        "chat"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "chat",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "chat",
+        "chats"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "chat",
+      "limit": 10,
+      "split_numbers": false,
+      "suggestions": [
+        "chat",
+        "chats"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "chatt",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "chat",
+        "chats"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "chta",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "chat",
+        "chats"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "shat",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "chat",
+        "chats"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "chats",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "chats",
+        "chat"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "cheins",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "chiens",
+        "chien"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "ecole",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "École",
+        "école",
+        "écoles"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "écol",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "École",
+        "école",
+        "écoles"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "écoles",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "écoles",
+        "École",
+        "école"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "yeu",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "yeux",
+        "ciel"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "paris",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "Paris"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "Chatt",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "Chat",
+        "Chats"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "CHATT",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "CHAT",
+        "CHATS"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "maangeaient",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "mangeaient"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "l'ecole",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "l’École",
+        "l’école",
+        "l’écoles"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "mange-t-il",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "mangé-t-il"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "chat12",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "chat 12"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "chat12",
+      "limit": 5,
+      "split_numbers": true,
+      "suggestions": [
+        "chat ¹²",
+        "chat 12"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "arcenciel",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": []
+    },
+    {
+      "dictionary": "small",
+      "word": "abcd",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "arc"
+      ]
+    },
+    {
+      "dictionary": "small",
+      "word": "a-b",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "a-b",
+        "a😀b"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "bonjor",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "bonjour",
+        "bongo",
+        "bongos",
+        "banjo",
+        "banjos"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "bonjouur",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "bonjour",
+        "bonjours"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "gramaire",
+      "limit": 1,
+      "split_numbers": false,
+      "suggestions": [
+        "grammaire"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "gramaire",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "grammaire",
+        "grammaires",
+        "Gram aire",
+        "gram aire"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "gramaire",
+      "limit": 10,
+      "split_numbers": false,
+      "suggestions": [
+        "grammaire",
+        "grammaires",
+        "Gram aire",
+        "gram aire"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "orthografe",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "orthographe",
+        "orthographes",
+        "orthographie",
+        "orthographiè",
+        "orthographié"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "ecole",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "école",
+        "acaule",
+        "encolle",
+        "encollè",
+        "encollé"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "cheveaux",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "chevaux",
+        "cheveux",
+        "chevreaux",
+        "chéneaux",
+        "écheveaux"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "chevau",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "cheval",
+        "chevaux",
+        "cheveu",
+        "écheveau",
+        "chewa"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "chataux",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "châteaux",
+        "Chatou",
+        "chanteaux",
+        "chaton",
+        "château"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "francais",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "français",
+        "Francis",
+        "François",
+        "fiançais",
+        "franchis"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "FRANCAIS",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "FRANÇAIS",
+        "FRANÇOIS",
+        "FIANÇAIS",
+        "FRANÇAISE",
+        "FRONÇAIS"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "Français",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "Français",
+        "Francis",
+        "François",
+        "Fiançais",
+        "Franchis"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "ÉCOLE",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "ÉCOLE",
+        "ACAULE",
+        "COLLE",
+        "COLLEY",
+        "COLLÈ"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "aujourdhui",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "aujourd’hui"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "l'ecole",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "l’école",
+        "l’acaule",
+        "l’encolle",
+        "l’encollè",
+        "l’encollé"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "manges-t-il",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "M’anges-t-il",
+        "manges-t-il",
+        "mangés-t-il",
+        "m’anges-t-il",
+        "mangez-t-il"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "mangez-vous",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "mangez-vous",
+        "manges-vous",
+        "mangés-vous",
+        "margez-vous",
+        "langez-vous"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "couleur12",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "couleur 12"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "couleur12",
+      "limit": 5,
+      "split_numbers": true,
+      "suggestions": [
+        "couleur ¹²",
+        "couleur 12"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "bonjour.",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "bonjour",
+        "bonjours",
+        "bon jour"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "aussi",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "aussi",
+        "Audi",
+        "OS",
+        "OSH",
+        "OSS"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "daccord",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "d’accord",
+        "accord",
+        "raccord",
+        "accorda",
+        "accorde"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "oeil",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "œil",
+        "oaï",
+        "El",
+        "Joël",
+        "Neil"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "œuill",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "exil",
+        "ouaille",
+        "ouais",
+        "oui",
+        "ouilla"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "profeseur",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "professeur",
+        "processeur",
+        "professer",
+        "professeure",
+        "professeurs"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "apparament",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "apatament",
+        "apparemment",
+        "alarment",
+        "anagramment",
+        "apatamant"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "sugestion",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "suggestion",
+        "suggestions",
+        "su gestion"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "réçament",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "recalent",
+        "recasent",
+        "récemment",
+        "réclament",
+        "rétament"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "s’écrirre",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "s’écrire",
+        "s’décrire",
+        "s’récrire",
+        "s’écrie",
+        "s’écrier"
+      ]
+    },
+    {
+      "dictionary": "full",
+      "word": "bonjourbonjour",
+      "limit": 5,
+      "split_numbers": false,
+      "suggestions": [
+        "bonjour bonjour"
+      ]
+    }
+  ]
+}
