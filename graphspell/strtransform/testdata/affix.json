@@ -1,0 +1,3821 @@
+{
+  "source": {
+    "repository": "https://github.com/benoit-pereira-da-silva/grammalecte",
+    "commit": "08511c222029b3be20bf547563315d10fb48d44b",
+    "path": "graphspell/str_transform.py",
+    "sha256": "03cf28e43a8bc6823ceeb589f45068676d989b58fdee45b8880f6da9c3f285f3",
+    "python": "3.14.3",
+    "selection": "29 targeted cases plus 256 evenly spaced French.lex entries; 17 direct decoding cases"
+  },
+  "pairs": [
+    {
+      "name": "same",
+      "flexion": "bonjour",
+      "stem": "bonjour",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "bonjour"
+      },
+      "affix": {
+        "result": "bonjour"
+      }
+    },
+    {
+      "name": "plural",
+      "flexion": "chats",
+      "stem": "chat",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "chat"
+      },
+      "affix": {
+        "result": "chat"
+      }
+    },
+    {
+      "name": "verb",
+      "flexion": "mangeais",
+      "stem": "manger",
+      "suffix_code": "3r",
+      "affix_code": "0/3r",
+      "suffix": {
+        "result": "manger"
+      },
+      "affix": {
+        "result": "manger"
+      }
+    },
+    {
+      "name": "prefix",
+      "flexion": "défaire",
+      "stem": "faire",
+      "suffix_code": "7faire",
+      "affix_code": "2/0",
+      "suffix": {
+        "result": "faire"
+      },
+      "affix": {
+        "result": "faire"
+      }
+    },
+    {
+      "name": "both",
+      "flexion": "déchantions",
+      "stem": "chanter",
+      "suffix_code": ";chanter",
+      "affix_code": "2/4er",
+      "suffix": {
+        "result": "chanter"
+      },
+      "affix": {
+        "result": "chanter"
+      }
+    },
+    {
+      "name": "unrelated",
+      "flexion": "cheval",
+      "stem": "être",
+      "suffix_code": "6être",
+      "affix_code": "être",
+      "suffix": {
+        "result": "être"
+      },
+      "affix": {
+        "result": "être"
+      }
+    },
+    {
+      "name": "empty_both",
+      "flexion": "",
+      "stem": "",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": ""
+      },
+      "affix": {
+        "result": ""
+      }
+    },
+    {
+      "name": "empty_flexion",
+      "flexion": "",
+      "stem": "été",
+      "suffix_code": "0été",
+      "affix_code": "été",
+      "suffix": {
+        "result": "été"
+      },
+      "affix": {
+        "result": "été"
+      }
+    },
+    {
+      "name": "empty_stem",
+      "flexion": "été",
+      "stem": "",
+      "suffix_code": "3",
+      "affix_code": "0/3",
+      "suffix": {
+        "result": ""
+      },
+      "affix": {
+        "result": ""
+      }
+    },
+    {
+      "name": "accents",
+      "flexion": "étudiées",
+      "stem": "étudier",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "étudier"
+      },
+      "affix": {
+        "result": "étudier"
+      }
+    },
+    {
+      "name": "ligature",
+      "flexion": "cœurs",
+      "stem": "cœur",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "cœur"
+      },
+      "affix": {
+        "result": "cœur"
+      }
+    },
+    {
+      "name": "non_bmp",
+      "flexion": "😀maisons",
+      "stem": "😀maison",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "😀maison"
+      },
+      "affix": {
+        "result": "😀maison"
+      }
+    },
+    {
+      "name": "non_bmp_prefix",
+      "flexion": "😀école",
+      "stem": "écoles",
+      "suffix_code": "6écoles",
+      "affix_code": "1/0s",
+      "suffix": {
+        "result": "écoles"
+      },
+      "affix": {
+        "result": "écoles"
+      }
+    },
+    {
+      "name": "combining",
+      "flexion": "écoles",
+      "stem": "école",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "école"
+      },
+      "affix": {
+        "result": "école"
+      }
+    },
+    {
+      "name": "normalization_preserved",
+      "flexion": "école",
+      "stem": "école",
+      "suffix_code": "5école",
+      "affix_code": "1é/0",
+      "suffix": {
+        "result": "école"
+      },
+      "affix": {
+        "result": "école"
+      }
+    },
+    {
+      "name": "cjk",
+      "flexion": "猫たち",
+      "stem": "猫",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "猫"
+      },
+      "affix": {
+        "result": "猫"
+      }
+    },
+    {
+      "name": "more_than_nine",
+      "flexion": "abcdefghijklmnop",
+      "stem": "xyz",
+      "suffix_code": "@xyz",
+      "affix_code": "xyz",
+      "suffix": {
+        "result": "xyz"
+      },
+      "affix": {
+        "result": "xyz"
+      }
+    },
+    {
+      "name": "substring_empty",
+      "flexion": "abcdefghijklmnop",
+      "stem": "",
+      "suffix_code": "@",
+      "affix_code": "0/@",
+      "suffix": {
+        "result": ""
+      },
+      "affix": {
+        "result": ""
+      }
+    },
+    {
+      "name": "common_tie",
+      "flexion": "abcXYZdef",
+      "stem": "defUVWabc",
+      "suffix_code": "9defUVWabc",
+      "affix_code": "0defUVW/6",
+      "suffix": {
+        "result": "defUVWabc"
+      },
+      "affix": {
+        "result": "defUVWabc"
+      }
+    },
+    {
+      "name": "repeated_common",
+      "flexion": "abcabc",
+      "stem": "zzabc",
+      "suffix_code": "6zzabc",
+      "affix_code": "0zz/3",
+      "suffix": {
+        "result": "zzabc"
+      },
+      "affix": {
+        "result": "zzabc"
+      }
+    },
+    {
+      "name": "single_common",
+      "flexion": "cat",
+      "stem": "bat",
+      "suffix_code": "3bat",
+      "affix_code": "1b/0",
+      "suffix": {
+        "result": "bat"
+      },
+      "affix": {
+        "result": "bat"
+      }
+    },
+    {
+      "name": "two_common",
+      "flexion": "cats",
+      "stem": "bats",
+      "suffix_code": "4bats",
+      "affix_code": "1b/0",
+      "suffix": {
+        "result": "bats"
+      },
+      "affix": {
+        "result": "bats"
+      }
+    },
+    {
+      "name": "stem_contains_flexion",
+      "flexion": "chat",
+      "stem": "chats",
+      "suffix_code": "0s",
+      "affix_code": "0/0s",
+      "suffix": {
+        "result": "chats"
+      },
+      "affix": {
+        "result": "chats"
+      }
+    },
+    {
+      "name": "astral_stem",
+      "flexion": "𐐀𐐁𐐂",
+      "stem": "𐐀𐐁",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "𐐀𐐁"
+      },
+      "affix": {
+        "result": "𐐀𐐁"
+      }
+    },
+    {
+      "name": "newline",
+      "flexion": "ab\ncd",
+      "stem": "ab\nef",
+      "suffix_code": "2ef",
+      "affix_code": "0/2ef",
+      "suffix": {
+        "result": "ab\nef"
+      },
+      "affix": {
+        "result": "ab\nef"
+      }
+    },
+    {
+      "name": "spaces",
+      "flexion": " one two ",
+      "stem": "one two",
+      "suffix_code": "9one two",
+      "affix_code": "1/1",
+      "suffix": {
+        "result": "one two"
+      },
+      "affix": {
+        "result": "one two"
+      }
+    },
+    {
+      "name": "slash_literal",
+      "flexion": "abc",
+      "stem": "a/b",
+      "suffix_code": "2/b",
+      "affix_code": "a/b",
+      "suffix": {
+        "result": "a/b"
+      },
+      "affix": {
+        "result": ""
+      }
+    },
+    {
+      "name": "slash_encoded",
+      "flexion": "prefix-core",
+      "stem": "new/core",
+      "suffix_code": ";new/core",
+      "affix_code": "7new//0",
+      "suffix": {
+        "result": "new/core"
+      },
+      "affix": {
+        "error": "ValueError"
+      }
+    },
+    {
+      "name": "zero_character",
+      "flexion": "\u0000ab",
+      "stem": "\u0000ac",
+      "suffix_code": "1c",
+      "affix_code": "0/1c",
+      "suffix": {
+        "result": "\u0000ac"
+      },
+      "affix": {
+        "result": "\u0000ac"
+      }
+    },
+    {
+      "name": "lexicon_0",
+      "flexion": "de",
+      "stem": "de",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "de"
+      },
+      "affix": {
+        "result": "de"
+      }
+    },
+    {
+      "name": "lexicon_2022",
+      "flexion": "prennent",
+      "stem": "prendre",
+      "suffix_code": "4dre",
+      "affix_code": "0/4dre",
+      "suffix": {
+        "result": "prendre"
+      },
+      "affix": {
+        "result": "prendre"
+      }
+    },
+    {
+      "name": "lexicon_4044",
+      "flexion": "idéologie",
+      "stem": "idéologie",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "idéologie"
+      },
+      "affix": {
+        "result": "idéologie"
+      }
+    },
+    {
+      "name": "lexicon_6066",
+      "flexion": "conduits",
+      "stem": "conduit",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "conduit"
+      },
+      "affix": {
+        "result": "conduit"
+      }
+    },
+    {
+      "name": "lexicon_8089",
+      "flexion": "existants",
+      "stem": "existant",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "existant"
+      },
+      "affix": {
+        "result": "existant"
+      }
+    },
+    {
+      "name": "lexicon_10111",
+      "flexion": "ralentissement",
+      "stem": "ralentissement",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "ralentissement"
+      },
+      "affix": {
+        "result": "ralentissement"
+      }
+    },
+    {
+      "name": "lexicon_12133",
+      "flexion": "racisme",
+      "stem": "racisme",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "racisme"
+      },
+      "affix": {
+        "result": "racisme"
+      }
+    },
+    {
+      "name": "lexicon_14156",
+      "flexion": "enterré",
+      "stem": "enterrer",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "enterrer"
+      },
+      "affix": {
+        "result": "enterrer"
+      }
+    },
+    {
+      "name": "lexicon_16178",
+      "flexion": "jalouse",
+      "stem": "jaloux",
+      "suffix_code": "2x",
+      "affix_code": "0/2x",
+      "suffix": {
+        "result": "jaloux"
+      },
+      "affix": {
+        "result": "jaloux"
+      }
+    },
+    {
+      "name": "lexicon_18200",
+      "flexion": "atteindra",
+      "stem": "atteindre",
+      "suffix_code": "1e",
+      "affix_code": "0/1e",
+      "suffix": {
+        "result": "atteindre"
+      },
+      "affix": {
+        "result": "atteindre"
+      }
+    },
+    {
+      "name": "lexicon_20223",
+      "flexion": "Bayeux",
+      "stem": "Bayeux",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "Bayeux"
+      },
+      "affix": {
+        "result": "Bayeux"
+      }
+    },
+    {
+      "name": "lexicon_22245",
+      "flexion": "reviens",
+      "stem": "revenir",
+      "suffix_code": "4enir",
+      "affix_code": "0/4enir",
+      "suffix": {
+        "result": "revenir"
+      },
+      "affix": {
+        "result": "revenir"
+      }
+    },
+    {
+      "name": "lexicon_24267",
+      "flexion": "accessibilité",
+      "stem": "accessibilité",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "accessibilité"
+      },
+      "affix": {
+        "result": "accessibilité"
+      }
+    },
+    {
+      "name": "lexicon_26290",
+      "flexion": "achète",
+      "stem": "acheter",
+      "suffix_code": "3eter",
+      "affix_code": "0/3eter",
+      "suffix": {
+        "result": "acheter"
+      },
+      "affix": {
+        "result": "acheter"
+      }
+    },
+    {
+      "name": "lexicon_28312",
+      "flexion": "napolitain",
+      "stem": "napolitain",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "napolitain"
+      },
+      "affix": {
+        "result": "napolitain"
+      }
+    },
+    {
+      "name": "lexicon_30334",
+      "flexion": "rayonner",
+      "stem": "rayonner",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "rayonner"
+      },
+      "affix": {
+        "result": "rayonner"
+      }
+    },
+    {
+      "name": "lexicon_32357",
+      "flexion": "multipliait",
+      "stem": "multiplier",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "multiplier"
+      },
+      "affix": {
+        "result": "multiplier"
+      }
+    },
+    {
+      "name": "lexicon_34379",
+      "flexion": "médiate",
+      "stem": "médiat",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "médiat"
+      },
+      "affix": {
+        "result": "médiat"
+      }
+    },
+    {
+      "name": "lexicon_36401",
+      "flexion": "hâtif",
+      "stem": "hâtif",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "hâtif"
+      },
+      "affix": {
+        "result": "hâtif"
+      }
+    },
+    {
+      "name": "lexicon_38424",
+      "flexion": "divagations",
+      "stem": "divagation",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "divagation"
+      },
+      "affix": {
+        "result": "divagation"
+      }
+    },
+    {
+      "name": "lexicon_40446",
+      "flexion": "troublant",
+      "stem": "troublant",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "troublant"
+      },
+      "affix": {
+        "result": "troublant"
+      }
+    },
+    {
+      "name": "lexicon_42468",
+      "flexion": "référentiels",
+      "stem": "référentiel",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "référentiel"
+      },
+      "affix": {
+        "result": "référentiel"
+      }
+    },
+    {
+      "name": "lexicon_44491",
+      "flexion": "colmatage",
+      "stem": "colmatage",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "colmatage"
+      },
+      "affix": {
+        "result": "colmatage"
+      }
+    },
+    {
+      "name": "lexicon_46513",
+      "flexion": "Bradley",
+      "stem": "Bradley",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "Bradley"
+      },
+      "affix": {
+        "result": "Bradley"
+      }
+    },
+    {
+      "name": "lexicon_48535",
+      "flexion": "papiste",
+      "stem": "papiste",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "papiste"
+      },
+      "affix": {
+        "result": "papiste"
+      }
+    },
+    {
+      "name": "lexicon_50558",
+      "flexion": "lubrifiant",
+      "stem": "lubrifiant",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "lubrifiant"
+      },
+      "affix": {
+        "result": "lubrifiant"
+      }
+    },
+    {
+      "name": "lexicon_52580",
+      "flexion": "mouchards",
+      "stem": "mouchard",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "mouchard"
+      },
+      "affix": {
+        "result": "mouchard"
+      }
+    },
+    {
+      "name": "lexicon_54602",
+      "flexion": "unira",
+      "stem": "unir",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "unir"
+      },
+      "affix": {
+        "result": "unir"
+      }
+    },
+    {
+      "name": "lexicon_56625",
+      "flexion": "pelé",
+      "stem": "peler",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "peler"
+      },
+      "affix": {
+        "result": "peler"
+      }
+    },
+    {
+      "name": "lexicon_58647",
+      "flexion": "perçois",
+      "stem": "percevoir",
+      "suffix_code": "4cevoir",
+      "affix_code": "0/4cevoir",
+      "suffix": {
+        "result": "percevoir"
+      },
+      "affix": {
+        "result": "percevoir"
+      }
+    },
+    {
+      "name": "lexicon_60669",
+      "flexion": "Lamentin",
+      "stem": "Lamentin",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "Lamentin"
+      },
+      "affix": {
+        "result": "Lamentin"
+      }
+    },
+    {
+      "name": "lexicon_62691",
+      "flexion": "attendrissante",
+      "stem": "attendrissant",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "attendrissant"
+      },
+      "affix": {
+        "result": "attendrissant"
+      }
+    },
+    {
+      "name": "lexicon_64714",
+      "flexion": "rejoignons",
+      "stem": "rejoindre",
+      "suffix_code": "5ndre",
+      "affix_code": "0/5ndre",
+      "suffix": {
+        "result": "rejoindre"
+      },
+      "affix": {
+        "result": "rejoindre"
+      }
+    },
+    {
+      "name": "lexicon_66736",
+      "flexion": "terrage",
+      "stem": "terrage",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "terrage"
+      },
+      "affix": {
+        "result": "terrage"
+      }
+    },
+    {
+      "name": "lexicon_68758",
+      "flexion": "exploitèrent",
+      "stem": "exploiter",
+      "suffix_code": "5er",
+      "affix_code": "0/5er",
+      "suffix": {
+        "result": "exploiter"
+      },
+      "affix": {
+        "result": "exploiter"
+      }
+    },
+    {
+      "name": "lexicon_70781",
+      "flexion": "entasse",
+      "stem": "entasser",
+      "suffix_code": "0r",
+      "affix_code": "0/0r",
+      "suffix": {
+        "result": "entasser"
+      },
+      "affix": {
+        "result": "entasser"
+      }
+    },
+    {
+      "name": "lexicon_72803",
+      "flexion": "charriait",
+      "stem": "charrier",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "charrier"
+      },
+      "affix": {
+        "result": "charrier"
+      }
+    },
+    {
+      "name": "lexicon_74825",
+      "flexion": "ensanglantèrent",
+      "stem": "ensanglanter",
+      "suffix_code": "5er",
+      "affix_code": "0/5er",
+      "suffix": {
+        "result": "ensanglanter"
+      },
+      "affix": {
+        "result": "ensanglanter"
+      }
+    },
+    {
+      "name": "lexicon_76848",
+      "flexion": "azoture",
+      "stem": "azoture",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "azoture"
+      },
+      "affix": {
+        "result": "azoture"
+      }
+    },
+    {
+      "name": "lexicon_78870",
+      "flexion": "phobiques",
+      "stem": "phobique",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "phobique"
+      },
+      "affix": {
+        "result": "phobique"
+      }
+    },
+    {
+      "name": "lexicon_80892",
+      "flexion": "gravifique",
+      "stem": "gravifique",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "gravifique"
+      },
+      "affix": {
+        "result": "gravifique"
+      }
+    },
+    {
+      "name": "lexicon_82915",
+      "flexion": "mandées",
+      "stem": "mander",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "mander"
+      },
+      "affix": {
+        "result": "mander"
+      }
+    },
+    {
+      "name": "lexicon_84937",
+      "flexion": "violeurs",
+      "stem": "violeur",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "violeur"
+      },
+      "affix": {
+        "result": "violeur"
+      }
+    },
+    {
+      "name": "lexicon_86959",
+      "flexion": "outragées",
+      "stem": "outragé",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "outragé"
+      },
+      "affix": {
+        "result": "outragé"
+      }
+    },
+    {
+      "name": "lexicon_88982",
+      "flexion": "tercer",
+      "stem": "tercer",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "tercer"
+      },
+      "affix": {
+        "result": "tercer"
+      }
+    },
+    {
+      "name": "lexicon_91004",
+      "flexion": "immodérément",
+      "stem": "immodérément",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "immodérément"
+      },
+      "affix": {
+        "result": "immodérément"
+      }
+    },
+    {
+      "name": "lexicon_93026",
+      "flexion": "conserveurs",
+      "stem": "conserveur",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "conserveur"
+      },
+      "affix": {
+        "result": "conserveur"
+      }
+    },
+    {
+      "name": "lexicon_95049",
+      "flexion": "bowling",
+      "stem": "bowling",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "bowling"
+      },
+      "affix": {
+        "result": "bowling"
+      }
+    },
+    {
+      "name": "lexicon_97071",
+      "flexion": "ignorerons",
+      "stem": "ignorer",
+      "suffix_code": "3",
+      "affix_code": "0/3",
+      "suffix": {
+        "result": "ignorer"
+      },
+      "affix": {
+        "result": "ignorer"
+      }
+    },
+    {
+      "name": "lexicon_99093",
+      "flexion": "hydrostatiques",
+      "stem": "hydrostatique",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "hydrostatique"
+      },
+      "affix": {
+        "result": "hydrostatique"
+      }
+    },
+    {
+      "name": "lexicon_101116",
+      "flexion": "focs",
+      "stem": "foc",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "foc"
+      },
+      "affix": {
+        "result": "foc"
+      }
+    },
+    {
+      "name": "lexicon_103138",
+      "flexion": "développez",
+      "stem": "développer",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "développer"
+      },
+      "affix": {
+        "result": "développer"
+      }
+    },
+    {
+      "name": "lexicon_105160",
+      "flexion": "respectes",
+      "stem": "respecter",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "respecter"
+      },
+      "affix": {
+        "result": "respecter"
+      }
+    },
+    {
+      "name": "lexicon_107183",
+      "flexion": "appareillèrent",
+      "stem": "appareiller",
+      "suffix_code": "5er",
+      "affix_code": "0/5er",
+      "suffix": {
+        "result": "appareiller"
+      },
+      "affix": {
+        "result": "appareiller"
+      }
+    },
+    {
+      "name": "lexicon_109205",
+      "flexion": "gerce",
+      "stem": "gerce",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "gerce"
+      },
+      "affix": {
+        "result": "gerce"
+      }
+    },
+    {
+      "name": "lexicon_111227",
+      "flexion": "téléphonerai",
+      "stem": "téléphoner",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "téléphoner"
+      },
+      "affix": {
+        "result": "téléphoner"
+      }
+    },
+    {
+      "name": "lexicon_113250",
+      "flexion": "émiettant",
+      "stem": "émietter",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "émietter"
+      },
+      "affix": {
+        "result": "émietter"
+      }
+    },
+    {
+      "name": "lexicon_115272",
+      "flexion": "dépeuplaient",
+      "stem": "dépeupler",
+      "suffix_code": "5er",
+      "affix_code": "0/5er",
+      "suffix": {
+        "result": "dépeupler"
+      },
+      "affix": {
+        "result": "dépeupler"
+      }
+    },
+    {
+      "name": "lexicon_117294",
+      "flexion": "dogmatise",
+      "stem": "dogmatiser",
+      "suffix_code": "0r",
+      "affix_code": "0/0r",
+      "suffix": {
+        "result": "dogmatiser"
+      },
+      "affix": {
+        "result": "dogmatiser"
+      }
+    },
+    {
+      "name": "lexicon_119316",
+      "flexion": "pagayer",
+      "stem": "pagayer",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "pagayer"
+      },
+      "affix": {
+        "result": "pagayer"
+      }
+    },
+    {
+      "name": "lexicon_121339",
+      "flexion": "minoratifs",
+      "stem": "minoratif",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "minoratif"
+      },
+      "affix": {
+        "result": "minoratif"
+      }
+    },
+    {
+      "name": "lexicon_123361",
+      "flexion": "évinça",
+      "stem": "évincer",
+      "suffix_code": "2cer",
+      "affix_code": "0/2cer",
+      "suffix": {
+        "result": "évincer"
+      },
+      "affix": {
+        "result": "évincer"
+      }
+    },
+    {
+      "name": "lexicon_125383",
+      "flexion": "digitaliques",
+      "stem": "digitalique",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "digitalique"
+      },
+      "affix": {
+        "result": "digitalique"
+      }
+    },
+    {
+      "name": "lexicon_127406",
+      "flexion": "traqué",
+      "stem": "traquer",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "traquer"
+      },
+      "affix": {
+        "result": "traquer"
+      }
+    },
+    {
+      "name": "lexicon_129428",
+      "flexion": "homopolaires",
+      "stem": "homopolaire",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "homopolaire"
+      },
+      "affix": {
+        "result": "homopolaire"
+      }
+    },
+    {
+      "name": "lexicon_131450",
+      "flexion": "talonnière",
+      "stem": "talonnière",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "talonnière"
+      },
+      "affix": {
+        "result": "talonnière"
+      }
+    },
+    {
+      "name": "lexicon_133473",
+      "flexion": "offusquant",
+      "stem": "offusquer",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "offusquer"
+      },
+      "affix": {
+        "result": "offusquer"
+      }
+    },
+    {
+      "name": "lexicon_135495",
+      "flexion": "nucléoside",
+      "stem": "nucléoside",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "nucléoside"
+      },
+      "affix": {
+        "result": "nucléoside"
+      }
+    },
+    {
+      "name": "lexicon_137517",
+      "flexion": "procuratrice",
+      "stem": "procurateur",
+      "suffix_code": "4eur",
+      "affix_code": "0/4eur",
+      "suffix": {
+        "result": "procurateur"
+      },
+      "affix": {
+        "result": "procurateur"
+      }
+    },
+    {
+      "name": "lexicon_139540",
+      "flexion": "trioléine",
+      "stem": "trioléine",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "trioléine"
+      },
+      "affix": {
+        "result": "trioléine"
+      }
+    },
+    {
+      "name": "lexicon_141562",
+      "flexion": "autofinancé",
+      "stem": "autofinancer",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "autofinancer"
+      },
+      "affix": {
+        "result": "autofinancer"
+      }
+    },
+    {
+      "name": "lexicon_143584",
+      "flexion": "imprimantes",
+      "stem": "imprimant",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "imprimant"
+      },
+      "affix": {
+        "result": "imprimant"
+      }
+    },
+    {
+      "name": "lexicon_145607",
+      "flexion": "rainée",
+      "stem": "rainer",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "rainer"
+      },
+      "affix": {
+        "result": "rainer"
+      }
+    },
+    {
+      "name": "lexicon_147629",
+      "flexion": "désocclusion",
+      "stem": "désocclusion",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "désocclusion"
+      },
+      "affix": {
+        "result": "désocclusion"
+      }
+    },
+    {
+      "name": "lexicon_149651",
+      "flexion": "neuropeptide",
+      "stem": "neuropeptide",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "neuropeptide"
+      },
+      "affix": {
+        "result": "neuropeptide"
+      }
+    },
+    {
+      "name": "lexicon_151674",
+      "flexion": "antieuropéen",
+      "stem": "antieuropéen",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "antieuropéen"
+      },
+      "affix": {
+        "result": "antieuropéen"
+      }
+    },
+    {
+      "name": "lexicon_153696",
+      "flexion": "quenottes",
+      "stem": "quenotte",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "quenotte"
+      },
+      "affix": {
+        "result": "quenotte"
+      }
+    },
+    {
+      "name": "lexicon_155718",
+      "flexion": "rouspète",
+      "stem": "rouspéter",
+      "suffix_code": "3éter",
+      "affix_code": "0/3éter",
+      "suffix": {
+        "result": "rouspéter"
+      },
+      "affix": {
+        "result": "rouspéter"
+      }
+    },
+    {
+      "name": "lexicon_157741",
+      "flexion": "infatuer",
+      "stem": "infatuer",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "infatuer"
+      },
+      "affix": {
+        "result": "infatuer"
+      }
+    },
+    {
+      "name": "lexicon_159763",
+      "flexion": "socioéducatives",
+      "stem": "socioéducatif",
+      "suffix_code": "3f",
+      "affix_code": "0/3f",
+      "suffix": {
+        "result": "socioéducatif"
+      },
+      "affix": {
+        "result": "socioéducatif"
+      }
+    },
+    {
+      "name": "lexicon_161785",
+      "flexion": "tapai",
+      "stem": "taper",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "taper"
+      },
+      "affix": {
+        "result": "taper"
+      }
+    },
+    {
+      "name": "lexicon_163808",
+      "flexion": "vintage",
+      "stem": "vintage",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "vintage"
+      },
+      "affix": {
+        "result": "vintage"
+      }
+    },
+    {
+      "name": "lexicon_165830",
+      "flexion": "réjouîmes",
+      "stem": "réjouir",
+      "suffix_code": "4ir",
+      "affix_code": "0/4ir",
+      "suffix": {
+        "result": "réjouir"
+      },
+      "affix": {
+        "result": "réjouir"
+      }
+    },
+    {
+      "name": "lexicon_167852",
+      "flexion": "fleurissantes",
+      "stem": "fleurissant",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "fleurissant"
+      },
+      "affix": {
+        "result": "fleurissant"
+      }
+    },
+    {
+      "name": "lexicon_169875",
+      "flexion": "flirta",
+      "stem": "flirter",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "flirter"
+      },
+      "affix": {
+        "result": "flirter"
+      }
+    },
+    {
+      "name": "lexicon_171897",
+      "flexion": "tuilées",
+      "stem": "tuiler",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "tuiler"
+      },
+      "affix": {
+        "result": "tuiler"
+      }
+    },
+    {
+      "name": "lexicon_173919",
+      "flexion": "échine",
+      "stem": "échiner",
+      "suffix_code": "0r",
+      "affix_code": "0/0r",
+      "suffix": {
+        "result": "échiner"
+      },
+      "affix": {
+        "result": "échiner"
+      }
+    },
+    {
+      "name": "lexicon_175941",
+      "flexion": "recoiffa",
+      "stem": "recoiffer",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "recoiffer"
+      },
+      "affix": {
+        "result": "recoiffer"
+      }
+    },
+    {
+      "name": "lexicon_177964",
+      "flexion": "suremballages",
+      "stem": "suremballage",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "suremballage"
+      },
+      "affix": {
+        "result": "suremballage"
+      }
+    },
+    {
+      "name": "lexicon_179986",
+      "flexion": "résonneraient",
+      "stem": "résonner",
+      "suffix_code": "5",
+      "affix_code": "0/5",
+      "suffix": {
+        "result": "résonner"
+      },
+      "affix": {
+        "result": "résonner"
+      }
+    },
+    {
+      "name": "lexicon_182008",
+      "flexion": "éclaircissez",
+      "stem": "éclaircir",
+      "suffix_code": "4r",
+      "affix_code": "0/4r",
+      "suffix": {
+        "result": "éclaircir"
+      },
+      "affix": {
+        "result": "éclaircir"
+      }
+    },
+    {
+      "name": "lexicon_184031",
+      "flexion": "bouchonnée",
+      "stem": "bouchonner",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "bouchonner"
+      },
+      "affix": {
+        "result": "bouchonner"
+      }
+    },
+    {
+      "name": "lexicon_186053",
+      "flexion": "lenticelle",
+      "stem": "lenticelle",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "lenticelle"
+      },
+      "affix": {
+        "result": "lenticelle"
+      }
+    },
+    {
+      "name": "lexicon_188075",
+      "flexion": "irénistes",
+      "stem": "iréniste",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "iréniste"
+      },
+      "affix": {
+        "result": "iréniste"
+      }
+    },
+    {
+      "name": "lexicon_190098",
+      "flexion": "mérisme",
+      "stem": "mérisme",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "mérisme"
+      },
+      "affix": {
+        "result": "mérisme"
+      }
+    },
+    {
+      "name": "lexicon_192120",
+      "flexion": "hésiteras",
+      "stem": "hésiter",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "hésiter"
+      },
+      "affix": {
+        "result": "hésiter"
+      }
+    },
+    {
+      "name": "lexicon_194142",
+      "flexion": "supputions",
+      "stem": "supputer",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "supputer"
+      },
+      "affix": {
+        "result": "supputer"
+      }
+    },
+    {
+      "name": "lexicon_196165",
+      "flexion": "transbordaient",
+      "stem": "transborder",
+      "suffix_code": "5er",
+      "affix_code": "0/5er",
+      "suffix": {
+        "result": "transborder"
+      },
+      "affix": {
+        "result": "transborder"
+      }
+    },
+    {
+      "name": "lexicon_198187",
+      "flexion": "défaillît",
+      "stem": "défaillir",
+      "suffix_code": "2ir",
+      "affix_code": "0/2ir",
+      "suffix": {
+        "result": "défaillir"
+      },
+      "affix": {
+        "result": "défaillir"
+      }
+    },
+    {
+      "name": "lexicon_200209",
+      "flexion": "orthocentrique",
+      "stem": "orthocentrique",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "orthocentrique"
+      },
+      "affix": {
+        "result": "orthocentrique"
+      }
+    },
+    {
+      "name": "lexicon_202232",
+      "flexion": "déculotte",
+      "stem": "déculotter",
+      "suffix_code": "0r",
+      "affix_code": "0/0r",
+      "suffix": {
+        "result": "déculotter"
+      },
+      "affix": {
+        "result": "déculotter"
+      }
+    },
+    {
+      "name": "lexicon_204254",
+      "flexion": "immatérialise",
+      "stem": "immatérialiser",
+      "suffix_code": "0r",
+      "affix_code": "0/0r",
+      "suffix": {
+        "result": "immatérialiser"
+      },
+      "affix": {
+        "result": "immatérialiser"
+      }
+    },
+    {
+      "name": "lexicon_206276",
+      "flexion": "capotent",
+      "stem": "capoter",
+      "suffix_code": "2r",
+      "affix_code": "0/2r",
+      "suffix": {
+        "result": "capoter"
+      },
+      "affix": {
+        "result": "capoter"
+      }
+    },
+    {
+      "name": "lexicon_208299",
+      "flexion": "émigrons",
+      "stem": "émigrer",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "émigrer"
+      },
+      "affix": {
+        "result": "émigrer"
+      }
+    },
+    {
+      "name": "lexicon_210321",
+      "flexion": "réimputées",
+      "stem": "réimputer",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "réimputer"
+      },
+      "affix": {
+        "result": "réimputer"
+      }
+    },
+    {
+      "name": "lexicon_212343",
+      "flexion": "dénombrai",
+      "stem": "dénombrer",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "dénombrer"
+      },
+      "affix": {
+        "result": "dénombrer"
+      }
+    },
+    {
+      "name": "lexicon_214366",
+      "flexion": "consonant",
+      "stem": "consoner",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "consoner"
+      },
+      "affix": {
+        "result": "consoner"
+      }
+    },
+    {
+      "name": "lexicon_216388",
+      "flexion": "éthylotests",
+      "stem": "éthylotest",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "éthylotest"
+      },
+      "affix": {
+        "result": "éthylotest"
+      }
+    },
+    {
+      "name": "lexicon_218410",
+      "flexion": "voûtez",
+      "stem": "voûter",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "voûter"
+      },
+      "affix": {
+        "result": "voûter"
+      }
+    },
+    {
+      "name": "lexicon_220433",
+      "flexion": "crêpière",
+      "stem": "crêpier",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "crêpier"
+      },
+      "affix": {
+        "result": "crêpier"
+      }
+    },
+    {
+      "name": "lexicon_222455",
+      "flexion": "visualisiez",
+      "stem": "visualiser",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "visualiser"
+      },
+      "affix": {
+        "result": "visualiser"
+      }
+    },
+    {
+      "name": "lexicon_224477",
+      "flexion": "rôdez",
+      "stem": "rôder",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "rôder"
+      },
+      "affix": {
+        "result": "rôder"
+      }
+    },
+    {
+      "name": "lexicon_226500",
+      "flexion": "grignotions",
+      "stem": "grignoter",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "grignoter"
+      },
+      "affix": {
+        "result": "grignoter"
+      }
+    },
+    {
+      "name": "lexicon_228522",
+      "flexion": "modériez",
+      "stem": "modérer",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "modérer"
+      },
+      "affix": {
+        "result": "modérer"
+      }
+    },
+    {
+      "name": "lexicon_230544",
+      "flexion": "déconseilleraient",
+      "stem": "déconseiller",
+      "suffix_code": "5",
+      "affix_code": "0/5",
+      "suffix": {
+        "result": "déconseiller"
+      },
+      "affix": {
+        "result": "déconseiller"
+      }
+    },
+    {
+      "name": "lexicon_232566",
+      "flexion": "goudou",
+      "stem": "goudou",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "goudou"
+      },
+      "affix": {
+        "result": "goudou"
+      }
+    },
+    {
+      "name": "lexicon_234589",
+      "flexion": "contrecharge",
+      "stem": "contrecharge",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "contrecharge"
+      },
+      "affix": {
+        "result": "contrecharge"
+      }
+    },
+    {
+      "name": "lexicon_236611",
+      "flexion": "antijeune",
+      "stem": "antijeune",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "antijeune"
+      },
+      "affix": {
+        "result": "antijeune"
+      }
+    },
+    {
+      "name": "lexicon_238633",
+      "flexion": "tortillez",
+      "stem": "tortiller",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "tortiller"
+      },
+      "affix": {
+        "result": "tortiller"
+      }
+    },
+    {
+      "name": "lexicon_240656",
+      "flexion": "frimes",
+      "stem": "frimer",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "frimer"
+      },
+      "affix": {
+        "result": "frimer"
+      }
+    },
+    {
+      "name": "lexicon_242678",
+      "flexion": "écureuse",
+      "stem": "écureur",
+      "suffix_code": "2r",
+      "affix_code": "0/2r",
+      "suffix": {
+        "result": "écureur"
+      },
+      "affix": {
+        "result": "écureur"
+      }
+    },
+    {
+      "name": "lexicon_244700",
+      "flexion": "suspecterais",
+      "stem": "suspecter",
+      "suffix_code": "3",
+      "affix_code": "0/3",
+      "suffix": {
+        "result": "suspecter"
+      },
+      "affix": {
+        "result": "suspecter"
+      }
+    },
+    {
+      "name": "lexicon_246723",
+      "flexion": "soûlot",
+      "stem": "soûlot",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "soûlot"
+      },
+      "affix": {
+        "result": "soûlot"
+      }
+    },
+    {
+      "name": "lexicon_248745",
+      "flexion": "joueries",
+      "stem": "jouerie",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "jouerie"
+      },
+      "affix": {
+        "result": "jouerie"
+      }
+    },
+    {
+      "name": "lexicon_250767",
+      "flexion": "transfigurons",
+      "stem": "transfigurer",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "transfigurer"
+      },
+      "affix": {
+        "result": "transfigurer"
+      }
+    },
+    {
+      "name": "lexicon_252790",
+      "flexion": "consolidiez",
+      "stem": "consolider",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "consolider"
+      },
+      "affix": {
+        "result": "consolider"
+      }
+    },
+    {
+      "name": "lexicon_254812",
+      "flexion": "accentuerions",
+      "stem": "accentuer",
+      "suffix_code": "4",
+      "affix_code": "0/4",
+      "suffix": {
+        "result": "accentuer"
+      },
+      "affix": {
+        "result": "accentuer"
+      }
+    },
+    {
+      "name": "lexicon_256834",
+      "flexion": "lycope",
+      "stem": "lycope",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "lycope"
+      },
+      "affix": {
+        "result": "lycope"
+      }
+    },
+    {
+      "name": "lexicon_258857",
+      "flexion": "élégies",
+      "stem": "élégir",
+      "suffix_code": "2r",
+      "affix_code": "0/2r",
+      "suffix": {
+        "result": "élégir"
+      },
+      "affix": {
+        "result": "élégir"
+      }
+    },
+    {
+      "name": "lexicon_260879",
+      "flexion": "médicamentez",
+      "stem": "médicamenter",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "médicamenter"
+      },
+      "affix": {
+        "result": "médicamenter"
+      }
+    },
+    {
+      "name": "lexicon_262901",
+      "flexion": "allouassent",
+      "stem": "allouer",
+      "suffix_code": "6er",
+      "affix_code": "0/6er",
+      "suffix": {
+        "result": "allouer"
+      },
+      "affix": {
+        "result": "allouer"
+      }
+    },
+    {
+      "name": "lexicon_264924",
+      "flexion": "agacions",
+      "stem": "agacer",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "agacer"
+      },
+      "affix": {
+        "result": "agacer"
+      }
+    },
+    {
+      "name": "lexicon_266946",
+      "flexion": "extroverties",
+      "stem": "extroverti",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "extroverti"
+      },
+      "affix": {
+        "result": "extroverti"
+      }
+    },
+    {
+      "name": "lexicon_268968",
+      "flexion": "bagarrez",
+      "stem": "bagarrer",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "bagarrer"
+      },
+      "affix": {
+        "result": "bagarrer"
+      }
+    },
+    {
+      "name": "lexicon_270991",
+      "flexion": "assourdiraient",
+      "stem": "assourdir",
+      "suffix_code": "5",
+      "affix_code": "0/5",
+      "suffix": {
+        "result": "assourdir"
+      },
+      "affix": {
+        "result": "assourdir"
+      }
+    },
+    {
+      "name": "lexicon_273013",
+      "flexion": "giflas",
+      "stem": "gifler",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "gifler"
+      },
+      "affix": {
+        "result": "gifler"
+      }
+    },
+    {
+      "name": "lexicon_275035",
+      "flexion": "moulurent",
+      "stem": "moulurer",
+      "suffix_code": "2r",
+      "affix_code": "0/2r",
+      "suffix": {
+        "result": "moulurer"
+      },
+      "affix": {
+        "result": "moulurer"
+      }
+    },
+    {
+      "name": "lexicon_277058",
+      "flexion": "chapelle",
+      "stem": "chapeler",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "chapeler"
+      },
+      "affix": {
+        "result": "chapeler"
+      }
+    },
+    {
+      "name": "lexicon_279080",
+      "flexion": "téléassistant",
+      "stem": "téléassistant",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "téléassistant"
+      },
+      "affix": {
+        "result": "téléassistant"
+      }
+    },
+    {
+      "name": "lexicon_281102",
+      "flexion": "étrillâmes",
+      "stem": "étriller",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "étriller"
+      },
+      "affix": {
+        "result": "étriller"
+      }
+    },
+    {
+      "name": "lexicon_283125",
+      "flexion": "caillette",
+      "stem": "cailleter",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "cailleter"
+      },
+      "affix": {
+        "result": "cailleter"
+      }
+    },
+    {
+      "name": "lexicon_285147",
+      "flexion": "cuirasseront",
+      "stem": "cuirasser",
+      "suffix_code": "3",
+      "affix_code": "0/3",
+      "suffix": {
+        "result": "cuirasser"
+      },
+      "affix": {
+        "result": "cuirasser"
+      }
+    },
+    {
+      "name": "lexicon_287169",
+      "flexion": "Bas-Jura",
+      "stem": "Bas-Jura",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "Bas-Jura"
+      },
+      "affix": {
+        "result": "Bas-Jura"
+      }
+    },
+    {
+      "name": "lexicon_289191",
+      "flexion": "désobligeais",
+      "stem": "désobliger",
+      "suffix_code": "3r",
+      "affix_code": "0/3r",
+      "suffix": {
+        "result": "désobliger"
+      },
+      "affix": {
+        "result": "désobliger"
+      }
+    },
+    {
+      "name": "lexicon_291214",
+      "flexion": "plussoyant",
+      "stem": "plussoyer",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "plussoyer"
+      },
+      "affix": {
+        "result": "plussoyer"
+      }
+    },
+    {
+      "name": "lexicon_293236",
+      "flexion": "étoupent",
+      "stem": "étouper",
+      "suffix_code": "2r",
+      "affix_code": "0/2r",
+      "suffix": {
+        "result": "étouper"
+      },
+      "affix": {
+        "result": "étouper"
+      }
+    },
+    {
+      "name": "lexicon_295258",
+      "flexion": "calculassions",
+      "stem": "calculer",
+      "suffix_code": "7er",
+      "affix_code": "0/7er",
+      "suffix": {
+        "result": "calculer"
+      },
+      "affix": {
+        "result": "calculer"
+      }
+    },
+    {
+      "name": "lexicon_297281",
+      "flexion": "décommandons",
+      "stem": "décommander",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "décommander"
+      },
+      "affix": {
+        "result": "décommander"
+      }
+    },
+    {
+      "name": "lexicon_299303",
+      "flexion": "fadée",
+      "stem": "fader",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "fader"
+      },
+      "affix": {
+        "result": "fader"
+      }
+    },
+    {
+      "name": "lexicon_301325",
+      "flexion": "macadamisons",
+      "stem": "macadamiser",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "macadamiser"
+      },
+      "affix": {
+        "result": "macadamiser"
+      }
+    },
+    {
+      "name": "lexicon_303348",
+      "flexion": "quetté",
+      "stem": "quetter",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "quetter"
+      },
+      "affix": {
+        "result": "quetter"
+      }
+    },
+    {
+      "name": "lexicon_305370",
+      "flexion": "solfiez",
+      "stem": "solfier",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "solfier"
+      },
+      "affix": {
+        "result": "solfier"
+      }
+    },
+    {
+      "name": "lexicon_307392",
+      "flexion": "épouvantâmes",
+      "stem": "épouvanter",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "épouvanter"
+      },
+      "affix": {
+        "result": "épouvanter"
+      }
+    },
+    {
+      "name": "lexicon_309415",
+      "flexion": "UF₆",
+      "stem": "UF₆",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "UF₆"
+      },
+      "affix": {
+        "result": "UF₆"
+      }
+    },
+    {
+      "name": "lexicon_311437",
+      "flexion": "achalè",
+      "stem": "achaler",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "achaler"
+      },
+      "affix": {
+        "result": "achaler"
+      }
+    },
+    {
+      "name": "lexicon_313459",
+      "flexion": "agglutinassiez",
+      "stem": "agglutiner",
+      "suffix_code": "6er",
+      "affix_code": "0/6er",
+      "suffix": {
+        "result": "agglutiner"
+      },
+      "affix": {
+        "result": "agglutiner"
+      }
+    },
+    {
+      "name": "lexicon_315482",
+      "flexion": "amincissions",
+      "stem": "amincir",
+      "suffix_code": "6r",
+      "affix_code": "0/6r",
+      "suffix": {
+        "result": "amincir"
+      },
+      "affix": {
+        "result": "amincir"
+      }
+    },
+    {
+      "name": "lexicon_317504",
+      "flexion": "appairassions",
+      "stem": "appairer",
+      "suffix_code": "7er",
+      "affix_code": "0/7er",
+      "suffix": {
+        "result": "appairer"
+      },
+      "affix": {
+        "result": "appairer"
+      }
+    },
+    {
+      "name": "lexicon_319526",
+      "flexion": "assertasses",
+      "stem": "asserter",
+      "suffix_code": "5er",
+      "affix_code": "0/5er",
+      "suffix": {
+        "result": "asserter"
+      },
+      "affix": {
+        "result": "asserter"
+      }
+    },
+    {
+      "name": "lexicon_321549",
+      "flexion": "avitailleriez",
+      "stem": "avitailler",
+      "suffix_code": "3",
+      "affix_code": "0/3",
+      "suffix": {
+        "result": "avitailler"
+      },
+      "affix": {
+        "result": "avitailler"
+      }
+    },
+    {
+      "name": "lexicon_323571",
+      "flexion": "baresthésies",
+      "stem": "baresthésie",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "baresthésie"
+      },
+      "affix": {
+        "result": "baresthésie"
+      }
+    },
+    {
+      "name": "lexicon_325593",
+      "flexion": "billassions",
+      "stem": "biller",
+      "suffix_code": "7er",
+      "affix_code": "0/7er",
+      "suffix": {
+        "result": "biller"
+      },
+      "affix": {
+        "result": "biller"
+      }
+    },
+    {
+      "name": "lexicon_327616",
+      "flexion": "bolchévisez",
+      "stem": "bolchéviser",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "bolchéviser"
+      },
+      "affix": {
+        "result": "bolchéviser"
+      }
+    },
+    {
+      "name": "lexicon_329638",
+      "flexion": "brancardez",
+      "stem": "brancarder",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "brancarder"
+      },
+      "affix": {
+        "result": "brancarder"
+      }
+    },
+    {
+      "name": "lexicon_331660",
+      "flexion": "burineras",
+      "stem": "buriner",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "buriner"
+      },
+      "affix": {
+        "result": "buriner"
+      }
+    },
+    {
+      "name": "lexicon_333683",
+      "flexion": "caillouteras",
+      "stem": "caillouter",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "caillouter"
+      },
+      "affix": {
+        "result": "caillouter"
+      }
+    },
+    {
+      "name": "lexicon_335705",
+      "flexion": "carambolerai",
+      "stem": "caramboler",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "caramboler"
+      },
+      "affix": {
+        "result": "caramboler"
+      }
+    },
+    {
+      "name": "lexicon_337727",
+      "flexion": "chahutât",
+      "stem": "chahuter",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "chahuter"
+      },
+      "affix": {
+        "result": "chahuter"
+      }
+    },
+    {
+      "name": "lexicon_339750",
+      "flexion": "chicottasses",
+      "stem": "chicotter",
+      "suffix_code": "5er",
+      "affix_code": "0/5er",
+      "suffix": {
+        "result": "chicotter"
+      },
+      "affix": {
+        "result": "chicotter"
+      }
+    },
+    {
+      "name": "lexicon_341772",
+      "flexion": "clampserai",
+      "stem": "clampser",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "clampser"
+      },
+      "affix": {
+        "result": "clampser"
+      }
+    },
+    {
+      "name": "lexicon_343794",
+      "flexion": "coencadrerions",
+      "stem": "coencadrer",
+      "suffix_code": "4",
+      "affix_code": "0/4",
+      "suffix": {
+        "result": "coencadrer"
+      },
+      "affix": {
+        "result": "coencadrer"
+      }
+    },
+    {
+      "name": "lexicon_345816",
+      "flexion": "concélébreraient",
+      "stem": "concélébrer",
+      "suffix_code": "5",
+      "affix_code": "0/5",
+      "suffix": {
+        "result": "concélébrer"
+      },
+      "affix": {
+        "result": "concélébrer"
+      }
+    },
+    {
+      "name": "lexicon_347839",
+      "flexion": "contrebraqueront",
+      "stem": "contrebraquer",
+      "suffix_code": "3",
+      "affix_code": "0/3",
+      "suffix": {
+        "result": "contrebraquer"
+      },
+      "affix": {
+        "result": "contrebraquer"
+      }
+    },
+    {
+      "name": "lexicon_349861",
+      "flexion": "corporiserai",
+      "stem": "corporiser",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "corporiser"
+      },
+      "affix": {
+        "result": "corporiser"
+      }
+    },
+    {
+      "name": "lexicon_351883",
+      "flexion": "crasserions",
+      "stem": "crasser",
+      "suffix_code": "4",
+      "affix_code": "0/4",
+      "suffix": {
+        "result": "crasser"
+      },
+      "affix": {
+        "result": "crasser"
+      }
+    },
+    {
+      "name": "lexicon_353906",
+      "flexion": "cyanosassions",
+      "stem": "cyanoser",
+      "suffix_code": "7er",
+      "affix_code": "0/7er",
+      "suffix": {
+        "result": "cyanoser"
+      },
+      "affix": {
+        "result": "cyanoser"
+      }
+    },
+    {
+      "name": "lexicon_355928",
+      "flexion": "diaphragmâtes",
+      "stem": "diaphragmer",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "diaphragmer"
+      },
+      "affix": {
+        "result": "diaphragmer"
+      }
+    },
+    {
+      "name": "lexicon_357950",
+      "flexion": "doublonnasse",
+      "stem": "doublonner",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "doublonner"
+      },
+      "affix": {
+        "result": "doublonner"
+      }
+    },
+    {
+      "name": "lexicon_359973",
+      "flexion": "déboude",
+      "stem": "débouder",
+      "suffix_code": "0r",
+      "affix_code": "0/0r",
+      "suffix": {
+        "result": "débouder"
+      },
+      "affix": {
+        "result": "débouder"
+      }
+    },
+    {
+      "name": "lexicon_361995",
+      "flexion": "décauser",
+      "stem": "décauser",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "décauser"
+      },
+      "affix": {
+        "result": "décauser"
+      }
+    },
+    {
+      "name": "lexicon_364017",
+      "flexion": "décomplexifiés",
+      "stem": "décomplexifier",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "décomplexifier"
+      },
+      "affix": {
+        "result": "décomplexifier"
+      }
+    },
+    {
+      "name": "lexicon_366040",
+      "flexion": "déculturerons",
+      "stem": "déculturer",
+      "suffix_code": "3",
+      "affix_code": "0/3",
+      "suffix": {
+        "result": "déculturer"
+      },
+      "affix": {
+        "result": "déculturer"
+      }
+    },
+    {
+      "name": "lexicon_368062",
+      "flexion": "défruitâtes",
+      "stem": "défruiter",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "défruiter"
+      },
+      "affix": {
+        "result": "défruiter"
+      }
+    },
+    {
+      "name": "lexicon_370084",
+      "flexion": "déjetons",
+      "stem": "déjeter",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "déjeter"
+      },
+      "affix": {
+        "result": "déjeter"
+      }
+    },
+    {
+      "name": "lexicon_372107",
+      "flexion": "démocratisè",
+      "stem": "démocratiser",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "démocratiser"
+      },
+      "affix": {
+        "result": "démocratiser"
+      }
+    },
+    {
+      "name": "lexicon_374129",
+      "flexion": "déparasse",
+      "stem": "déparer",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "déparer"
+      },
+      "affix": {
+        "result": "déparer"
+      }
+    },
+    {
+      "name": "lexicon_376151",
+      "flexion": "déqualifiez",
+      "stem": "déqualifier",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "déqualifier"
+      },
+      "affix": {
+        "result": "déqualifier"
+      }
+    },
+    {
+      "name": "lexicon_378174",
+      "flexion": "désambiguïsassions",
+      "stem": "désambiguïser",
+      "suffix_code": "7er",
+      "affix_code": "0/7er",
+      "suffix": {
+        "result": "désambiguïser"
+      },
+      "affix": {
+        "result": "désambiguïser"
+      }
+    },
+    {
+      "name": "lexicon_380196",
+      "flexion": "désendoctrine",
+      "stem": "désendoctriner",
+      "suffix_code": "0r",
+      "affix_code": "0/0r",
+      "suffix": {
+        "result": "désendoctriner"
+      },
+      "affix": {
+        "result": "désendoctriner"
+      }
+    },
+    {
+      "name": "lexicon_382218",
+      "flexion": "désinformera",
+      "stem": "désinformer",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "désinformer"
+      },
+      "affix": {
+        "result": "désinformer"
+      }
+    },
+    {
+      "name": "lexicon_384241",
+      "flexion": "déteindrons",
+      "stem": "déteindre",
+      "suffix_code": "3e",
+      "affix_code": "0/3e",
+      "suffix": {
+        "result": "déteindre"
+      },
+      "affix": {
+        "result": "déteindre"
+      }
+    },
+    {
+      "name": "lexicon_386263",
+      "flexion": "effleurît",
+      "stem": "effleurir",
+      "suffix_code": "2ir",
+      "affix_code": "0/2ir",
+      "suffix": {
+        "result": "effleurir"
+      },
+      "affix": {
+        "result": "effleurir"
+      }
+    },
+    {
+      "name": "lexicon_388285",
+      "flexion": "emmitonnez",
+      "stem": "emmitonner",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "emmitonner"
+      },
+      "affix": {
+        "result": "emmitonner"
+      }
+    },
+    {
+      "name": "lexicon_390308",
+      "flexion": "encartonna",
+      "stem": "encartonner",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "encartonner"
+      },
+      "affix": {
+        "result": "encartonner"
+      }
+    },
+    {
+      "name": "lexicon_392330",
+      "flexion": "enfirouapasse",
+      "stem": "enfirouaper",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "enfirouaper"
+      },
+      "affix": {
+        "result": "enfirouaper"
+      }
+    },
+    {
+      "name": "lexicon_394352",
+      "flexion": "enracinâtes",
+      "stem": "enraciner",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "enraciner"
+      },
+      "affix": {
+        "result": "enraciner"
+      }
+    },
+    {
+      "name": "lexicon_396375",
+      "flexion": "entrehaïes",
+      "stem": "entrehaïr",
+      "suffix_code": "2r",
+      "affix_code": "0/2r",
+      "suffix": {
+        "result": "entrehaïr"
+      },
+      "affix": {
+        "result": "entrehaïr"
+      }
+    },
+    {
+      "name": "lexicon_398397",
+      "flexion": "essencière",
+      "stem": "essencier",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "essencier"
+      },
+      "affix": {
+        "result": "essencier"
+      }
+    },
+    {
+      "name": "lexicon_400419",
+      "flexion": "extrudiez",
+      "stem": "extruder",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "extruder"
+      },
+      "affix": {
+        "result": "extruder"
+      }
+    },
+    {
+      "name": "lexicon_402441",
+      "flexion": "ficèleras",
+      "stem": "ficeler",
+      "suffix_code": "6eler",
+      "affix_code": "0/6eler",
+      "suffix": {
+        "result": "ficeler"
+      },
+      "affix": {
+        "result": "ficeler"
+      }
+    },
+    {
+      "name": "lexicon_404464",
+      "flexion": "fonctionnarisons",
+      "stem": "fonctionnariser",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "fonctionnariser"
+      },
+      "affix": {
+        "result": "fonctionnariser"
+      }
+    },
+    {
+      "name": "lexicon_406486",
+      "flexion": "frondè",
+      "stem": "fronder",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "fronder"
+      },
+      "affix": {
+        "result": "fronder"
+      }
+    },
+    {
+      "name": "lexicon_408508",
+      "flexion": "gazonnassent",
+      "stem": "gazonner",
+      "suffix_code": "6er",
+      "affix_code": "0/6er",
+      "suffix": {
+        "result": "gazonner"
+      },
+      "affix": {
+        "result": "gazonner"
+      }
+    },
+    {
+      "name": "lexicon_410531",
+      "flexion": "gougeais",
+      "stem": "gouger",
+      "suffix_code": "3r",
+      "affix_code": "0/3r",
+      "suffix": {
+        "result": "gouger"
+      },
+      "affix": {
+        "result": "gouger"
+      }
+    },
+    {
+      "name": "lexicon_412553",
+      "flexion": "grumelè",
+      "stem": "grumeler",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "grumeler"
+      },
+      "affix": {
+        "result": "grumeler"
+      }
+    },
+    {
+      "name": "lexicon_414575",
+      "flexion": "heptathlonien",
+      "stem": "heptathlonien",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "heptathlonien"
+      },
+      "affix": {
+        "result": "heptathlonien"
+      }
+    },
+    {
+      "name": "lexicon_416598",
+      "flexion": "hébétassent",
+      "stem": "hébéter",
+      "suffix_code": "6er",
+      "affix_code": "0/6er",
+      "suffix": {
+        "result": "hébéter"
+      },
+      "affix": {
+        "result": "hébéter"
+      }
+    },
+    {
+      "name": "lexicon_418620",
+      "flexion": "infirmâmes",
+      "stem": "infirmer",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "infirmer"
+      },
+      "affix": {
+        "result": "infirmer"
+      }
+    },
+    {
+      "name": "lexicon_420642",
+      "flexion": "invalidè",
+      "stem": "invalider",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "invalider"
+      },
+      "affix": {
+        "result": "invalider"
+      }
+    },
+    {
+      "name": "lexicon_422665",
+      "flexion": "juponnasses",
+      "stem": "juponner",
+      "suffix_code": "5er",
+      "affix_code": "0/5er",
+      "suffix": {
+        "result": "juponner"
+      },
+      "affix": {
+        "result": "juponner"
+      }
+    },
+    {
+      "name": "lexicon_424687",
+      "flexion": "lignifiiez",
+      "stem": "lignifier",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "lignifier"
+      },
+      "affix": {
+        "result": "lignifier"
+      }
+    },
+    {
+      "name": "lexicon_426709",
+      "flexion": "machicotasse",
+      "stem": "machicoter",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "machicoter"
+      },
+      "affix": {
+        "result": "machicoter"
+      }
+    },
+    {
+      "name": "lexicon_428732",
+      "flexion": "marginerai",
+      "stem": "marginer",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "marginer"
+      },
+      "affix": {
+        "result": "marginer"
+      }
+    },
+    {
+      "name": "lexicon_430754",
+      "flexion": "microfonction",
+      "stem": "microfonction",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "microfonction"
+      },
+      "affix": {
+        "result": "microfonction"
+      }
+    },
+    {
+      "name": "lexicon_432776",
+      "flexion": "morflât",
+      "stem": "morfler",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "morfler"
+      },
+      "affix": {
+        "result": "morfler"
+      }
+    },
+    {
+      "name": "lexicon_434799",
+      "flexion": "médaillâmes",
+      "stem": "médailler",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "médailler"
+      },
+      "affix": {
+        "result": "médailler"
+      }
+    },
+    {
+      "name": "lexicon_436821",
+      "flexion": "nitraterons",
+      "stem": "nitrater",
+      "suffix_code": "3",
+      "affix_code": "0/3",
+      "suffix": {
+        "result": "nitrater"
+      },
+      "affix": {
+        "result": "nitrater"
+      }
+    },
+    {
+      "name": "lexicon_438843",
+      "flexion": "opacifierez",
+      "stem": "opacifier",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "opacifier"
+      },
+      "affix": {
+        "result": "opacifier"
+      }
+    },
+    {
+      "name": "lexicon_440866",
+      "flexion": "paissèles",
+      "stem": "paisseler",
+      "suffix_code": "4eler",
+      "affix_code": "0/4eler",
+      "suffix": {
+        "result": "paisseler"
+      },
+      "affix": {
+        "result": "paisseler"
+      }
+    },
+    {
+      "name": "lexicon_442888",
+      "flexion": "parsions",
+      "stem": "parser",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "parser"
+      },
+      "affix": {
+        "result": "parser"
+      }
+    },
+    {
+      "name": "lexicon_444910",
+      "flexion": "perturbasses",
+      "stem": "perturber",
+      "suffix_code": "5er",
+      "affix_code": "0/5er",
+      "suffix": {
+        "result": "perturber"
+      },
+      "affix": {
+        "result": "perturber"
+      }
+    },
+    {
+      "name": "lexicon_446933",
+      "flexion": "pistolages",
+      "stem": "pistolage",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "pistolage"
+      },
+      "affix": {
+        "result": "pistolage"
+      }
+    },
+    {
+      "name": "lexicon_448955",
+      "flexion": "polypropènes",
+      "stem": "polypropène",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "polypropène"
+      },
+      "affix": {
+        "result": "polypropène"
+      }
+    },
+    {
+      "name": "lexicon_450977",
+      "flexion": "proscéniums",
+      "stem": "proscénium",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "proscénium"
+      },
+      "affix": {
+        "result": "proscénium"
+      }
+    },
+    {
+      "name": "lexicon_453000",
+      "flexion": "psalmodierions",
+      "stem": "psalmodier",
+      "suffix_code": "4",
+      "affix_code": "0/4",
+      "suffix": {
+        "result": "psalmodier"
+      },
+      "affix": {
+        "result": "psalmodier"
+      }
+    },
+    {
+      "name": "lexicon_455022",
+      "flexion": "rabibocha",
+      "stem": "rabibocher",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "rabibocher"
+      },
+      "affix": {
+        "result": "rabibocher"
+      }
+    },
+    {
+      "name": "lexicon_457044",
+      "flexion": "ramastiquez",
+      "stem": "ramastiquer",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "ramastiquer"
+      },
+      "affix": {
+        "result": "ramastiquer"
+      }
+    },
+    {
+      "name": "lexicon_459066",
+      "flexion": "rebifferas",
+      "stem": "rebiffer",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "rebiffer"
+      },
+      "affix": {
+        "result": "rebiffer"
+      }
+    },
+    {
+      "name": "lexicon_461089",
+      "flexion": "reconfirmeras",
+      "stem": "reconfirmer",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "reconfirmer"
+      },
+      "affix": {
+        "result": "reconfirmer"
+      }
+    },
+    {
+      "name": "lexicon_463111",
+      "flexion": "reficelons",
+      "stem": "reficeler",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "reficeler"
+      },
+      "affix": {
+        "result": "reficeler"
+      }
+    },
+    {
+      "name": "lexicon_465133",
+      "flexion": "remboitâtes",
+      "stem": "remboiter",
+      "suffix_code": "4er",
+      "affix_code": "0/4er",
+      "suffix": {
+        "result": "remboiter"
+      },
+      "affix": {
+        "result": "remboiter"
+      }
+    },
+    {
+      "name": "lexicon_467156",
+      "flexion": "rengracie",
+      "stem": "rengracier",
+      "suffix_code": "0r",
+      "affix_code": "0/0r",
+      "suffix": {
+        "result": "rengracier"
+      },
+      "affix": {
+        "result": "rengracier"
+      }
+    },
+    {
+      "name": "lexicon_469178",
+      "flexion": "resalisse",
+      "stem": "resalir",
+      "suffix_code": "3r",
+      "affix_code": "0/3r",
+      "suffix": {
+        "result": "resalir"
+      },
+      "affix": {
+        "result": "resalir"
+      }
+    },
+    {
+      "name": "lexicon_471200",
+      "flexion": "reverrouillât",
+      "stem": "reverrouiller",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "reverrouiller"
+      },
+      "affix": {
+        "result": "reverrouiller"
+      }
+    },
+    {
+      "name": "lexicon_473223",
+      "flexion": "rouloterai",
+      "stem": "rouloter",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "rouloter"
+      },
+      "affix": {
+        "result": "rouloter"
+      }
+    },
+    {
+      "name": "lexicon_475245",
+      "flexion": "réassurerais",
+      "stem": "réassurer",
+      "suffix_code": "3",
+      "affix_code": "0/3",
+      "suffix": {
+        "result": "réassurer"
+      },
+      "affix": {
+        "result": "réassurer"
+      }
+    },
+    {
+      "name": "lexicon_477267",
+      "flexion": "réincorporons",
+      "stem": "réincorporer",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "réincorporer"
+      },
+      "affix": {
+        "result": "réincorporer"
+      }
+    },
+    {
+      "name": "lexicon_479290",
+      "flexion": "rééquilibrerai",
+      "stem": "rééquilibrer",
+      "suffix_code": "2",
+      "affix_code": "0/2",
+      "suffix": {
+        "result": "rééquilibrer"
+      },
+      "affix": {
+        "result": "rééquilibrer"
+      }
+    },
+    {
+      "name": "lexicon_481312",
+      "flexion": "scannérisaient",
+      "stem": "scannériser",
+      "suffix_code": "5er",
+      "affix_code": "0/5er",
+      "suffix": {
+        "result": "scannériser"
+      },
+      "affix": {
+        "result": "scannériser"
+      }
+    },
+    {
+      "name": "lexicon_483334",
+      "flexion": "sinueraient",
+      "stem": "sinuer",
+      "suffix_code": "5",
+      "affix_code": "0/5",
+      "suffix": {
+        "result": "sinuer"
+      },
+      "affix": {
+        "result": "sinuer"
+      }
+    },
+    {
+      "name": "lexicon_485357",
+      "flexion": "sous-investis",
+      "stem": "sous-investir",
+      "suffix_code": "1r",
+      "affix_code": "0/1r",
+      "suffix": {
+        "result": "sous-investir"
+      },
+      "affix": {
+        "result": "sous-investir"
+      }
+    },
+    {
+      "name": "lexicon_487379",
+      "flexion": "stéréotyperais",
+      "stem": "stéréotyper",
+      "suffix_code": "3",
+      "affix_code": "0/3",
+      "suffix": {
+        "result": "stéréotyper"
+      },
+      "affix": {
+        "result": "stéréotyper"
+      }
+    },
+    {
+      "name": "lexicon_489401",
+      "flexion": "surendettons",
+      "stem": "surendetter",
+      "suffix_code": "3er",
+      "affix_code": "0/3er",
+      "suffix": {
+        "result": "surendetter"
+      },
+      "affix": {
+        "result": "surendetter"
+      }
+    },
+    {
+      "name": "lexicon_491424",
+      "flexion": "survalorisassiez",
+      "stem": "survaloriser",
+      "suffix_code": "6er",
+      "affix_code": "0/6er",
+      "suffix": {
+        "result": "survaloriser"
+      },
+      "affix": {
+        "result": "survaloriser"
+      }
+    },
+    {
+      "name": "lexicon_493446",
+      "flexion": "tannè",
+      "stem": "tanner",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "tanner"
+      },
+      "affix": {
+        "result": "tanner"
+      }
+    },
+    {
+      "name": "lexicon_495468",
+      "flexion": "thésaurisè",
+      "stem": "thésauriser",
+      "suffix_code": "1er",
+      "affix_code": "0/1er",
+      "suffix": {
+        "result": "thésauriser"
+      },
+      "affix": {
+        "result": "thésauriser"
+      }
+    },
+    {
+      "name": "lexicon_497491",
+      "flexion": "trachéotomisent",
+      "stem": "trachéotomiser",
+      "suffix_code": "2r",
+      "affix_code": "0/2r",
+      "suffix": {
+        "result": "trachéotomiser"
+      },
+      "affix": {
+        "result": "trachéotomiser"
+      }
+    },
+    {
+      "name": "lexicon_499513",
+      "flexion": "trompèterait",
+      "stem": "trompeter",
+      "suffix_code": "7eter",
+      "affix_code": "0/7eter",
+      "suffix": {
+        "result": "trompeter"
+      },
+      "affix": {
+        "result": "trompeter"
+      }
+    },
+    {
+      "name": "lexicon_501535",
+      "flexion": "télésnobai",
+      "stem": "télésnober",
+      "suffix_code": "2er",
+      "affix_code": "0/2er",
+      "suffix": {
+        "result": "télésnober"
+      },
+      "affix": {
+        "result": "télésnober"
+      }
+    },
+    {
+      "name": "lexicon_503558",
+      "flexion": "vergeassent",
+      "stem": "verger",
+      "suffix_code": "6r",
+      "affix_code": "0/6r",
+      "suffix": {
+        "result": "verger"
+      },
+      "affix": {
+        "result": "verger"
+      }
+    },
+    {
+      "name": "lexicon_505580",
+      "flexion": "voutassions",
+      "stem": "vouter",
+      "suffix_code": "7er",
+      "affix_code": "0/7er",
+      "suffix": {
+        "result": "vouter"
+      },
+      "affix": {
+        "result": "vouter"
+      }
+    },
+    {
+      "name": "lexicon_507602",
+      "flexion": "ânonnerions",
+      "stem": "ânonner",
+      "suffix_code": "4",
+      "affix_code": "0/4",
+      "suffix": {
+        "result": "ânonner"
+      },
+      "affix": {
+        "result": "ânonner"
+      }
+    },
+    {
+      "name": "lexicon_509625",
+      "flexion": "écoparticipations",
+      "stem": "écoparticipation",
+      "suffix_code": "1",
+      "affix_code": "0/1",
+      "suffix": {
+        "result": "écoparticipation"
+      },
+      "affix": {
+        "result": "écoparticipation"
+      }
+    },
+    {
+      "name": "lexicon_511647",
+      "flexion": "élégissais",
+      "stem": "élégir",
+      "suffix_code": "5r",
+      "affix_code": "0/5r",
+      "suffix": {
+        "result": "élégir"
+      },
+      "affix": {
+        "result": "élégir"
+      }
+    },
+    {
+      "name": "lexicon_513669",
+      "flexion": "époutie",
+      "stem": "époutier",
+      "suffix_code": "0r",
+      "affix_code": "0/0r",
+      "suffix": {
+        "result": "époutier"
+      },
+      "affix": {
+        "result": "époutier"
+      }
+    },
+    {
+      "name": "lexicon_515692",
+      "flexion": "Ω",
+      "stem": "Ω",
+      "suffix_code": "0",
+      "affix_code": "0",
+      "suffix": {
+        "result": "Ω"
+      },
+      "affix": {
+        "result": "Ω"
+      }
+    }
+  ],
+  "decodes": [
+    {
+      "kind": "suffix",
+      "word": "abc",
+      "code": "",
+      "error": "IndexError"
+    },
+    {
+      "kind": "suffix",
+      "word": "abc",
+      "code": ":x",
+      "result": "x"
+    },
+    {
+      "kind": "suffix",
+      "word": "é😀c",
+      "code": "/x",
+      "result": "éx"
+    },
+    {
+      "kind": "suffix",
+      "word": "é😀c",
+      "code": "-x",
+      "result": "é😀cx"
+    },
+    {
+      "kind": "suffix",
+      "word": "abc",
+      "code": "0tail",
+      "result": "abctail"
+    },
+    {
+      "kind": "suffix",
+      "word": "",
+      "code": "1x",
+      "result": "x"
+    },
+    {
+      "kind": "suffix",
+      "word": "abc",
+      "code": "😀x",
+      "result": "x"
+    },
+    {
+      "kind": "affix",
+      "word": "abc",
+      "code": "",
+      "result": ""
+    },
+    {
+      "kind": "affix",
+      "word": "abc",
+      "code": "/",
+      "error": "IndexError"
+    },
+    {
+      "kind": "affix",
+      "word": "abc",
+      "code": "/0",
+      "error": "IndexError"
+    },
+    {
+      "kind": "affix",
+      "word": "abc",
+      "code": "0/",
+      "error": "IndexError"
+    },
+    {
+      "kind": "affix",
+      "word": "abc",
+      "code": "0/0/0",
+      "error": "ValueError"
+    },
+    {
+      "kind": "affix",
+      "word": "é😀c",
+      "code": "-x/0",
+      "result": "xé😀c"
+    },
+    {
+      "kind": "affix",
+      "word": "é😀c",
+      "code": ":x/0",
+      "result": "x"
+    },
+    {
+      "kind": "affix",
+      "word": "é😀c",
+      "code": "0/1",
+      "result": "é😀"
+    },
+    {
+      "kind": "affix",
+      "word": "abc",
+      "code": "0x/9y",
+      "result": "y"
+    },
+    {
+      "kind": "affix",
+      "word": "abc",
+      "code": "literal",
+      "result": "literal"
+    }
+  ]
+}

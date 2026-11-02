@@ -1,0 +1,1971 @@
+{
+  "source_repository": "https://github.com/benoit-pereira-da-silva/grammalecte",
+  "source_commit": "08511c222029b3be20bf547563315d10fb48d44b",
+  "source_file": "gc_core/py/text.py",
+  "source_sha256": "8b67bb123588776cfe26090f618ddb985ab9185ea88c0a6cec7037d005d449eb",
+  "oracle_python": "3.9.6",
+  "cases": [
+    {
+      "name": "empty",
+      "input": "",
+      "paragraphs": [
+        ""
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 0
+        }
+      ],
+      "sentences": [
+        ""
+      ]
+    },
+    {
+      "name": "plain",
+      "input": "Bonjour tout le monde",
+      "paragraphs": [
+        "Bonjour tout le monde"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 21
+        }
+      ],
+      "sentences": [
+        "Bonjour tout le monde"
+      ]
+    },
+    {
+      "name": "lf",
+      "input": "a\nb\n",
+      "paragraphs": [
+        "a",
+        "b",
+        ""
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 4
+        }
+      ],
+      "sentences": [
+        "a\nb\n"
+      ]
+    },
+    {
+      "name": "cr",
+      "input": "a\rb\r",
+      "paragraphs": [
+        "a",
+        "b",
+        ""
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 4
+        }
+      ],
+      "sentences": [
+        "a\rb\r"
+      ]
+    },
+    {
+      "name": "crlf",
+      "input": "a\r\nb\r\n",
+      "paragraphs": [
+        "a",
+        "b",
+        ""
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a\r\nb\r\n"
+      ]
+    },
+    {
+      "name": "mixed_newlines",
+      "input": "a\r\nb\rc\n\nd",
+      "paragraphs": [
+        "a",
+        "b",
+        "c",
+        "",
+        "d"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 9
+        }
+      ],
+      "sentences": [
+        "a\r\nb\rc\n\nd"
+      ]
+    },
+    {
+      "name": "blank_lines",
+      "input": "\n\n",
+      "paragraphs": [
+        "",
+        "",
+        ""
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 2
+        }
+      ],
+      "sentences": [
+        "\n\n"
+      ]
+    },
+    {
+      "name": "one_lf",
+      "input": "\n",
+      "paragraphs": [
+        "",
+        ""
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 1
+        }
+      ],
+      "sentences": [
+        "\n"
+      ]
+    },
+    {
+      "name": "preserved_spaces",
+      "input": "  un  \n  deux  ",
+      "paragraphs": [
+        "  un  ",
+        "  deux  "
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 15
+        }
+      ],
+      "sentences": [
+        "  un  \n  deux  "
+      ]
+    },
+    {
+      "name": "unicode_line_separator",
+      "input": "un deux trois",
+      "paragraphs": [
+        "un deux trois"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 13
+        }
+      ],
+      "sentences": [
+        "un deux trois"
+      ]
+    },
+    {
+      "name": "simple_sentences",
+      "input": "Bonjour. Salut.",
+      "paragraphs": [
+        "Bonjour. Salut."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 9
+        },
+        {
+          "Start": 9,
+          "End": 15
+        }
+      ],
+      "sentences": [
+        "Bonjour. ",
+        "Salut."
+      ]
+    },
+    {
+      "name": "punctuation_run",
+      "input": "Bonjour?!… Au revoir.",
+      "paragraphs": [
+        "Bonjour?!… Au revoir."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 11
+        },
+        {
+          "Start": 11,
+          "End": 21
+        }
+      ],
+      "sentences": [
+        "Bonjour?!… ",
+        "Au revoir."
+      ]
+    },
+    {
+      "name": "lowercase_continuation",
+      "input": "Bonjour. suite.",
+      "paragraphs": [
+        "Bonjour. suite."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 15
+        }
+      ],
+      "sentences": [
+        "Bonjour. suite."
+      ]
+    },
+    {
+      "name": "no_space",
+      "input": "Bonjour.Salut.",
+      "paragraphs": [
+        "Bonjour.Salut."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 14
+        }
+      ],
+      "sentences": [
+        "Bonjour.Salut."
+      ]
+    },
+    {
+      "name": "trailing_space",
+      "input": "Bonjour. ",
+      "paragraphs": [
+        "Bonjour. "
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 9
+        }
+      ],
+      "sentences": [
+        "Bonjour. "
+      ]
+    },
+    {
+      "name": "trailing_semicolon",
+      "input": "Bonjour; ",
+      "paragraphs": [
+        "Bonjour; "
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 9
+        },
+        {
+          "Start": 9,
+          "End": 9
+        }
+      ],
+      "sentences": [
+        "Bonjour; ",
+        ""
+      ]
+    },
+    {
+      "name": "colon",
+      "input": "Titre: détail; fin",
+      "paragraphs": [
+        "Titre: détail; fin"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 7
+        },
+        {
+          "Start": 7,
+          "End": 15
+        },
+        {
+          "Start": 15,
+          "End": 18
+        }
+      ],
+      "sentences": [
+        "Titre: ",
+        "détail; ",
+        "fin"
+      ]
+    },
+    {
+      "name": "semicolon_runs",
+      "input": "a;; B",
+      "paragraphs": [
+        "a;; B"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 4
+        },
+        {
+          "Start": 4,
+          "End": 5
+        }
+      ],
+      "sentences": [
+        "a;; ",
+        "B"
+      ]
+    },
+    {
+      "name": "multiple_spaces",
+      "input": "Un.    Deux.",
+      "paragraphs": [
+        "Un.    Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 7
+        },
+        {
+          "Start": 7,
+          "End": 12
+        }
+      ],
+      "sentences": [
+        "Un.    ",
+        "Deux."
+      ]
+    },
+    {
+      "name": "tab",
+      "input": "Un.\tDeux.",
+      "paragraphs": [
+        "Un.\tDeux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 9
+        }
+      ],
+      "sentences": [
+        "Un.\tDeux."
+      ]
+    },
+    {
+      "name": "newline_sentence",
+      "input": "Un.\nDeux.",
+      "paragraphs": [
+        "Un.",
+        "Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 9
+        }
+      ],
+      "sentences": [
+        "Un.\nDeux."
+      ]
+    },
+    {
+      "name": "carriage_return_sentence",
+      "input": "Un.\rDeux.",
+      "paragraphs": [
+        "Un.",
+        "Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 9
+        }
+      ],
+      "sentences": [
+        "Un.\rDeux."
+      ]
+    },
+    {
+      "name": "nonbreaking_space",
+      "input": "Un. Deux.",
+      "paragraphs": [
+        "Un. Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 4
+        },
+        {
+          "Start": 4,
+          "End": 9
+        }
+      ],
+      "sentences": [
+        "Un. ",
+        "Deux."
+      ]
+    },
+    {
+      "name": "narrow_nonbreaking_space",
+      "input": "Un. Deux.",
+      "paragraphs": [
+        "Un. Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 4
+        },
+        {
+          "Start": 4,
+          "End": 9
+        }
+      ],
+      "sentences": [
+        "Un. ",
+        "Deux."
+      ]
+    },
+    {
+      "name": "thin_space",
+      "input": "Un. Deux.",
+      "paragraphs": [
+        "Un. Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 9
+        }
+      ],
+      "sentences": [
+        "Un. Deux."
+      ]
+    },
+    {
+      "name": "mixed_sentence_spaces",
+      "input": "Un.    Deux.",
+      "paragraphs": [
+        "Un.    Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 7
+        },
+        {
+          "Start": 7,
+          "End": 12
+        }
+      ],
+      "sentences": [
+        "Un.    ",
+        "Deux."
+      ]
+    },
+    {
+      "name": "closing_guillemet_before_space",
+      "input": "Un.» Deux.",
+      "paragraphs": [
+        "Un.» Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 5
+        },
+        {
+          "Start": 5,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "Un.» ",
+        "Deux."
+      ]
+    },
+    {
+      "name": "closing_curly_double_before_space",
+      "input": "Un.” Deux.",
+      "paragraphs": [
+        "Un.” Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 5
+        },
+        {
+          "Start": 5,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "Un.” ",
+        "Deux."
+      ]
+    },
+    {
+      "name": "closing_curly_single_before_space",
+      "input": "Un.’ Deux.",
+      "paragraphs": [
+        "Un.’ Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 5
+        },
+        {
+          "Start": 5,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "Un.’ ",
+        "Deux."
+      ]
+    },
+    {
+      "name": "closing_parenthesis_before_space",
+      "input": "Un.) Deux.",
+      "paragraphs": [
+        "Un.) Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 5
+        },
+        {
+          "Start": 5,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "Un.) ",
+        "Deux."
+      ]
+    },
+    {
+      "name": "closing_parenthesis_after_space",
+      "input": "Un. ) Deux.",
+      "paragraphs": [
+        "Un. ) Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 11
+        }
+      ],
+      "sentences": [
+        "Un. ) Deux."
+      ]
+    },
+    {
+      "name": "closing_guillemet_after_space",
+      "input": "Un. »Deux.",
+      "paragraphs": [
+        "Un. »Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 5
+        },
+        {
+          "Start": 5,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "Un. »",
+        "Deux."
+      ]
+    },
+    {
+      "name": "closing_guillemet_after_space_with_gap",
+      "input": "Un. » Deux.",
+      "paragraphs": [
+        "Un. » Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 5
+        },
+        {
+          "Start": 5,
+          "End": 11
+        }
+      ],
+      "sentences": [
+        "Un. »",
+        " Deux."
+      ]
+    },
+    {
+      "name": "two_closing_quotes",
+      "input": "Un.» ”Deux.",
+      "paragraphs": [
+        "Un.» ”Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        },
+        {
+          "Start": 6,
+          "End": 11
+        }
+      ],
+      "sentences": [
+        "Un.» ”",
+        "Deux."
+      ]
+    },
+    {
+      "name": "repeated_closing_quotes",
+      "input": "Un. »»Deux.",
+      "paragraphs": [
+        "Un. »»Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 11
+        }
+      ],
+      "sentences": [
+        "Un. »»Deux."
+      ]
+    },
+    {
+      "name": "opening_quotes",
+      "input": "Un. «“‘\"Deux.",
+      "paragraphs": [
+        "Un. «“‘\"Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 4
+        },
+        {
+          "Start": 4,
+          "End": 13
+        }
+      ],
+      "sentences": [
+        "Un. ",
+        "«“‘\"Deux."
+      ]
+    },
+    {
+      "name": "dash_continuation",
+      "input": "Un. —– Deux.",
+      "paragraphs": [
+        "Un. —– Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 4
+        },
+        {
+          "Start": 4,
+          "End": 12
+        }
+      ],
+      "sentences": [
+        "Un. ",
+        "—– Deux."
+      ]
+    },
+    {
+      "name": "lowercase_after_quote",
+      "input": "Un. «deux.",
+      "paragraphs": [
+        "Un. «deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "Un. «deux."
+      ]
+    },
+    {
+      "name": "digit_continuation",
+      "input": "Un. 2 personnes.",
+      "paragraphs": [
+        "Un. 2 personnes."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 16
+        }
+      ],
+      "sentences": [
+        "Un. 2 personnes."
+      ]
+    },
+    {
+      "name": "capital_accent",
+      "input": "Un. École.",
+      "paragraphs": [
+        "Un. École."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 4
+        },
+        {
+          "Start": 4,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "Un. ",
+        "École."
+      ]
+    },
+    {
+      "name": "unsupported_capital_accent",
+      "input": "Un. Ëcole.",
+      "paragraphs": [
+        "Un. Ëcole."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "Un. Ëcole."
+      ]
+    },
+    {
+      "name": "emoji_continuation",
+      "input": "Un. 😀 Deux.",
+      "paragraphs": [
+        "Un. 😀 Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 11
+        }
+      ],
+      "sentences": [
+        "Un. 😀 Deux."
+      ]
+    },
+    {
+      "name": "emoji_before_boundary",
+      "input": "😀 Un. Deux.",
+      "paragraphs": [
+        "😀 Un. Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        },
+        {
+          "Start": 6,
+          "End": 11
+        }
+      ],
+      "sentences": [
+        "😀 Un. ",
+        "Deux."
+      ]
+    },
+    {
+      "name": "non_bmp_before_boundary",
+      "input": "𝄞. Deux.",
+      "paragraphs": [
+        "𝄞. Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 8
+        }
+      ],
+      "sentences": [
+        "𝄞. ",
+        "Deux."
+      ]
+    },
+    {
+      "name": "combining_accent",
+      "input": "école. École.",
+      "paragraphs": [
+        "école. École."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 8
+        },
+        {
+          "Start": 8,
+          "End": 14
+        }
+      ],
+      "sentences": [
+        "école. ",
+        "École."
+      ]
+    },
+    {
+      "name": "colon_without_capital",
+      "input": "Titre: texte",
+      "paragraphs": [
+        "Titre: texte"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 7
+        },
+        {
+          "Start": 7,
+          "End": 12
+        }
+      ],
+      "sentences": [
+        "Titre: ",
+        "texte"
+      ]
+    },
+    {
+      "name": "colon_before_newline",
+      "input": "Titre:\ntexte",
+      "paragraphs": [
+        "Titre:",
+        "texte"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 12
+        }
+      ],
+      "sentences": [
+        "Titre:\ntexte"
+      ]
+    },
+    {
+      "name": "colon_with_quotes",
+      "input": "Titre: » texte",
+      "paragraphs": [
+        "Titre: » texte"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 7
+        },
+        {
+          "Start": 7,
+          "End": 14
+        }
+      ],
+      "sentences": [
+        "Titre: ",
+        "» texte"
+      ]
+    },
+    {
+      "name": "only_colon",
+      "input": ": ",
+      "paragraphs": [
+        ": "
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 2
+        },
+        {
+          "Start": 2,
+          "End": 2
+        }
+      ],
+      "sentences": [
+        ": ",
+        ""
+      ]
+    },
+    {
+      "name": "only_punctuation",
+      "input": "...",
+      "paragraphs": [
+        "..."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        }
+      ],
+      "sentences": [
+        "..."
+      ]
+    },
+    {
+      "name": "consecutive_candidates",
+      "input": "a. b; c. D",
+      "paragraphs": [
+        "a. b; c. D"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        },
+        {
+          "Start": 6,
+          "End": 9
+        },
+        {
+          "Start": 9,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "a. b; ",
+        "c. ",
+        "D"
+      ]
+    },
+    {
+      "name": "multiple_boundaries",
+      "input": "Un. Deux! Trois? Quatre… Cinq: six; sept.",
+      "paragraphs": [
+        "Un. Deux! Trois? Quatre… Cinq: six; sept."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 4
+        },
+        {
+          "Start": 4,
+          "End": 10
+        },
+        {
+          "Start": 10,
+          "End": 17
+        },
+        {
+          "Start": 17,
+          "End": 25
+        },
+        {
+          "Start": 25,
+          "End": 31
+        },
+        {
+          "Start": 31,
+          "End": 36
+        },
+        {
+          "Start": 36,
+          "End": 41
+        }
+      ],
+      "sentences": [
+        "Un. ",
+        "Deux! ",
+        "Trois? ",
+        "Quatre… ",
+        "Cinq: ",
+        "six; ",
+        "sept."
+      ]
+    },
+    {
+      "name": "ascii_quote_after_period",
+      "input": "Un.\" Deux.",
+      "paragraphs": [
+        "Un.\" Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "Un.\" Deux."
+      ]
+    },
+    {
+      "name": "apostrophe_after_period",
+      "input": "Un.' Deux.",
+      "paragraphs": [
+        "Un.' Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 10
+        }
+      ],
+      "sentences": [
+        "Un.' Deux."
+      ]
+    },
+    {
+      "name": "spaces_then_quotes_then_spaces",
+      "input": "Un.   »   « Deux.",
+      "paragraphs": [
+        "Un.   »   « Deux."
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 7
+        },
+        {
+          "Start": 7,
+          "End": 17
+        }
+      ],
+      "sentences": [
+        "Un.   »",
+        "   « Deux."
+      ]
+    },
+    {
+      "name": "continuation_U0041",
+      "input": "a. Abc",
+      "paragraphs": [
+        "a. Abc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Abc"
+      ]
+    },
+    {
+      "name": "continuation_U0042",
+      "input": "a. Bbc",
+      "paragraphs": [
+        "a. Bbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Bbc"
+      ]
+    },
+    {
+      "name": "continuation_U0043",
+      "input": "a. Cbc",
+      "paragraphs": [
+        "a. Cbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Cbc"
+      ]
+    },
+    {
+      "name": "continuation_U0044",
+      "input": "a. Dbc",
+      "paragraphs": [
+        "a. Dbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Dbc"
+      ]
+    },
+    {
+      "name": "continuation_U0045",
+      "input": "a. Ebc",
+      "paragraphs": [
+        "a. Ebc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Ebc"
+      ]
+    },
+    {
+      "name": "continuation_U0046",
+      "input": "a. Fbc",
+      "paragraphs": [
+        "a. Fbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Fbc"
+      ]
+    },
+    {
+      "name": "continuation_U0047",
+      "input": "a. Gbc",
+      "paragraphs": [
+        "a. Gbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Gbc"
+      ]
+    },
+    {
+      "name": "continuation_U0048",
+      "input": "a. Hbc",
+      "paragraphs": [
+        "a. Hbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Hbc"
+      ]
+    },
+    {
+      "name": "continuation_U0049",
+      "input": "a. Ibc",
+      "paragraphs": [
+        "a. Ibc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Ibc"
+      ]
+    },
+    {
+      "name": "continuation_U004A",
+      "input": "a. Jbc",
+      "paragraphs": [
+        "a. Jbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Jbc"
+      ]
+    },
+    {
+      "name": "continuation_U004B",
+      "input": "a. Kbc",
+      "paragraphs": [
+        "a. Kbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Kbc"
+      ]
+    },
+    {
+      "name": "continuation_U004C",
+      "input": "a. Lbc",
+      "paragraphs": [
+        "a. Lbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Lbc"
+      ]
+    },
+    {
+      "name": "continuation_U004D",
+      "input": "a. Mbc",
+      "paragraphs": [
+        "a. Mbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Mbc"
+      ]
+    },
+    {
+      "name": "continuation_U004E",
+      "input": "a. Nbc",
+      "paragraphs": [
+        "a. Nbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Nbc"
+      ]
+    },
+    {
+      "name": "continuation_U004F",
+      "input": "a. Obc",
+      "paragraphs": [
+        "a. Obc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Obc"
+      ]
+    },
+    {
+      "name": "continuation_U0050",
+      "input": "a. Pbc",
+      "paragraphs": [
+        "a. Pbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Pbc"
+      ]
+    },
+    {
+      "name": "continuation_U0051",
+      "input": "a. Qbc",
+      "paragraphs": [
+        "a. Qbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Qbc"
+      ]
+    },
+    {
+      "name": "continuation_U0052",
+      "input": "a. Rbc",
+      "paragraphs": [
+        "a. Rbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Rbc"
+      ]
+    },
+    {
+      "name": "continuation_U0053",
+      "input": "a. Sbc",
+      "paragraphs": [
+        "a. Sbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Sbc"
+      ]
+    },
+    {
+      "name": "continuation_U0054",
+      "input": "a. Tbc",
+      "paragraphs": [
+        "a. Tbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Tbc"
+      ]
+    },
+    {
+      "name": "continuation_U0055",
+      "input": "a. Ubc",
+      "paragraphs": [
+        "a. Ubc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Ubc"
+      ]
+    },
+    {
+      "name": "continuation_U0056",
+      "input": "a. Vbc",
+      "paragraphs": [
+        "a. Vbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Vbc"
+      ]
+    },
+    {
+      "name": "continuation_U0057",
+      "input": "a. Wbc",
+      "paragraphs": [
+        "a. Wbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Wbc"
+      ]
+    },
+    {
+      "name": "continuation_U0058",
+      "input": "a. Xbc",
+      "paragraphs": [
+        "a. Xbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Xbc"
+      ]
+    },
+    {
+      "name": "continuation_U0059",
+      "input": "a. Ybc",
+      "paragraphs": [
+        "a. Ybc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Ybc"
+      ]
+    },
+    {
+      "name": "continuation_U005A",
+      "input": "a. Zbc",
+      "paragraphs": [
+        "a. Zbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Zbc"
+      ]
+    },
+    {
+      "name": "continuation_U00C0",
+      "input": "a. Àbc",
+      "paragraphs": [
+        "a. Àbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Àbc"
+      ]
+    },
+    {
+      "name": "continuation_U00C2",
+      "input": "a. Âbc",
+      "paragraphs": [
+        "a. Âbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Âbc"
+      ]
+    },
+    {
+      "name": "continuation_U00C9",
+      "input": "a. Ébc",
+      "paragraphs": [
+        "a. Ébc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Ébc"
+      ]
+    },
+    {
+      "name": "continuation_U00C8",
+      "input": "a. Èbc",
+      "paragraphs": [
+        "a. Èbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Èbc"
+      ]
+    },
+    {
+      "name": "continuation_U00CA",
+      "input": "a. Êbc",
+      "paragraphs": [
+        "a. Êbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Êbc"
+      ]
+    },
+    {
+      "name": "continuation_U00CE",
+      "input": "a. Îbc",
+      "paragraphs": [
+        "a. Îbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Îbc"
+      ]
+    },
+    {
+      "name": "continuation_U00D4",
+      "input": "a. Ôbc",
+      "paragraphs": [
+        "a. Ôbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Ôbc"
+      ]
+    },
+    {
+      "name": "continuation_U00C7",
+      "input": "a. Çbc",
+      "paragraphs": [
+        "a. Çbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 3
+        },
+        {
+          "Start": 3,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. ",
+        "Çbc"
+      ]
+    },
+    {
+      "name": "continuation_U00C4",
+      "input": "a. Äbc",
+      "paragraphs": [
+        "a. Äbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Äbc"
+      ]
+    },
+    {
+      "name": "continuation_U00C5",
+      "input": "a. Åbc",
+      "paragraphs": [
+        "a. Åbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Åbc"
+      ]
+    },
+    {
+      "name": "continuation_U00C6",
+      "input": "a. Æbc",
+      "paragraphs": [
+        "a. Æbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Æbc"
+      ]
+    },
+    {
+      "name": "continuation_U00CB",
+      "input": "a. Ëbc",
+      "paragraphs": [
+        "a. Ëbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Ëbc"
+      ]
+    },
+    {
+      "name": "continuation_U00CF",
+      "input": "a. Ïbc",
+      "paragraphs": [
+        "a. Ïbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Ïbc"
+      ]
+    },
+    {
+      "name": "continuation_U00D6",
+      "input": "a. Öbc",
+      "paragraphs": [
+        "a. Öbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Öbc"
+      ]
+    },
+    {
+      "name": "continuation_U0152",
+      "input": "a. Œbc",
+      "paragraphs": [
+        "a. Œbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Œbc"
+      ]
+    },
+    {
+      "name": "continuation_U00D9",
+      "input": "a. Ùbc",
+      "paragraphs": [
+        "a. Ùbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Ùbc"
+      ]
+    },
+    {
+      "name": "continuation_U00DB",
+      "input": "a. Ûbc",
+      "paragraphs": [
+        "a. Ûbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Ûbc"
+      ]
+    },
+    {
+      "name": "continuation_U00DC",
+      "input": "a. Übc",
+      "paragraphs": [
+        "a. Übc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Übc"
+      ]
+    },
+    {
+      "name": "continuation_U0178",
+      "input": "a. Ÿbc",
+      "paragraphs": [
+        "a. Ÿbc"
+      ],
+      "boundaries": [
+        {
+          "Start": 0,
+          "End": 6
+        }
+      ],
+      "sentences": [
+        "a. Ÿbc"
+      ]
+    }
+  ]
+}
