@@ -50,3 +50,13 @@ The full race-instrumented suite passes with `go test -race ./...`.
 Its corpus and graph-generation tests take substantially longer than the normal
 suite. Targeted concurrency tests also exercise independent grammar analyses,
 shared dictionaries, detailed token snapshots and resource helpers.
+
+## Timed-text input — 2026-11-03
+
+The additional `subtitle` package and the file/stdin CLI projection pass tests
+for SRT, WebVTT, ASS/SSA, SBV/SubViewer, MicroDVD, LRC and TTML/DFXP. Coverage
+includes timing/style/metadata exclusion, BOM/UTF-8/CRLF input, inline tags and
+entities, original-source diagnostic and token positions, and formatting that
+preserves timing and markup. A 10-second parser fuzz run completed 305,098
+executions without an invalid source span. The full normal and race suites and
+`go vet ./...` pass; the paragraph engine and its reference corpus are unchanged.

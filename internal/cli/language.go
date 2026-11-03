@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"io"
 	"os"
-	"unicode/utf8"
 
 	"github.com/benoit-pereira-da-silva/gogrammalecte/french"
 	"github.com/benoit-pereira-da-silva/gogrammalecte/graphspell"
 	"github.com/benoit-pereira-da-silva/gogrammalecte/graphspell/dictionary"
 	"github.com/benoit-pereira-da-silva/gogrammalecte/rules"
+	"github.com/benoit-pereira-da-silva/gogrammalecte/subtitle"
 	"github.com/spf13/cobra"
 )
 
@@ -58,20 +58,27 @@ func languageCommands() []*cobra.Command {
 		}
 		return json.NewEncoder(cmd.OutOrStdout()).Encode(doc.Defaults)
 	}}
-	spell := &cobra.Command{Use: "spell", Short: "Find spelling errors in UTF-8 standard input", Args: cobra.NoArgs, RunE: func(cmd *cobra.Command, _ []string) error {
-		input, err := io.ReadAll(cmd.InOrStdin())
+	var format string
+	spell := &cobra.Command{Use: "spell [file]", Short: "Find spelling errors in UTF-8 prose or subtitle payloads", Args: cobra.MaximumNArgs(1), RunE: func(cmd *cobra.Command, args []string) error {
+		input, kind, err := readDocument(cmd, args, format)
 		if err != nil {
 			return err
 		}
-		if !utf8.Valid(input) {
-			return fmt.Errorf("standard input must contain valid UTF-8")
+		if kind != "" {
+			result, err := subtitle.Spell(cmd.Context(), input, kind)
+			if err != nil {
+				return err
+			}
+			return json.NewEncoder(cmd.OutOrStdout()).Encode(result)
 		}
 		checker, err := graphspell.Default()
 		if err != nil {
 			return err
 		}
-		return json.NewEncoder(cmd.OutOrStdout()).Encode(checker.ParseParagraph(string(input)))
+		return json.NewEncoder(cmd.OutOrStdout()).Encode(checker.ParseParagraph(input))
 	}}
+	documentFormatFlag(spell, &format)
+
 	var limit int
 	suggest := &cobra.Command{Use: "suggest word", Short: "Suggest spellings using embedded French resources", Args: cobra.ExactArgs(1), RunE: func(cmd *cobra.Command, args []string) error {
 		if limit < 1 {

@@ -22,6 +22,14 @@ a sibling checkout. Source and resource provenance live beside each component.
   Double Metaphone, Graphspell/Hunspell outputs and linguistic resource generators.
 - Cobra commands for checking, spelling, formatting, inspection and generation.
 
+## Subtitle projection
+
+The `subtitle` package and the CLI's `--format` input projection are additional
+Go APIs, rather than changes to the reference paragraph engine. Tests cover
+SRT, WebVTT, ASS/SSA, SBV/SubViewer, MicroDVD, LRC and TTML/DFXP extraction,
+original-file Unicode positions and preservation of timing and markup. The
+underlying grammar, spelling data and rule identifiers remain unchanged.
+
 ## Deliberate boundaries
 
 The Go CLI is organized as subcommands; it does not reproduce the original

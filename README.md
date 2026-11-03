@@ -47,6 +47,39 @@ an extra newline. Input must be UTF-8. The CLI reads input into memory.
 `paragraphs`, `sentences` and `rules` expose text segmentation and the embedded
 rule inventory. Run any command with `--help` for its parameters.
 
+## Text subtitles
+
+`check`, `spell` and `format` accept an optional UTF-8 file path (or `-` for
+standard input). Automatic detection uses its extension, then structural
+signatures. Use `--format text` to disable detection, or select a format explicitly:
+
+```sh
+bin/gogrammalecte check film.srt
+bin/gogrammalecte check --full --include-context film.vtt
+bin/gogrammalecte spell lyrics.lrc
+bin/gogrammalecte format film.ass > film-formatted.ass
+bin/gogrammalecte check --format srt < film.srt
+```
+
+Supported formats are SRT, WebVTT (`vtt`, `webvtt`), ASS/SSA, SBV/SubViewer,
+MicroDVD (textual `.sub`), LRC and TTML/DFXP. Only dialogue/lyrics are analyzed;
+timing, cue identifiers, metadata, styles and drawing commands are excluded.
+Physical lines within one cue are joined for grammar analysis; separate cues
+remain independent. ASS/SSA requires Text to be the last declared event field.
+Binary or bitmap subtitles and legacy non-UTF-8 encodings are not supported.
+Incomplete or unrecognized blocks may be skipped; this is not a subtitle syntax,
+timing or synchronization validator.
+
+The public `subtitle` package exposes `Project`, `Check`, `Analyze`, `Spell` and
+`Format`. The existing plain-paragraph APIs remain unchanged. Diagnostic offsets
+refer to Unicode code points in the original file; full-analysis token offsets
+remain relative to their original-source sentence. `Project` exposes byte spans
+and `Cue.SourceRange` for adapters. Grammar suggestions crossing tags, entities,
+line breaks or control escapes are withheld. Formatting changes only literal
+text runs, preserving timing, markup, escapes and physical line breaks; rules
+requiring context across these boundaries are conservatively skipped. Formatting
+writes to standard output and does not modify the source file.
+
 ## Native generation
 
 Every command below uses embedded source data and native Go generators:

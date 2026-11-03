@@ -5,11 +5,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"os"
 	"strings"
 	"unicode/utf8"
 
 	"github.com/benoit-pereira-da-silva/gogrammalecte/french"
 	"github.com/benoit-pereira-da-silva/gogrammalecte/grammar"
+	"github.com/benoit-pereira-da-silva/gogrammalecte/subtitle"
 	"github.com/spf13/cobra"
 )
 
@@ -23,6 +25,49 @@ func readUTF8(cmd *cobra.Command) (string, error) {
 	}
 	return string(data), nil
 }
+
+// readDocument accepts a file or stdin and selects a structural projection.
+// Explicit text mode disables subtitle detection for prose containing examples.
+func readDocument(cmd *cobra.Command, args []string, format string) (string, string, error) {
+	var input string
+	var err error
+	filename := ""
+	if len(args) > 0 && args[0] != "-" {
+		filename = args[0]
+		var data []byte
+		data, err = os.ReadFile(filename)
+		if err != nil {
+			return "", "", fmt.Errorf("read input file: %w", err)
+		}
+		if !utf8.Valid(data) {
+			return "", "", fmt.Errorf("input file must contain valid UTF-8")
+		}
+		input = string(data)
+	} else {
+		input, err = readUTF8(cmd)
+	}
+	if err != nil {
+		return "", "", err
+	}
+	if format == "text" {
+		return input, "", nil
+	}
+	normalized := subtitle.Normalize(format)
+	if normalized == "" {
+		return "", "", fmt.Errorf("unsupported input format %q", format)
+	}
+	if normalized == "auto" {
+		normalized = subtitle.FromFilename(filename)
+		if normalized == "" {
+			normalized = subtitle.Detect(input)
+		}
+	}
+	return input, normalized, nil
+}
+func documentFormatFlag(cmd *cobra.Command, format *string) {
+	cmd.Flags().StringVar(format, "format", "auto", "Input format: auto, text, srt, vtt, ass, ssa, sbv, sub, microdvd, lrc, ttml or dfxp")
+}
+
 func parseOptionFlags(enabled, disabled []string) map[string]bool {
 	options := map[string]bool{}
 	for _, name := range enabled {
@@ -34,11 +79,11 @@ func parseOptionFlags(enabled, disabled []string) map[string]bool {
 	return options
 }
 func checkCommand() *cobra.Command {
-	var country, app string
+	var country, app, format string
 	var withContext, full bool
 	var enable, disable, ignore []string
-	cmd := &cobra.Command{Use: "check", Short: "Check every paragraph of UTF-8 standard input and emit diagnostic JSON", Args: cobra.NoArgs, RunE: func(cmd *cobra.Command, _ []string) error {
-		input, err := readUTF8(cmd)
+	cmd := &cobra.Command{Use: "check [file]", Short: "Check UTF-8 prose or subtitles from a file or standard input and emit diagnostic JSON", Args: cobra.MaximumNArgs(1), RunE: func(cmd *cobra.Command, args []string) error {
+		input, kind, err := readDocument(cmd, args, format)
 		if err != nil {
 			return err
 		}
@@ -51,12 +96,22 @@ func checkCommand() *cobra.Command {
 			ignored[rule] = true
 		}
 		settings := grammar.ParseOptions{Country: country, AppContext: app, Context: withContext, Options: parseOptionFlags(enable, disable), IgnoredRules: ignored}
-		result, err := checkDocument(cmd.Context(), engine, input, settings, full)
+		var result any
+		if kind != "" {
+			if full {
+				result, err = subtitle.Analyze(cmd.Context(), input, kind, settings)
+			} else {
+				result, err = subtitle.Check(cmd.Context(), input, kind, settings)
+			}
+		} else {
+			result, err = checkDocument(cmd.Context(), engine, input, settings, full)
+		}
 		if err != nil {
 			return err
 		}
 		return json.NewEncoder(cmd.OutOrStdout()).Encode(result)
 	}}
+	documentFormatFlag(cmd, &format)
 	cmd.Flags().StringVar(&country, "country", "FR", "Country code used by grammar rules")
 	cmd.Flags().StringVar(&app, "context", "Python", "Option defaults: Python, Server or Writer")
 	cmd.Flags().BoolVar(&withContext, "include-context", false, "Include the original text around each diagnostic")
@@ -68,9 +123,9 @@ func checkCommand() *cobra.Command {
 }
 func formatCommand() *cobra.Command {
 	var enable, disable []string
-	var rule string
-	cmd := &cobra.Command{Use: "format", Short: "Format French typography in UTF-8 standard input", Args: cobra.NoArgs, RunE: func(cmd *cobra.Command, _ []string) error {
-		input, err := readUTF8(cmd)
+	var rule, format string
+	cmd := &cobra.Command{Use: "format [file]", Short: "Format UTF-8 French prose or subtitle payloads from a file or standard input", Args: cobra.MaximumNArgs(1), RunE: func(cmd *cobra.Command, args []string) error {
+		input, kind, err := readDocument(cmd, args, format)
 		if err != nil {
 			return err
 		}
@@ -79,10 +134,12 @@ func formatCommand() *cobra.Command {
 			return err
 		}
 		var output string
-		if rule != "" {
-			if len(enable)+len(disable) > 0 {
-				return fmt.Errorf("--rule cannot be combined with --enable or --disable")
-			}
+		if rule != "" && len(enable)+len(disable) > 0 {
+			return fmt.Errorf("--rule cannot be combined with --enable or --disable")
+		}
+		if kind != "" {
+			output, err = subtitle.Format(cmd.Context(), input, kind, parseOptionFlags(enable, disable), rule)
+		} else if rule != "" {
 			output, _, err = formatter.Apply(cmd.Context(), input, rule)
 		} else {
 			output, err = formatter.FormatWithOptions(cmd.Context(), input, parseOptionFlags(enable, disable))
@@ -93,6 +150,7 @@ func formatCommand() *cobra.Command {
 		_, err = io.Copy(cmd.OutOrStdout(), strings.NewReader(output))
 		return err
 	}}
+	documentFormatFlag(cmd, &format)
 	cmd.Flags().StringVar(&rule, "rule", "", "Apply one named formatter option")
 	cmd.Flags().StringSliceVar(&enable, "enable", nil, "Comma-separated formatter options to enable")
 	cmd.Flags().StringSliceVar(&disable, "disable", nil, "Comma-separated formatter options to disable")
